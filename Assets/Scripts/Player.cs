@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class Player : MonoBehaviour
+{
+    private void Start()
+    {
+ 
+    }
+    private void Update()
+    {
+    
+    }
+
+    private void FixedUpdate()
+    {
+
+    }
+
+}
