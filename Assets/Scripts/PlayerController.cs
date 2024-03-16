@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private InputAction attack;
     private PlayerAttack _playerAttack;
 
+    Animator animator;
 
     private Rigidbody rb;
     [SerializeField] private float movementForce = 1.0f;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponentInChildren<Animator>();
         _playerAttack = GetComponent<PlayerAttack>();
         rb = GetComponent<Rigidbody>();
         playerInputActions = new PlayerInputActions();
@@ -63,13 +65,19 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(forceDirection, ForceMode.Impulse);
         forceDirection = Vector3.zero;
 
-
         Vector3 horizontalVelocity = rb.velocity;
         horizontalVelocity.y = 0f;
         if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
         {
             rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rb.velocity.y;
         }
+
+        if (move.ReadValue<Vector2>().x != 0 || move.ReadValue<Vector2>().y != 0)
+        {
+            Debug.Log("walking");
+            animator.SetBool("isWalking", true);
+        }
+        else animator.SetBool("isWalking", false);
     }
 
     private Vector3 GetCameraForward(Camera playerCamera)
