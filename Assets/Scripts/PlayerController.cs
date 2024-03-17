@@ -72,9 +72,9 @@ public class PlayerController : MonoBehaviour
             rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rb.velocity.y;
         }
 
+        //animation
         if (move.ReadValue<Vector2>().x != 0 || move.ReadValue<Vector2>().y != 0)
         {
-            Debug.Log("walking");
             animator.SetBool("isWalking", true);
         }
         else animator.SetBool("isWalking", false);
