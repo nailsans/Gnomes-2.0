@@ -1797,6 +1797,7 @@ MonoBehaviour:
   movementForce: 1
   jumpForce: 5
   maxSpeed: 5
+  runningSpeedMultiplier: 2
   playerCamera: {fileID: 1530994276}
 --- !u!114 &1698208046
 MonoBehaviour:

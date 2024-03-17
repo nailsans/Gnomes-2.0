@@ -5,12 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     private PlayerInputActions playerInputActions;
     private InputAction move;
     private InputAction attack;
+    private InputAction run;
     private PlayerAttack _playerAttack;
 
     Animator animator;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementForce = 1.0f;
     [SerializeField] private float jumpForce = 5.0f;
     [SerializeField] private float maxSpeed = 5.0f;
+    [SerializeField] private float runningSpeedMultiplier = 1.8f;
     private Vector3 forceDirection = Vector3.zero;
 
     [SerializeField] private Camera playerCamera;
@@ -36,8 +39,10 @@ public class PlayerController : MonoBehaviour
     {
         playerInputActions.Player.Jump.started += DoJump;
         playerInputActions.Player.Attack.started += doAttack;
+        playerInputActions.Player.Run.started += doRun;
 
         move = playerInputActions.Player.Move;
+        run = playerInputActions.Player.Run;
         playerInputActions.Player.Enable();
     }
 
@@ -45,6 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         playerInputActions.Player.Jump.started -= DoJump;
         playerInputActions.Player.Attack.started -= doAttack;
+        playerInputActions.Player.Run.started -= doRun;
 
         playerInputActions.Player.Disable();
     }
@@ -59,8 +65,10 @@ public class PlayerController : MonoBehaviour
 
     private void doMove()
     {
-        forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
-        forceDirection += move.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
+        bool isRunning = run.ReadValue<float>() != 0;
+
+        forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce * (isRunning? runningSpeedMultiplier : 1);
+        forceDirection += move.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce * (isRunning ? runningSpeedMultiplier : 1);
 
         rb.AddForce(forceDirection, ForceMode.Impulse);
         forceDirection = Vector3.zero;
@@ -78,6 +86,12 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
         }
         else animator.SetBool("isWalking", false);
+
+        if (isRunning)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else animator.SetBool("isRunning", false);
     }
 
     private Vector3 GetCameraForward(Camera playerCamera)
@@ -106,6 +120,11 @@ public class PlayerController : MonoBehaviour
     {
         //implement a hit in a direction that model of player is already looking
         _playerAttack.Attack();
+    }
+
+    private void doRun(InputAction.CallbackContext context)
+    {
+        
     }
 
     private bool IsGrounded()

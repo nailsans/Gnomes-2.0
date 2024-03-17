@@ -38,13 +38,6 @@ public class PlayerMotion : MonoBehaviour
 
         Vector3 movementVelocity = moveDirection;
 
-        if (movementVelocity.x != 0 || movementVelocity.y != 0)
-        {
-            Debug.Log("walking");
-            animator.SetBool("isWalking", true);
-        }
-        else animator.SetBool("isWalking", false);
-
         playerRigidBody.velocity = movementVelocity;
     }
 
