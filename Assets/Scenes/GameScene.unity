@@ -1591,6 +1591,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1476221828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7721495246855828320, guid: 82ee629fd0bbbf046b9fc248b18154cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3791094999205351622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530994274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1775,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3791094999205351622}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1580810343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476221828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6a4f4f8404c9c468b1bde10714e25c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacksPlayers: 1
+  attacksPeneks: 0
+  damage: 3
+  attackArea: {fileID: 1694785908}
 --- !u!1 &1694785908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,9 +1857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c91250d975cfcd46b218c2fc7ae3260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
-  attacksPlayers: 1
-  attacksPeneks: 0
 --- !u!1 &1698208040
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,7 +2200,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1694785909}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7721495246855828320, guid: 82ee629fd0bbbf046b9fc248b18154cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1580810343}
   m_SourcePrefab: {fileID: 100100000, guid: 82ee629fd0bbbf046b9fc248b18154cc, type: 3}
 --- !u!1001 &5360236502800847865
 PrefabInstance:

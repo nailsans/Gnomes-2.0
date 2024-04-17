@@ -8,15 +8,20 @@ public abstract class EntityMove : MonoBehaviour
     private NavMeshAgent agent;
     private SphereCollider attackArea;
     private Transform currentTarget;
-    public bool targetIsClose;
+    public bool targetIsClose; //boolean shows if cur target is in attack area
 
     public LayerMask whatIsGround, whatIsPlayer;
 
     private void Update()
     {
         currentTarget = findTarget();
-        if (!targetIsClose)
+        if (targetIsClose)
+            agent.isStopped = true;
+        else
+        {
+            agent.isStopped = false;
             moveTowards(currentTarget);
+        }
     }
 
     private void Awake()
@@ -24,19 +29,6 @@ public abstract class EntityMove : MonoBehaviour
         targetIsClose = false;
         attackArea = GetComponentInChildren<SphereCollider>();
         agent = GetComponent<NavMeshAgent>();
-    }
-
-    private bool closeToTarget(Transform target)
-    {
-        Debug.Log(Vector3.Distance(target.position, attackArea.gameObject.transform.position));
-        Debug.Log(attackArea.radius * 2 + 0.5);
-        if (Vector3.Distance(target.position, attackArea.gameObject.transform.position) < (attackArea.radius * 2))
-        {
-            Debug.Log("CLOSE " + Vector3.Distance(target.position, attackArea.gameObject.transform.position));
-            return true;
-
-        }
-        return false;
     }
 
     protected abstract Transform findTarget();
