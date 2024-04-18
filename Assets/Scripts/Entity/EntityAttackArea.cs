@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EntityAttackArea : MonoBehaviour
 {
+    // A script for collider object of entity that has EntityAttack script, checks contacts with objects that can be attacked
     private EntityMove _entityMove;
     private EntityAttack _entityAttack;
 

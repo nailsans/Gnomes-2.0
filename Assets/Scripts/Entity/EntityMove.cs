@@ -5,10 +5,12 @@ using UnityEngine.AI;
 
 public abstract class EntityMove : MonoBehaviour
 {
+    // A script applied on entity that allows to implement movement for it
     private NavMeshAgent agent;
     private SphereCollider attackArea;
     private Transform currentTarget;
     public bool targetIsClose; //boolean shows if cur target is in attack area
+    Animator animator;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -26,6 +28,7 @@ public abstract class EntityMove : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponentInChildren<Animator>();
         targetIsClose = false;
         attackArea = GetComponentInChildren<SphereCollider>();
         agent = GetComponent<NavMeshAgent>();

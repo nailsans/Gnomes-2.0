@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class EntityAttack : MonoBehaviour
 {
+    // A script applied on entity that allows to implement attack for it
     [SerializeField] bool attacksPlayers = true;
     [SerializeField] bool attacksPeneks = false;
     [SerializeField] private int damage = 3;
     private GameObject model;
-
+    Animator animator;
     private EntityMove _entityMove;
 
     [SerializeField] private GameObject attackArea = default(GameObject);
     private bool isAttacking = false;
-    private float timeToAttack = 2f;
+    private float timeToAttack = 0.65f;
 
     private void Awake()
     {
+        animator = GetComponentInChildren<Animator>();
         _entityMove = GetComponent<EntityMove>();
         model = transform.Find("Model").gameObject;
     }
@@ -46,9 +48,10 @@ public class EntityAttack : MonoBehaviour
             {
                 if (playerHP != null)
                 {
-                    bettaAttackAnim();
+                    animator.SetTrigger("hit");
                     _entityMove.targetIsClose = true;
                     playerHP.takeDamage(damage);
+                    
                 }
             }
 
