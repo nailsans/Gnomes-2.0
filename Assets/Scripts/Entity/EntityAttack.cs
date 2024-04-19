@@ -28,6 +28,7 @@ public class EntityAttack : MonoBehaviour
         if (!attacksPlayers) return;
         PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
         if (playerHP == null) return;
+        _entityMove.targetIsClose = true;
         StartCoroutine(IAttackCycle(other));
     }
 

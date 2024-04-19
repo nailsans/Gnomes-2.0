@@ -14,6 +14,8 @@ public abstract class EntityMove : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+    private EntityAttackArea entityAttackArea;
+
     private void Update()
     {
         currentTarget = findTarget();
@@ -28,6 +30,7 @@ public abstract class EntityMove : MonoBehaviour
 
     private void Awake()
     {
+        entityAttackArea = GetComponent<EntityAttackArea>();
         animator = GetComponentInChildren<Animator>();
         targetIsClose = false;
         attackArea = GetComponentInChildren<SphereCollider>();
