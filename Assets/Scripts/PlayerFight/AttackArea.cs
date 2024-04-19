@@ -8,6 +8,7 @@ public class AttackArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Triggered");
         EntityDamagable enemy = other.GetComponent<EntityDamagable>();
         if (enemy != null)
         {

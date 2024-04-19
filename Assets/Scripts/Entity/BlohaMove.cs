@@ -8,7 +8,7 @@ public class BlohaMove : EntityMove
     GameObject[] players;
     protected override Transform findTarget()
     {
-        GameObject closestPlayer = new GameObject();
+        GameObject closestPlayer = null;
         float minDistance = 1000;
 
         players = GameObject.FindGameObjectsWithTag("Player");

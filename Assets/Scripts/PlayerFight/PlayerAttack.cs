@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
 
     private IEnumerator IAttack()
     {
+        Debug.Log("ATTACK!");
         isAttacking = true;
         attackArea.SetActive(isAttacking);
         yield return new WaitForSeconds(timeToAttack);

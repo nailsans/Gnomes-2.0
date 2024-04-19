@@ -15,13 +15,12 @@ public class PlayerHPSystem : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        Debug.Log("игрок получил урон");
         hp -= damage * (100 - resistance) / 100;
         if (hp <= 0) Death();
     }
 
     public void Death()
     {
-        Debug.Log("Игрок сдох");
+
     }
 }

@@ -15,10 +15,13 @@ public class EntityDamagable : MonoBehaviour
     private Quaternion startRotation;
     private Vector3 startPos;
 
+    Animator animator;
+
     private void Awake()
     {
         startRotation = model.transform.rotation;
         startPos = model.transform.localPosition;
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void takeDamage(int damage)
@@ -31,7 +34,7 @@ public class EntityDamagable : MonoBehaviour
 
     public void callDeath()
     {
-        Destroy(gameObject);
+        StartCoroutine(IPlayDeathAnimation());
     }
 
     private IEnumerator IPlayDamageAnimation()
@@ -39,5 +42,13 @@ public class EntityDamagable : MonoBehaviour
         model.transform.Rotate(new Vector3(10, 10, 10));
         yield return new WaitForSeconds(0.25f);
         model.transform.SetLocalPositionAndRotation(startPos, startRotation);
+    }
+
+    private IEnumerator IPlayDeathAnimation()
+    {
+        animator.SetTrigger("dead");
+        
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }
