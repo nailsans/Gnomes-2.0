@@ -27,6 +27,7 @@ public class BlohaMove : EntityMove
             }
         }
 
+        if (closestPlayer == null) return null;
         return closestPlayer.transform;
     }
 }
