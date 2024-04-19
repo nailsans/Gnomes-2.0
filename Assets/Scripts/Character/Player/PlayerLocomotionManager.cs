@@ -34,6 +34,7 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
         {
             isWalking = player.PlayerNetworkManager.isWalking.Value;
 
+
             player.PlayerAnimatorManager.UpdateAnimatorParameter("isWalking", isWalking);
         }
     }
@@ -43,7 +44,7 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
         HandleRotation();
     }
 
-
+    //Get motion parameters from PlayerInputManager class
     private void GetMotionInputs()
     {
         verticalMovement = PlayerInputManager.instance.verticalInput;
@@ -72,6 +73,8 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
         }
     }
 
+
+    //Get the mouse proection to the game scene
     private Vector3 getMousePos()
     {
         Vector3 direction = Vector3.zero;
@@ -92,12 +95,16 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
 
     private void HandleRotation()
     {
+
+        //Checks if the mouse inside the screen (for debugging)
         Vector3 mp = Input.mousePosition;
         if (0 > mp.x || 0 > mp.y || Screen.width < mp.x || Screen.height < mp.y)
         {
             return;
         };
         
+        //If the character is running, he looks towards running direction
+
         if (!player.characterNetworkManager.isRunning.Value)
         {
             Vector3 direction = getMousePos();
@@ -107,6 +114,8 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, float.MaxValue);
             }
         }
+
+        //If the character is walking/stationary, he looks towards mouse
 
         else if (PlayerInputManager.instance.isWalking)
         {

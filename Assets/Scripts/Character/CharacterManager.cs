@@ -11,6 +11,8 @@ public class CharacterManager : NetworkBehaviour
 
     public CharacterNetworkManager characterNetworkManager;
 
+
+    //Is character perfoming action like attacking etc
     public bool isPerfomingAction = false;
     protected virtual void Awake()
     {
@@ -25,11 +27,14 @@ public class CharacterManager : NetworkBehaviour
     {
         if (IsOwner)
         {
+            //If we own the character, then put some values into network variables
             characterNetworkManager.networkPosition.Value = transform.position;
             characterNetworkManager.networkRotation.Value = transform.rotation;
         }
         else
         {
+            //If we dont own the character, then take variables from network
+
 
             //Position
             transform.position = Vector3.SmoothDamp(

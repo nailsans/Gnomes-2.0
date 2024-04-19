@@ -40,6 +40,8 @@ public class PlayerCamera : MonoBehaviour
 
     private void FollowTarget()
     {
+        //Makes camera follow the target
+
         Vector3 targetCameraPosition = Vector3.SmoothDamp(transform.position, player.transform.position, ref cameraVelocity, cameraSmoothSpeed * Time.deltaTime);
         transform.position = targetCameraPosition;
     }
