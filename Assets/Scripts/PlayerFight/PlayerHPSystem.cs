@@ -13,12 +13,14 @@ public class PlayerHPSystem : MonoBehaviour
         hp = maxHp;
     }
 
+    // Taking damage
     public void takeDamage(int damage)
     {
         hp -= damage * (100 - resistance) / 100;
         if (hp <= 0) Death();
     }
 
+    // Executing death
     public void Death()
     {
 

@@ -16,6 +16,7 @@ public class EntityAttack : MonoBehaviour
     private bool isAttacking = false;
     private float timeToAttack = 0.65f;
 
+    // Getting components
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
@@ -23,11 +24,14 @@ public class EntityAttack : MonoBehaviour
         model = transform.Find("Model").gameObject;
     }
 
+    // Called when something is in sight of our attack field
     public void startAttacking(Collider other)
     {
+        // If our entity is not attacking nothing, cancel attacking script
         if (!attacksPlayers) return;
         PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
         if (playerHP == null) return;
+        // Making EntityMover stop moving as now we are going to attack
         _entityMove.targetIsClose = true;
         StartCoroutine(IAttackCycle(other));
     }
@@ -38,11 +42,10 @@ public class EntityAttack : MonoBehaviour
         StopAllCoroutines();
     }
 
+    // Attacking target every time as cooldowm passes
     private IEnumerator IAttackCycle(Collider other)
     {
-        //if (!attacksPlayers) yield break;
         PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
-        //if (playerHP == null) yield break;
         while (true)
         {
             if (attacksPlayers)
@@ -58,18 +61,5 @@ public class EntityAttack : MonoBehaviour
 
             yield return new WaitForSeconds(timeToAttack);
         }
-    }
-
-    private void bettaAttackAnim()
-    {
-        StartCoroutine(IAttack());
-    }
-
-    private IEnumerator IAttack()
-    {
-        Vector3 startPos = model.transform.localPosition;
-        model.transform.localPosition = new Vector3(startPos.x, startPos.y + 1, startPos.z);
-        yield return new WaitForSeconds(0.3f);
-        model.transform.localPosition = startPos;
     }
 }

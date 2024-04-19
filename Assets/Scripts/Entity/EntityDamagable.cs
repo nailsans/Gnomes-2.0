@@ -8,6 +8,7 @@ public interface IDamagable {
 
 }
 
+// Class for working with states of Entities that can be damaged 
 public class EntityDamagable : MonoBehaviour
 {
     [SerializeField] private int health = 5;
@@ -17,6 +18,7 @@ public class EntityDamagable : MonoBehaviour
 
     Animator animator;
 
+    // Getting components
     private void Awake()
     {
         startRotation = model.transform.rotation;
@@ -24,19 +26,23 @@ public class EntityDamagable : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
+    // Taking damaged is called by the thing that attack Entity
     public void takeDamage(int damage)
     {
         StartCoroutine(IPlayDamageAnimation());
         health -= damage;
         if (health <= 0)
+            // If no hp is left, execute death
             callDeath();
     }
 
+    // Death method
     public void callDeath()
     {
         StartCoroutine(IPlayDeathAnimation());
     }
 
+    //Plaiying damage animation
     private IEnumerator IPlayDamageAnimation()
     {
         model.transform.Rotate(new Vector3(10, 10, 10));
@@ -44,10 +50,12 @@ public class EntityDamagable : MonoBehaviour
         model.transform.SetLocalPositionAndRotation(startPos, startRotation);
     }
 
+    // Animation corroutine
     private IEnumerator IPlayDeathAnimation()
     {
         animator.SetTrigger("dead");
         
+        //After three seconds of animation being played, removing the object of dead entity
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }

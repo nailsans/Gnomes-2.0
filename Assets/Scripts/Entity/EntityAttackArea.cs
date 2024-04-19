@@ -10,17 +10,20 @@ public class EntityAttackArea : MonoBehaviour
 
     private void Awake()
     {
+        //Getting main components
         _entityMove = GetComponentInParent<EntityMove>();
         _entityAttack = GetComponentInParent<EntityAttack>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        // When target is in attacking area, call the script for attacking
         _entityAttack.startAttacking(other);
     }
 
     private void OnTriggerExit(Collider other)
     {
+        // When target is out of area, stop attacking
         _entityAttack.StopAttacking();
     }
 

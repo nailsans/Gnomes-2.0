@@ -18,8 +18,12 @@ public abstract class EntityMove : MonoBehaviour
 
     private void Update()
     {
+        // Finding closest targing
         currentTarget = findTarget();
+
+        // Checking if target is in field of attack
         if (targetIsClose)
+            // If target can be attacked, stop moving
             agent.isStopped = true;
         else
         {
@@ -30,6 +34,7 @@ public abstract class EntityMove : MonoBehaviour
 
     private void Awake()
     {
+        // Getting components
         entityAttackArea = GetComponent<EntityAttackArea>();
         animator = GetComponentInChildren<Animator>();
         targetIsClose = false;
@@ -39,6 +44,10 @@ public abstract class EntityMove : MonoBehaviour
 
     protected abstract Transform findTarget();
 
+    /// <summary>
+    /// Setting destination for movement AI
+    /// </summary>
+    /// <param name="target"></param>
     public void moveTowards(Transform target)
     {
         agent.SetDestination(target.position);
