@@ -13,7 +13,7 @@ public class PlayerInputManager : MonoBehaviour
     [SerializeField] Vector2 movementInput;
     public float horizontalInput;
     public float verticalInput;
-    public float moveAmount;
+    public bool isWalking;
 
     [Header("PLAYER ACTION INPUT")]
     [SerializeField] bool sprintInput = false;
@@ -92,30 +92,29 @@ public class PlayerInputManager : MonoBehaviour
         verticalInput = movementInput.y;
         horizontalInput = movementInput.x;
 
-
-        ////Returns always the positive number
-        moveAmount = Mathf.Clamp01(Mathf.Abs(verticalInput) + Mathf.Abs(horizontalInput));
-
-        if (moveAmount <= 0.5f && moveAmount > 0)
+        if (verticalInput != 0 | horizontalInput != 0)
         {
-            moveAmount = 0.5f;
-        }
-        else if (moveAmount > 0.5f && moveAmount < 1)
-        {
-            moveAmount = 1;
-        }
-
-        if (player == null)
-            return;
-
-        if (moveAmount > 0)
-        {
-            player.PlayerAnimatorManager.UpdateAnimatorMovementParameter("isWalking", true);
+            isWalking = true;
         }
 
         else
         {
-            player.PlayerAnimatorManager.UpdateAnimatorMovementParameter("isWalking", false);
+            isWalking = false;
+        }
+
+        
+
+        if (player == null)
+            return;
+
+        if (isWalking)
+        {
+            player.PlayerAnimatorManager.UpdateAnimatorParameter("isWalking", true);
+        }
+
+        else
+        {
+            player.PlayerAnimatorManager.UpdateAnimatorParameter("isWalking", false);
         }
     }
 
@@ -124,6 +123,11 @@ public class PlayerInputManager : MonoBehaviour
         if (sprintInput)
         {
             player.PlayerLocomotionManager.HandleRunning();
+        }
+
+        else
+        {
+            player.PlayerNetworkManager.isRunning.Value = false;
         }
     }
     //If we minimize or lower the window, stop adjusting inputs

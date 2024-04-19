@@ -9,7 +9,9 @@ public class CharacterManager : NetworkBehaviour
     public CharacterController characterController;
     public Animator animator;
 
-    CharacterNetworkManager characterNetworkManager;
+    public CharacterNetworkManager characterNetworkManager;
+
+    public bool isPerfomingAction = false;
     protected virtual void Awake()
     {
         DontDestroyOnLoad(this);

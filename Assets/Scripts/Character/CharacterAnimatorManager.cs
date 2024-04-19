@@ -10,8 +10,19 @@ public class CharacterAnimatorManager : MonoBehaviour
     {
         character = GetComponent<CharacterManager>();
     }
-    public void UpdateAnimatorMovementParameter(string parameterName, bool value)
+    public void UpdateAnimatorParameter(string parameterName, bool value)
     {
-        character.animator.SetBool(parameterName, value);
+
+        if (character.characterNetworkManager.isRunning.Value)
+        {
+            character.animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            character.animator.SetBool(parameterName, value);
+            character.animator.SetBool("isRunning", false);
+        }
     }
+
+
 }

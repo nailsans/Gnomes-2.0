@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using UnityEngine;
 
 public class PlayerLocomotionManager : CharacterLocomotionManager
@@ -6,7 +7,8 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
 
     public float verticalMovement;
     public float horizontalMovement;
-    public float moveAmount;
+    public bool isShiftPressed;
+    public bool isWalking;
 
     private Vector3 moveDirection;
     private Vector3 targetRotationDirection;
@@ -20,7 +22,21 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
 
         player = GetComponent<PlayerManager>();
     }
+    protected override void Update()
+    {
+        base.Update();  
 
+        if (player.IsOwner)
+        {
+            player.PlayerNetworkManager.isWalking.Value = isWalking;
+        }
+        else
+        {
+            isWalking = player.PlayerNetworkManager.isWalking.Value;
+
+            player.PlayerAnimatorManager.UpdateAnimatorParameter("isWalking", isWalking);
+        }
+    }
     public void HandleAllMovement()
     {
         HandleMovement();
@@ -28,15 +44,16 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
     }
 
 
-    private void GetVericalAndHorizontalInputs()
+    private void GetMotionInputs()
     {
         verticalMovement = PlayerInputManager.instance.verticalInput;
         horizontalMovement = PlayerInputManager.instance.horizontalInput;
+        isWalking = PlayerInputManager.instance.isWalking;
     }
     private void HandleMovement()
     {
 
-        GetVericalAndHorizontalInputs();
+        GetMotionInputs();
 
         // Movement direction based on camera perspective
         moveDirection = PlayerCamera.instance.transform.forward * verticalMovement;
@@ -44,11 +61,12 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
         moveDirection.Normalize();
         moveDirection.y = 0;
 
-        if (PlayerInputManager.instance.moveAmount > 0.5f)
+
+        if (player.PlayerNetworkManager.isRunning.Value)
         {
             player.characterController.Move(moveDirection * runningSpeed * Time.deltaTime);
         }
-        else if (PlayerInputManager.instance.moveAmount <= 0.5f)
+        else if (PlayerInputManager.instance.isWalking)
         {
             player.characterController.Move(moveDirection * walkingSpeed * Time.deltaTime);
         }
@@ -79,8 +97,8 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
         {
             return;
         };
-
-        if (PlayerInputManager.instance.moveAmount <= 0.5f)
+        
+        if (!player.characterNetworkManager.isRunning.Value)
         {
             Vector3 direction = getMousePos();
             if (direction != Vector3.zero)
@@ -90,7 +108,7 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
             }
         }
 
-        else if (PlayerInputManager.instance.moveAmount > 0.5f)
+        else if (PlayerInputManager.instance.isWalking)
         {
             targetRotationDirection = Vector3.zero;
             targetRotationDirection = PlayerCamera.instance.cameraObject.transform.forward * verticalMovement;
@@ -111,7 +129,19 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
 
     public void HandleRunning()
     {
+        if (player.isPerfomingAction)
+        {
+            player.PlayerNetworkManager.isRunning.Value = false;
+        }
 
+        if (PlayerInputManager.instance.isWalking)
+        {
+            player.PlayerNetworkManager.isRunning.Value = true;
+        }
+        else
+        {
+            player.PlayerNetworkManager.isRunning.Value = false;
+        }
     }
 }
     
