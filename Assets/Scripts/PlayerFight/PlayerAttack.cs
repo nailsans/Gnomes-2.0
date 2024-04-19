@@ -16,10 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (!isAttacking)
-        {
-            StartCoroutine(IAttack());
-        }
+        StartCoroutine(IAttack());
     }
 
     private IEnumerator IAttack()
