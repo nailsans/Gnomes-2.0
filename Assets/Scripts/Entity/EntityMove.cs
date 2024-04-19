@@ -5,33 +5,38 @@ using UnityEngine.AI;
 
 public abstract class EntityMove : MonoBehaviour
 {
-    // A script applied on entity that allows to implement movement for it
     private NavMeshAgent agent;
     private SphereCollider attackArea;
     private Transform currentTarget;
-    public bool targetIsClose; //boolean shows if cur target is in attack area
-    Animator animator;
+    public bool targetIsClose;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
     private void Update()
     {
         currentTarget = findTarget();
-        if (targetIsClose)
-            agent.isStopped = true;
-        else
-        {
-            agent.isStopped = false;
+        if (!targetIsClose)
             moveTowards(currentTarget);
-        }
     }
 
     private void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
         targetIsClose = false;
         attackArea = GetComponentInChildren<SphereCollider>();
         agent = GetComponent<NavMeshAgent>();
+    }
+
+    private bool closeToTarget(Transform target)
+    {
+        Debug.Log(Vector3.Distance(target.position, attackArea.gameObject.transform.position));
+        Debug.Log(attackArea.radius * 2 + 0.5);
+        if (Vector3.Distance(target.position, attackArea.gameObject.transform.position) < (attackArea.radius * 2))
+        {
+            Debug.Log("CLOSE " + Vector3.Distance(target.position, attackArea.gameObject.transform.position));
+            return true;
+
+        }
+        return false;
     }
 
     protected abstract Transform findTarget();

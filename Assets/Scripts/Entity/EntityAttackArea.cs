@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class EntityAttackArea : MonoBehaviour
 {
-    // A script for collider object of entity that has EntityAttack script, checks contacts with objects that can be attacked
+    [SerializeField] private int damage = 3;
+    [SerializeField] bool attacksPlayers = true;
+    [SerializeField] bool attacksPeneks = false;
     private EntityMove _entityMove;
-    private EntityAttack _entityAttack;
 
     private void Awake()
     {
         _entityMove = GetComponentInParent<EntityMove>();
-        _entityAttack = GetComponentInParent<EntityAttack>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        _entityAttack.startAttacking(other);
+        if (attacksPlayers)
+        {
+            PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
+            if (playerHP != null)
+            {
+                Debug.Log("true");
+                _entityMove.targetIsClose = true;
+                playerHP.takeDamage(damage);
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _entityAttack.StopAttacking();
+        if (attacksPlayers)
+        {
+            PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
+            if (playerHP != null)
+            {
+                _entityMove.targetIsClose = false;
+            }
+        }
     }
-
- 
 }
