@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -310,6 +310,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   model: {fileID: 270728131}
+--- !u!54 &270728139
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270728131}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &276331031
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +863,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloha
       objectReference: {fileID: 0}
+    - target: {fileID: 7721495246855828320, guid: 82ee629fd0bbbf046b9fc248b18154cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8722439343217918385, guid: 82ee629fd0bbbf046b9fc248b18154cc,
         type: 3}
       propertyPath: m_TagString
@@ -876,7 +908,7 @@ PrefabInstance:
     - target: {fileID: 2822259259793779679, guid: 6d1fd174395d31745b1471612579cb94,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9534497
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 2822259259793779679, guid: 6d1fd174395d31745b1471612579cb94,
         type: 3}
@@ -927,6 +959,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 270728138}
+    - targetCorrespondingSourceObject: {fileID: 1917097459579694928, guid: 6d1fd174395d31745b1471612579cb94,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 270728139}
   m_SourcePrefab: {fileID: 100100000, guid: 6d1fd174395d31745b1471612579cb94, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

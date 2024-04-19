@@ -8,6 +8,7 @@ public class PlayerManager : CharacterManager
     public PlayerLocomotionManager PlayerLocomotionManager;
     public PlayerAnimatorManager PlayerAnimatorManager;
     public PlayerNetworkManager PlayerNetworkManager;
+    public PlayerAttack PlayerAttack;
     protected override void Awake()
     {
         base.Awake();
@@ -15,6 +16,7 @@ public class PlayerManager : CharacterManager
         PlayerLocomotionManager = GetComponent<PlayerLocomotionManager>();
         PlayerAnimatorManager = GetComponent<PlayerAnimatorManager>();
         PlayerNetworkManager = GetComponent<PlayerNetworkManager>();
+        PlayerAttack = GetComponent<PlayerAttack>();
     }
 
     protected override void Update()

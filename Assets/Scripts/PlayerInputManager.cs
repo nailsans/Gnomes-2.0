@@ -17,6 +17,7 @@ public class PlayerInputManager : MonoBehaviour
 
     [Header("PLAYER ACTION INPUT")]
     [SerializeField] bool sprintInput = false;
+    [SerializeField] bool attackInput = false;
 
     private void OnEnable()
     {
@@ -30,6 +31,10 @@ public class PlayerInputManager : MonoBehaviour
 
             //Realising the run button, sets bool to false
             playerInputActions.Player.Run.canceled += i => sprintInput = false;
+
+            //attack button
+            playerInputActions.Player.Attack.performed += i => attackInput = true;
+            playerInputActions.Player.Attack.canceled += i => attackInput = false;
         }
 
         playerInputActions.Enable();
@@ -71,6 +76,7 @@ public class PlayerInputManager : MonoBehaviour
     {
         HandleMovementInput();
         HandleRunning();
+        HandleAttack();
     }
 
     private void OnSceneChange(Scene oldScene, Scene newScene)
@@ -130,6 +136,15 @@ public class PlayerInputManager : MonoBehaviour
             player.PlayerNetworkManager.isRunning.Value = false;
         }
     }
+
+    private void HandleAttack()
+    {
+        if (attackInput)
+        {
+            player.PlayerAttack.Attack();
+        }
+    }
+
     //If we minimize or lower the window, stop adjusting inputs
     private void OnApplicationFocus(bool focus)
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4991509372575386919}
   - component: {fileID: 2758430172727058903}
   - component: {fileID: 8722359393957423892}
+  - component: {fileID: 603358504843548808}
   m_Layer: 0
   m_Name: Bloha
   m_TagString: Enemy
@@ -70,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9990e8b927512ec49a103498a92d924d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetIsClose: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
@@ -89,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  model: {fileID: 8722439343217918385}
 --- !u!136 &8722359393957423892
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -112,6 +115,33 @@ CapsuleCollider:
   m_Height: 1.94
   m_Direction: 2
   m_Center: {x: 0, y: -0.4, z: 0}
+--- !u!54 &603358504843548808
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721495246855828320}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8722439343217918385
 GameObject:
   m_ObjectHideFlags: 0
