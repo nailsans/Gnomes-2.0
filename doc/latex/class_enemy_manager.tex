@@ -1,0 +1,177 @@
+\doxysection{Enemy\+Manager Class Reference}
+\hypertarget{class_enemy_manager}{}\label{class_enemy_manager}\index{EnemyManager@{EnemyManager}}
+Inheritance diagram for Enemy\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_manager_a26d4ccc47045ea2812977824e022fec8}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_manager_af57abe0d8647a967325a10de704579e3}{change\+Activity\+Type}} (\mbox{\hyperlink{_enemy_manager_8cs_a7de913ef354f617713b8e5019a47c3b3}{Enemy\+Activity\+Type}} activity)
+\item 
+void \mbox{\hyperlink{class_enemy_manager_a49b477529ce70a01b28c2f702ff9eb53}{Summon\+Random\+Enemy\+On\+Random\+Spawner}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_manager_ab3a41ec558f9498b1129b2c6fd316a52}{Summon\+Random\+Enemy}} (Vector3 Spawn\+Coords)
+\item 
+void \mbox{\hyperlink{class_enemy_manager_a44ed3bb0a221934b048d8d3e06e3cd3b}{Start\+Wave}} (int wave\+Number)
+\item 
+IEnumerator \mbox{\hyperlink{class_enemy_manager_a0641d914820f3aeea06936c538927ed8}{ISpawn\+Random\+Enemies}} (int enemies\+Amount)
+\item 
+void \mbox{\hyperlink{class_enemy_manager_ab3f12acb8d9273091e1f47b8f4ff5ad0}{Start\+Rest}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_enemy_manager_a1a406ff8a95e052f2e246c5969b082e5}{IStart\+Rest}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enemy_manager_aa1b16e31b992c1490413cb7eb1114cc0}{players}}
+\item 
+int \mbox{\hyperlink{class_enemy_manager_ab3cc4aae81cb7b5749e1f3a0ab038b6e}{spawn\+Coefficient}}
+\item 
+float \mbox{\hyperlink{class_enemy_manager_a8853257bf28e8940f9283efb1e0d3e9a}{rest\+Seconds}}
+\item 
+float \mbox{\hyperlink{class_enemy_manager_a762da7560fb7522fda41ff543021a02a}{time\+Between\+Spawn}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_enemy_manager_ad1d483493e3984e12787e4c3999ac32d}{enemy\+Prefabs}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_enemy_manager_a98efaaeb55b3ebc300644f6abe033358}{spawned\+Enemies}}
+\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enemy_manager_a9fcab95d1124bed09576a9f9f3629408}{spawns}}
+\item 
+\mbox{\hyperlink{_enemy_manager_8cs_a7de913ef354f617713b8e5019a47c3b3}{Enemy\+Activity\+Type}} \mbox{\hyperlink{class_enemy_manager_a7e900f6001d654893d32e457b9096fd8}{activity\+Type}}
+\item 
+int \mbox{\hyperlink{class_enemy_manager_ad2ee2694f225ebb9a1b5569b4776d492}{current\+Wave\+Number}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e}\label{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e} 
+\index{EnemyManager@{EnemyManager}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_af57abe0d8647a967325a10de704579e3}\label{class_enemy_manager_af57abe0d8647a967325a10de704579e3} 
+\index{EnemyManager@{EnemyManager}!changeActivityType@{changeActivityType}}
+\index{changeActivityType@{changeActivityType}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{changeActivityType()}{changeActivityType()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+change\+Activity\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enemy_manager_8cs_a7de913ef354f617713b8e5019a47c3b3}{Enemy\+Activity\+Type}}}]{activity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a0641d914820f3aeea06936c538927ed8}\label{class_enemy_manager_a0641d914820f3aeea06936c538927ed8} 
+\index{EnemyManager@{EnemyManager}!ISpawnRandomEnemies@{ISpawnRandomEnemies}}
+\index{ISpawnRandomEnemies@{ISpawnRandomEnemies}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{ISpawnRandomEnemies()}{ISpawnRandomEnemies()}}
+{\footnotesize\ttfamily IEnumerator Enemy\+Manager.\+ISpawn\+Random\+Enemies (\begin{DoxyParamCaption}\item[{int}]{enemies\+Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a1a406ff8a95e052f2e246c5969b082e5}\label{class_enemy_manager_a1a406ff8a95e052f2e246c5969b082e5} 
+\index{EnemyManager@{EnemyManager}!IStartRest@{IStartRest}}
+\index{IStartRest@{IStartRest}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{IStartRest()}{IStartRest()}}
+{\footnotesize\ttfamily IEnumerator Enemy\+Manager.\+IStart\+Rest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5}\label{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5} 
+\index{EnemyManager@{EnemyManager}!Start@{Start}}
+\index{Start@{Start}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_ab3f12acb8d9273091e1f47b8f4ff5ad0}\label{class_enemy_manager_ab3f12acb8d9273091e1f47b8f4ff5ad0} 
+\index{EnemyManager@{EnemyManager}!StartRest@{StartRest}}
+\index{StartRest@{StartRest}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{StartRest()}{StartRest()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Start\+Rest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a44ed3bb0a221934b048d8d3e06e3cd3b}\label{class_enemy_manager_a44ed3bb0a221934b048d8d3e06e3cd3b} 
+\index{EnemyManager@{EnemyManager}!StartWave@{StartWave}}
+\index{StartWave@{StartWave}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{StartWave()}{StartWave()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Start\+Wave (\begin{DoxyParamCaption}\item[{int}]{wave\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_ab3a41ec558f9498b1129b2c6fd316a52}\label{class_enemy_manager_ab3a41ec558f9498b1129b2c6fd316a52} 
+\index{EnemyManager@{EnemyManager}!SummonRandomEnemy@{SummonRandomEnemy}}
+\index{SummonRandomEnemy@{SummonRandomEnemy}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{SummonRandomEnemy()}{SummonRandomEnemy()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Summon\+Random\+Enemy (\begin{DoxyParamCaption}\item[{Vector3}]{Spawn\+Coords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a49b477529ce70a01b28c2f702ff9eb53}\label{class_enemy_manager_a49b477529ce70a01b28c2f702ff9eb53} 
+\index{EnemyManager@{EnemyManager}!SummonRandomEnemyOnRandomSpawner@{SummonRandomEnemyOnRandomSpawner}}
+\index{SummonRandomEnemyOnRandomSpawner@{SummonRandomEnemyOnRandomSpawner}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{SummonRandomEnemyOnRandomSpawner()}{SummonRandomEnemyOnRandomSpawner()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Summon\+Random\+Enemy\+On\+Random\+Spawner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a26d4ccc47045ea2812977824e022fec8}\label{class_enemy_manager_a26d4ccc47045ea2812977824e022fec8} 
+\index{EnemyManager@{EnemyManager}!Update@{Update}}
+\index{Update@{Update}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_enemy_manager_a7e900f6001d654893d32e457b9096fd8}\label{class_enemy_manager_a7e900f6001d654893d32e457b9096fd8} 
+\index{EnemyManager@{EnemyManager}!activityType@{activityType}}
+\index{activityType@{activityType}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{activityType}{activityType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enemy_manager_8cs_a7de913ef354f617713b8e5019a47c3b3}{Enemy\+Activity\+Type}} Enemy\+Manager.\+activity\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_ad2ee2694f225ebb9a1b5569b4776d492}\label{class_enemy_manager_ad2ee2694f225ebb9a1b5569b4776d492} 
+\index{EnemyManager@{EnemyManager}!currentWaveNumber@{currentWaveNumber}}
+\index{currentWaveNumber@{currentWaveNumber}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{currentWaveNumber}{currentWaveNumber}}
+{\footnotesize\ttfamily int Enemy\+Manager.\+current\+Wave\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_ad1d483493e3984e12787e4c3999ac32d}\label{class_enemy_manager_ad1d483493e3984e12787e4c3999ac32d} 
+\index{EnemyManager@{EnemyManager}!enemyPrefabs@{enemyPrefabs}}
+\index{enemyPrefabs@{enemyPrefabs}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{enemyPrefabs}{enemyPrefabs}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Enemy\+Manager.\+enemy\+Prefabs\hspace{0.3cm}{\ttfamily [private]}}
+
+time between enemies spawn during wave \Hypertarget{class_enemy_manager_aa1b16e31b992c1490413cb7eb1114cc0}\label{class_enemy_manager_aa1b16e31b992c1490413cb7eb1114cc0} 
+\index{EnemyManager@{EnemyManager}!players@{players}}
+\index{players@{players}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Enemy\+Manager.\+players\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a8853257bf28e8940f9283efb1e0d3e9a}\label{class_enemy_manager_a8853257bf28e8940f9283efb1e0d3e9a} 
+\index{EnemyManager@{EnemyManager}!restSeconds@{restSeconds}}
+\index{restSeconds@{restSeconds}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{restSeconds}{restSeconds}}
+{\footnotesize\ttfamily float Enemy\+Manager.\+rest\+Seconds\hspace{0.3cm}{\ttfamily [private]}}
+
+estimated amount of enemies spawned per wave \Hypertarget{class_enemy_manager_ab3cc4aae81cb7b5749e1f3a0ab038b6e}\label{class_enemy_manager_ab3cc4aae81cb7b5749e1f3a0ab038b6e} 
+\index{EnemyManager@{EnemyManager}!spawnCoefficient@{spawnCoefficient}}
+\index{spawnCoefficient@{spawnCoefficient}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{spawnCoefficient}{spawnCoefficient}}
+{\footnotesize\ttfamily int Enemy\+Manager.\+spawn\+Coefficient\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a98efaaeb55b3ebc300644f6abe033358}\label{class_enemy_manager_a98efaaeb55b3ebc300644f6abe033358} 
+\index{EnemyManager@{EnemyManager}!spawnedEnemies@{spawnedEnemies}}
+\index{spawnedEnemies@{spawnedEnemies}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{spawnedEnemies}{spawnedEnemies}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Enemy\+Manager.\+spawned\+Enemies\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a9fcab95d1124bed09576a9f9f3629408}\label{class_enemy_manager_a9fcab95d1124bed09576a9f9f3629408} 
+\index{EnemyManager@{EnemyManager}!spawns@{spawns}}
+\index{spawns@{spawns}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{spawns}{spawns}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Enemy\+Manager.\+spawns\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_enemy_manager_a762da7560fb7522fda41ff543021a02a}\label{class_enemy_manager_a762da7560fb7522fda41ff543021a02a} 
+\index{EnemyManager@{EnemyManager}!timeBetweenSpawn@{timeBetweenSpawn}}
+\index{timeBetweenSpawn@{timeBetweenSpawn}!EnemyManager@{EnemyManager}}
+\doxysubsubsection{\texorpdfstring{timeBetweenSpawn}{timeBetweenSpawn}}
+{\footnotesize\ttfamily float Enemy\+Manager.\+time\+Between\+Spawn\hspace{0.3cm}{\ttfamily [private]}}
+
+time of rest state after enemies are killed 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Gameplay\+Managers/\mbox{\hyperlink{_enemy_manager_8cs}{Enemy\+Manager.\+cs}}\end{DoxyCompactItemize}

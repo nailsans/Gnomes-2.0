@@ -1,0 +1,212 @@
+\doxysection{Player\+Input\+Actions Class Reference}
+\hypertarget{class_player_input_actions}{}\label{class_player_input_actions}\index{PlayerInputActions@{PlayerInputActions}}
+Inheritance diagram for Player\+Input\+Actions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_input_actions}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interface_player_input_actions_1_1_i_player_actions}{IPlayer\+Actions}}
+\item 
+struct \mbox{\hyperlink{struct_player_input_actions_1_1_player_actions}{Player\+Actions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_input_actions_aede10627bc76e7b6950cc8c009baf85a}{Player\+Input\+Actions}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_actions_a62ef2b36c7ccf5e8ee419363f565219c}{Dispose}} ()
+\item 
+bool \mbox{\hyperlink{class_player_input_actions_a9279ba7160150bf0d5f7210121a38c58}{Contains}} (Input\+Action action)
+\item 
+IEnumerator$<$ Input\+Action $>$ \mbox{\hyperlink{class_player_input_actions_ac44179911dc0f41381456145ea490e8a}{Get\+Enumerator}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_actions_afe575d8f0596c019d9317d681f232464}{Enable}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_actions_a9c51e57bb93bbd441105909c1bd6a472}{Disable}} ()
+\item 
+Input\+Action \mbox{\hyperlink{class_player_input_actions_a634b048f0a81cbb9f56b2ca0edf092b9}{Find\+Action}} (string action\+Name\+Or\+Id, bool throw\+If\+Not\+Found=false)
+\item 
+int \mbox{\hyperlink{class_player_input_actions_a8b4ce9ea96e3614a5d2aa9f5b9f2c473}{Find\+Binding}} (Input\+Binding \mbox{\hyperlink{class_player_input_actions_a5705f0242e753440e4aadfa54159d6fc}{binding\+Mask}}, out Input\+Action action)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Action\+Asset \mbox{\hyperlink{class_player_input_actions_a9cca9924290e1a02d3dc5cc249c1dfcc}{asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Input\+Binding? \mbox{\hyperlink{class_player_input_actions_a5705f0242e753440e4aadfa54159d6fc}{binding\+Mask}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Read\+Only\+Array$<$ Input\+Device $>$? \mbox{\hyperlink{class_player_input_actions_a7a53781ab7e52a8d74b3b8f5da3e9927}{devices}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Read\+Only\+Array$<$ Input\+Control\+Scheme $>$ \mbox{\hyperlink{class_player_input_actions_ab5c35025028364f9034efccd6dfb0b59}{control\+Schemes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IEnumerable$<$ Input\+Binding $>$ \mbox{\hyperlink{class_player_input_actions_a2866b3830bb914bc6d94ce40334f7cab}{bindings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_player_input_actions_1_1_player_actions}{Player\+Actions}} \mbox{\hyperlink{class_player_input_actions_a0e3e03820a2adc5478047234188eaa42}{Player}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerator IEnumerable. \mbox{\hyperlink{class_player_input_actions_a0c077d2a7c093dbf017ce1060f486943}{Get\+Enumerator}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Input\+Action\+Map \mbox{\hyperlink{class_player_input_actions_a80381aba8eb6191c31ef4f4bdd492226}{m\+\_\+\+Player}}
+\item 
+List$<$ \mbox{\hyperlink{interface_player_input_actions_1_1_i_player_actions}{IPlayer\+Actions}} $>$ \mbox{\hyperlink{class_player_input_actions_a7ce673703c72dd897cd05f193c879440}{m\+\_\+\+Player\+Actions\+Callback\+Interfaces}} = new List$<$\mbox{\hyperlink{interface_player_input_actions_1_1_i_player_actions}{IPlayer\+Actions}}$>$()
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_player_input_actions_a447b65bf524cfb0748174d4c0c26ba73}{m\+\_\+\+Player\+\_\+\+Move}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_player_input_actions_abfa5d7a2fd48a60920fa1f5e4d830d51}{m\+\_\+\+Player\+\_\+\+Jump}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_player_input_actions_ae8a860d4f70c48dfc6482bce25928789}{m\+\_\+\+Player\+\_\+\+Attack}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_player_input_actions_a03e379203a412421acefb18e95e601e2}{m\+\_\+\+Player\+\_\+\+Run}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_input_actions_aede10627bc76e7b6950cc8c009baf85a}\label{class_player_input_actions_aede10627bc76e7b6950cc8c009baf85a} 
+\index{PlayerInputActions@{PlayerInputActions}!PlayerInputActions@{PlayerInputActions}}
+\index{PlayerInputActions@{PlayerInputActions}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{PlayerInputActions()}{PlayerInputActions()}}
+{\footnotesize\ttfamily Player\+Input\+Actions.\+Player\+Input\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_input_actions_a9279ba7160150bf0d5f7210121a38c58}\label{class_player_input_actions_a9279ba7160150bf0d5f7210121a38c58} 
+\index{PlayerInputActions@{PlayerInputActions}!Contains@{Contains}}
+\index{Contains@{Contains}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool Player\+Input\+Actions.\+Contains (\begin{DoxyParamCaption}\item[{Input\+Action}]{action }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_a9c51e57bb93bbd441105909c1bd6a472}\label{class_player_input_actions_a9c51e57bb93bbd441105909c1bd6a472} 
+\index{PlayerInputActions@{PlayerInputActions}!Disable@{Disable}}
+\index{Disable@{Disable}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void Player\+Input\+Actions.\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_a62ef2b36c7ccf5e8ee419363f565219c}\label{class_player_input_actions_a62ef2b36c7ccf5e8ee419363f565219c} 
+\index{PlayerInputActions@{PlayerInputActions}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Player\+Input\+Actions.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_afe575d8f0596c019d9317d681f232464}\label{class_player_input_actions_afe575d8f0596c019d9317d681f232464} 
+\index{PlayerInputActions@{PlayerInputActions}!Enable@{Enable}}
+\index{Enable@{Enable}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}}
+{\footnotesize\ttfamily void Player\+Input\+Actions.\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_a634b048f0a81cbb9f56b2ca0edf092b9}\label{class_player_input_actions_a634b048f0a81cbb9f56b2ca0edf092b9} 
+\index{PlayerInputActions@{PlayerInputActions}!FindAction@{FindAction}}
+\index{FindAction@{FindAction}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{FindAction()}{FindAction()}}
+{\footnotesize\ttfamily Input\+Action Player\+Input\+Actions.\+Find\+Action (\begin{DoxyParamCaption}\item[{string}]{action\+Name\+Or\+Id,  }\item[{bool}]{throw\+If\+Not\+Found = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_a8b4ce9ea96e3614a5d2aa9f5b9f2c473}\label{class_player_input_actions_a8b4ce9ea96e3614a5d2aa9f5b9f2c473} 
+\index{PlayerInputActions@{PlayerInputActions}!FindBinding@{FindBinding}}
+\index{FindBinding@{FindBinding}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{FindBinding()}{FindBinding()}}
+{\footnotesize\ttfamily int Player\+Input\+Actions.\+Find\+Binding (\begin{DoxyParamCaption}\item[{Input\+Binding}]{binding\+Mask,  }\item[{out Input\+Action}]{action }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_ac44179911dc0f41381456145ea490e8a}\label{class_player_input_actions_ac44179911dc0f41381456145ea490e8a} 
+\index{PlayerInputActions@{PlayerInputActions}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IEnumerator$<$ Input\+Action $>$ Player\+Input\+Actions.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_input_actions_a0c077d2a7c093dbf017ce1060f486943}\label{class_player_input_actions_a0c077d2a7c093dbf017ce1060f486943} 
+\index{PlayerInputActions@{PlayerInputActions}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IEnumerator IEnumerable. Player\+Input\+Actions.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_input_actions_a80381aba8eb6191c31ef4f4bdd492226}\label{class_player_input_actions_a80381aba8eb6191c31ef4f4bdd492226} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_Player@{m\_Player}}
+\index{m\_Player@{m\_Player}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_Player}{m\_Player}}
+{\footnotesize\ttfamily readonly Input\+Action\+Map Player\+Input\+Actions.\+m\+\_\+\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_actions_ae8a860d4f70c48dfc6482bce25928789}\label{class_player_input_actions_ae8a860d4f70c48dfc6482bce25928789} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_Player\_Attack@{m\_Player\_Attack}}
+\index{m\_Player\_Attack@{m\_Player\_Attack}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_Player\_Attack}{m\_Player\_Attack}}
+{\footnotesize\ttfamily readonly Input\+Action Player\+Input\+Actions.\+m\+\_\+\+Player\+\_\+\+Attack\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_actions_abfa5d7a2fd48a60920fa1f5e4d830d51}\label{class_player_input_actions_abfa5d7a2fd48a60920fa1f5e4d830d51} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_Player\_Jump@{m\_Player\_Jump}}
+\index{m\_Player\_Jump@{m\_Player\_Jump}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_Player\_Jump}{m\_Player\_Jump}}
+{\footnotesize\ttfamily readonly Input\+Action Player\+Input\+Actions.\+m\+\_\+\+Player\+\_\+\+Jump\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_actions_a447b65bf524cfb0748174d4c0c26ba73}\label{class_player_input_actions_a447b65bf524cfb0748174d4c0c26ba73} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_Player\_Move@{m\_Player\_Move}}
+\index{m\_Player\_Move@{m\_Player\_Move}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_Player\_Move}{m\_Player\_Move}}
+{\footnotesize\ttfamily readonly Input\+Action Player\+Input\+Actions.\+m\+\_\+\+Player\+\_\+\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_actions_a03e379203a412421acefb18e95e601e2}\label{class_player_input_actions_a03e379203a412421acefb18e95e601e2} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_Player\_Run@{m\_Player\_Run}}
+\index{m\_Player\_Run@{m\_Player\_Run}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_Player\_Run}{m\_Player\_Run}}
+{\footnotesize\ttfamily readonly Input\+Action Player\+Input\+Actions.\+m\+\_\+\+Player\+\_\+\+Run\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_actions_a7ce673703c72dd897cd05f193c879440}\label{class_player_input_actions_a7ce673703c72dd897cd05f193c879440} 
+\index{PlayerInputActions@{PlayerInputActions}!m\_PlayerActionsCallbackInterfaces@{m\_PlayerActionsCallbackInterfaces}}
+\index{m\_PlayerActionsCallbackInterfaces@{m\_PlayerActionsCallbackInterfaces}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{m\_PlayerActionsCallbackInterfaces}{m\_PlayerActionsCallbackInterfaces}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interface_player_input_actions_1_1_i_player_actions}{IPlayer\+Actions}}$>$ Player\+Input\+Actions.\+m\+\_\+\+Player\+Actions\+Callback\+Interfaces = new List$<$\mbox{\hyperlink{interface_player_input_actions_1_1_i_player_actions}{IPlayer\+Actions}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_player_input_actions_a9cca9924290e1a02d3dc5cc249c1dfcc}\label{class_player_input_actions_a9cca9924290e1a02d3dc5cc249c1dfcc} 
+\index{PlayerInputActions@{PlayerInputActions}!asset@{asset}}
+\index{asset@{asset}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{asset}{asset}}
+{\footnotesize\ttfamily Input\+Action\+Asset Player\+Input\+Actions.\+asset\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_player_input_actions_a5705f0242e753440e4aadfa54159d6fc}\label{class_player_input_actions_a5705f0242e753440e4aadfa54159d6fc} 
+\index{PlayerInputActions@{PlayerInputActions}!bindingMask@{bindingMask}}
+\index{bindingMask@{bindingMask}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{bindingMask}{bindingMask}}
+{\footnotesize\ttfamily Input\+Binding? Player\+Input\+Actions.\+binding\+Mask\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_player_input_actions_a2866b3830bb914bc6d94ce40334f7cab}\label{class_player_input_actions_a2866b3830bb914bc6d94ce40334f7cab} 
+\index{PlayerInputActions@{PlayerInputActions}!bindings@{bindings}}
+\index{bindings@{bindings}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{bindings}{bindings}}
+{\footnotesize\ttfamily IEnumerable$<$Input\+Binding$>$ Player\+Input\+Actions.\+bindings\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_player_input_actions_ab5c35025028364f9034efccd6dfb0b59}\label{class_player_input_actions_ab5c35025028364f9034efccd6dfb0b59} 
+\index{PlayerInputActions@{PlayerInputActions}!controlSchemes@{controlSchemes}}
+\index{controlSchemes@{controlSchemes}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{controlSchemes}{controlSchemes}}
+{\footnotesize\ttfamily Read\+Only\+Array$<$Input\+Control\+Scheme$>$ Player\+Input\+Actions.\+control\+Schemes\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_player_input_actions_a7a53781ab7e52a8d74b3b8f5da3e9927}\label{class_player_input_actions_a7a53781ab7e52a8d74b3b8f5da3e9927} 
+\index{PlayerInputActions@{PlayerInputActions}!devices@{devices}}
+\index{devices@{devices}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{devices}{devices}}
+{\footnotesize\ttfamily Read\+Only\+Array$<$Input\+Device$>$? Player\+Input\+Actions.\+devices\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_player_input_actions_a0e3e03820a2adc5478047234188eaa42}\label{class_player_input_actions_a0e3e03820a2adc5478047234188eaa42} 
+\index{PlayerInputActions@{PlayerInputActions}!Player@{Player}}
+\index{Player@{Player}!PlayerInputActions@{PlayerInputActions}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_player_input_actions_1_1_player_actions}{Player\+Actions}} Player\+Input\+Actions.\+Player\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\mbox{\hyperlink{_player_input_actions_8cs}{Player\+Input\+Actions.\+cs}}\end{DoxyCompactItemize}

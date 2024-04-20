@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_u_i_manager" kind="class" language="C#" prot="public">
+    <compoundname>PlayerUIManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_player_u_i_manager_1a4984c5756279f47ebe33d8366c1685ba" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_player_u_i_manager" kindref="compound">PlayerUIManager</ref></type>
+        <definition>PlayerUIManager PlayerUIManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>PlayerUIManager.instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="8" column="35" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_u_i_manager_1a18234363749a7dfd6906120d490bd5d4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerUIManager.startGameAsClient</definition>
+        <argsstring></argsstring>
+        <name>startGameAsClient</name>
+        <qualifiedname>PlayerUIManager.startGameAsClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="11" column="11" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_u_i_manager_1ade182e4f8f1f6c103d058f09888818cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerUIManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>PlayerUIManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="13" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="13" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_u_i_manager_1a5086fc385cf393c27f9e1cfabe160d93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerUIManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerUIManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="25" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_u_i_manager_1a1f7d83348191dcc2d227b1bc2fc7c4c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerUIManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>PlayerUIManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="30" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="30" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerUIManager</label>
+        <link refid="class_player_u_i_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerUIManager</label>
+        <link refid="class_player_u_i_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" line="6" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI/PlayerUIManager.cs" bodystart="7" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_player_u_i_manager_1ade182e4f8f1f6c103d058f09888818cf" prot="private" virt="non-virtual"><scope>PlayerUIManager</scope><name>Awake</name></member>
+      <member refid="class_player_u_i_manager_1a4984c5756279f47ebe33d8366c1685ba" prot="public" virt="non-virtual"><scope>PlayerUIManager</scope><name>instance</name></member>
+      <member refid="class_player_u_i_manager_1a5086fc385cf393c27f9e1cfabe160d93" prot="private" virt="non-virtual"><scope>PlayerUIManager</scope><name>Start</name></member>
+      <member refid="class_player_u_i_manager_1a18234363749a7dfd6906120d490bd5d4" prot="private" virt="non-virtual"><scope>PlayerUIManager</scope><name>startGameAsClient</name></member>
+      <member refid="class_player_u_i_manager_1a1f7d83348191dcc2d227b1bc2fc7c4c0" prot="private" virt="non-virtual"><scope>PlayerUIManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

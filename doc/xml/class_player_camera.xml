@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_camera" kind="class" language="C#" prot="public">
+    <compoundname>PlayerCamera</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_player_camera_1a4dd46e41ba7bc595c71573863f579581" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_player_camera" kindref="compound">PlayerCamera</ref></type>
+        <definition>PlayerCamera PlayerCamera.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>PlayerCamera.instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="7" column="32" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_camera_1a435b7302a8d585d182d8a81d676aff94" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_manager" kindref="compound">PlayerManager</ref></type>
+        <definition>PlayerManager PlayerCamera.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>PlayerCamera.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="8" column="26" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_1a0af0df9bedb923cd0291a4f45b952e45" prot="public" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera PlayerCamera.cameraObject</definition>
+        <argsstring></argsstring>
+        <name>cameraObject</name>
+        <qualifiedname>PlayerCamera.cameraObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="9" column="19" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_camera_1a35ddfc9a4b61cdb033dbe888a8f6e2c4" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 PlayerCamera.cameraVelocity</definition>
+        <argsstring></argsstring>
+        <name>cameraVelocity</name>
+        <qualifiedname>PlayerCamera.cameraVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="13" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_camera_1a085fbb37029f18e909c039cf2b9f09c4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerCamera.cameraSmoothSpeed</definition>
+        <argsstring></argsstring>
+        <name>cameraSmoothSpeed</name>
+        <qualifiedname>PlayerCamera.cameraSmoothSpeed</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="14" column="19" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_camera_1a6f129f9d66892cf076dd48dafad67cd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCamera.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>PlayerCamera.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="15" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_camera_1a31bf97e8c2d69434a4c6d45c883aa441" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCamera.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerCamera.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="28" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_camera_1a326040fe8b08ec784a6eb6a59efb68dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCamera.FollowTarget</definition>
+        <argsstring>()</argsstring>
+        <name>FollowTarget</name>
+        <qualifiedname>PlayerCamera.FollowTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="41" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="41" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_camera_1a56a59d93133d673ac93b296497533878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerCamera.HandleAllCameraActions</definition>
+        <argsstring>()</argsstring>
+        <name>HandleAllCameraActions</name>
+        <qualifiedname>PlayerCamera.HandleAllCameraActions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="33" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="33" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerCamera</label>
+        <link refid="class_player_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>CharacterLocomotionManager</label>
+        <link refid="class_character_locomotion_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="9">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PlayerAttack</label>
+        <link refid="class_player_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerCamera</label>
+        <link refid="class_player_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PlayerLocomotionManager</label>
+        <link refid="class_player_locomotion_manager"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>PlayerLocomotionManager</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>PlayerAnimatorManager</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>PlayerNetworkManager</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>PlayerAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>PlayerNetworkManager</label>
+        <link refid="class_player_network_manager"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerCamera.cs" bodystart="6" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_player_camera_1a6f129f9d66892cf076dd48dafad67cd0" prot="private" virt="non-virtual"><scope>PlayerCamera</scope><name>Awake</name></member>
+      <member refid="class_player_camera_1a0af0df9bedb923cd0291a4f45b952e45" prot="public" virt="non-virtual"><scope>PlayerCamera</scope><name>cameraObject</name></member>
+      <member refid="class_player_camera_1a085fbb37029f18e909c039cf2b9f09c4" prot="private" virt="non-virtual"><scope>PlayerCamera</scope><name>cameraSmoothSpeed</name></member>
+      <member refid="class_player_camera_1a35ddfc9a4b61cdb033dbe888a8f6e2c4" prot="private" virt="non-virtual"><scope>PlayerCamera</scope><name>cameraVelocity</name></member>
+      <member refid="class_player_camera_1a326040fe8b08ec784a6eb6a59efb68dd" prot="private" virt="non-virtual"><scope>PlayerCamera</scope><name>FollowTarget</name></member>
+      <member refid="class_player_camera_1a56a59d93133d673ac93b296497533878" prot="public" virt="non-virtual"><scope>PlayerCamera</scope><name>HandleAllCameraActions</name></member>
+      <member refid="class_player_camera_1a4dd46e41ba7bc595c71573863f579581" prot="public" virt="non-virtual"><scope>PlayerCamera</scope><name>instance</name></member>
+      <member refid="class_player_camera_1a435b7302a8d585d182d8a81d676aff94" prot="public" virt="non-virtual"><scope>PlayerCamera</scope><name>player</name></member>
+      <member refid="class_player_camera_1a31bf97e8c2d69434a4c6d45c883aa441" prot="private" virt="non-virtual"><scope>PlayerCamera</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

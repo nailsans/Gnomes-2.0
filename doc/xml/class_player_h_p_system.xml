@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_h_p_system" kind="class" language="C#" prot="public">
+    <compoundname>PlayerHPSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_h_p_system_1a0336e6583ca1283802451eafc25be884" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerHPSystem.maxHp</definition>
+        <argsstring></argsstring>
+        <name>maxHp</name>
+        <qualifiedname>PlayerHPSystem.maxHp</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="7" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_h_p_system_1a3aa48c8974e921d5f8b7279a0d8129ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerHPSystem.hp</definition>
+        <argsstring></argsstring>
+        <name>hp</name>
+        <qualifiedname>PlayerHPSystem.hp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="8" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_h_p_system_1a2ce5ab458a193d92bd90fc12f61be78a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerHPSystem.resistance</definition>
+        <argsstring></argsstring>
+        <name>resistance</name>
+        <qualifiedname>PlayerHPSystem.resistance</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="9" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_h_p_system_1a0ef23cbc9943861dac8e7a44e060a3ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerHPSystem.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerHPSystem.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>процент нивелируемого урона </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="13" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_h_p_system_1a7c22da0410e557c052db4900e4c0784b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerHPSystem.takeDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>takeDamage</name>
+        <qualifiedname>PlayerHPSystem.takeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Taking damage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="22" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_h_p_system_1a364f52f8d8b715d8924ac629af4b78dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerHPSystem.Death</definition>
+        <argsstring>()</argsstring>
+        <name>Death</name>
+        <qualifiedname>PlayerHPSystem.Death</qualifiedname>
+        <briefdescription>
+<para>Executing death. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="31" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerHPSystem</label>
+        <link refid="class_player_h_p_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerHPSystem</label>
+        <link refid="class_player_h_p_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerHPSystem.cs" bodystart="6" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_player_h_p_system_1a364f52f8d8b715d8924ac629af4b78dd" prot="public" virt="non-virtual"><scope>PlayerHPSystem</scope><name>Death</name></member>
+      <member refid="class_player_h_p_system_1a3aa48c8974e921d5f8b7279a0d8129ae" prot="private" virt="non-virtual"><scope>PlayerHPSystem</scope><name>hp</name></member>
+      <member refid="class_player_h_p_system_1a0336e6583ca1283802451eafc25be884" prot="private" virt="non-virtual"><scope>PlayerHPSystem</scope><name>maxHp</name></member>
+      <member refid="class_player_h_p_system_1a2ce5ab458a193d92bd90fc12f61be78a" prot="private" virt="non-virtual"><scope>PlayerHPSystem</scope><name>resistance</name></member>
+      <member refid="class_player_h_p_system_1a0ef23cbc9943861dac8e7a44e060a3ac" prot="private" virt="non-virtual"><scope>PlayerHPSystem</scope><name>Start</name></member>
+      <member refid="class_player_h_p_system_1a7c22da0410e557c052db4900e4c0784b" prot="public" virt="non-virtual"><scope>PlayerHPSystem</scope><name>takeDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

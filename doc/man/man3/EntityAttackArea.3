@@ -1,0 +1,54 @@
+.TH "EntityAttackArea" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EntityAttackArea
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnTriggerEnter\fP (Collider other)"
+.br
+.ti -1c
+.RI "void \fBOnTriggerExit\fP (Collider other)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBEntityMove\fP \fB_entityMove\fP"
+.br
+.RI "A script for collider object of entity that has \fBEntityAttack\fP script, checks contacts with objects that can be attacked\&. "
+.ti -1c
+.RI "\fBEntityAttack\fP \fB_entityAttack\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void EntityAttackArea\&.Awake ()\fR [private]\fP"
+Getting main components
+.SS "void EntityAttackArea\&.OnTriggerEnter (Collider other)\fR [private]\fP"
+When target is in attacking area, call the script for attacking
+.SS "void EntityAttackArea\&.OnTriggerExit (Collider other)\fR [private]\fP"
+When target is out of area, stop attacking
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBEntityAttack\fP EntityAttackArea\&._entityAttack\fR [private]\fP"
+
+.SS "\fBEntityMove\fP EntityAttackArea\&._entityMove\fR [private]\fP"
+
+.PP
+A script for collider object of entity that has \fBEntityAttack\fP script, checks contacts with objects that can be attacked\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

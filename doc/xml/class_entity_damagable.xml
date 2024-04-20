@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_entity_damagable" kind="class" language="C#" prot="public">
+    <compoundname>EntityDamagable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_damagable_1a3ca38300b7a17ce805412459f16147cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EntityDamagable.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <qualifiedname>EntityDamagable.health</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="16" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_damagable_1af30a8202a222023dfeb3b3e0417db3c9" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject EntityDamagable.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>EntityDamagable.model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="17" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_damagable_1a5a188ab77b0e0c5c270c0735428a0b5f" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion EntityDamagable.startRotation</definition>
+        <argsstring></argsstring>
+        <name>startRotation</name>
+        <qualifiedname>EntityDamagable.startRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="18" column="24" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_damagable_1a25a6f52117a01b02ac08d07102d6f9f7" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 EntityDamagable.startPos</definition>
+        <argsstring></argsstring>
+        <name>startPos</name>
+        <qualifiedname>EntityDamagable.startPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="19" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_damagable_1af8d8f21b7af3c3dc69dd43689dea5e41" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator EntityDamagable.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <qualifiedname>EntityDamagable.animator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="21" column="14" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_entity_damagable_1ac2c6f050c5bd1f11e94359084c74d23a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityDamagable.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>EntityDamagable.Awake</qualifiedname>
+        <briefdescription>
+<para>Getting components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="26" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_damagable_1a30a13eb132f7d9cd5165e8c733008713" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EntityDamagable.IPlayDamageAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>IPlayDamageAnimation</name>
+        <qualifiedname>EntityDamagable.IPlayDamageAnimation</qualifiedname>
+        <briefdescription>
+<para>Plaiying damage animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="53" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_damagable_1a29e39d7b4af32daee9f88293bc294467" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EntityDamagable.IPlayDeathAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>IPlayDeathAnimation</name>
+        <qualifiedname>EntityDamagable.IPlayDeathAnimation</qualifiedname>
+        <briefdescription>
+<para>Animation corroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>After three seconds of animation being played, removing the object of dead entity</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="64" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="64" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_damagable_1a57062539c4ec4f58c5021727f2371c6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityDamagable.takeDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>takeDamage</name>
+        <qualifiedname>EntityDamagable.takeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Taking damaged is called by the thing that attack Entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>If no hp is left, execute death</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="37" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_damagable_1a2dd091c069892bfaef6ed4f001351f92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityDamagable.callDeath</definition>
+        <argsstring>()</argsstring>
+        <name>callDeath</name>
+        <qualifiedname>EntityDamagable.callDeath</qualifiedname>
+        <briefdescription>
+<para>Death method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="47" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for working with states of Entities that can be damaged. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EntityDamagable</label>
+        <link refid="class_entity_damagable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EntityDamagable</label>
+        <link refid="class_entity_damagable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" line="14" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityDamagable.cs" bodystart="15" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_entity_damagable_1af8d8f21b7af3c3dc69dd43689dea5e41" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>animator</name></member>
+      <member refid="class_entity_damagable_1ac2c6f050c5bd1f11e94359084c74d23a" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>Awake</name></member>
+      <member refid="class_entity_damagable_1a2dd091c069892bfaef6ed4f001351f92" prot="public" virt="non-virtual"><scope>EntityDamagable</scope><name>callDeath</name></member>
+      <member refid="class_entity_damagable_1a3ca38300b7a17ce805412459f16147cd" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>health</name></member>
+      <member refid="class_entity_damagable_1a30a13eb132f7d9cd5165e8c733008713" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>IPlayDamageAnimation</name></member>
+      <member refid="class_entity_damagable_1a29e39d7b4af32daee9f88293bc294467" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>IPlayDeathAnimation</name></member>
+      <member refid="class_entity_damagable_1af30a8202a222023dfeb3b3e0417db3c9" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>model</name></member>
+      <member refid="class_entity_damagable_1a25a6f52117a01b02ac08d07102d6f9f7" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>startPos</name></member>
+      <member refid="class_entity_damagable_1a5a188ab77b0e0c5c270c0735428a0b5f" prot="private" virt="non-virtual"><scope>EntityDamagable</scope><name>startRotation</name></member>
+      <member refid="class_entity_damagable_1a57062539c4ec4f58c5021727f2371c6f" prot="public" virt="non-virtual"><scope>EntityDamagable</scope><name>takeDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

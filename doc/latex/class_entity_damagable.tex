@@ -1,0 +1,144 @@
+\doxysection{Entity\+Damagable Class Reference}
+\hypertarget{class_entity_damagable}{}\label{class_entity_damagable}\index{EntityDamagable@{EntityDamagable}}
+
+
+Class for working with states of Entities that can be damaged.  
+
+
+Inheritance diagram for Entity\+Damagable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity_damagable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_damagable_a57062539c4ec4f58c5021727f2371c6f}{take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Taking damaged is called by the thing that attack Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_damagable_a2dd091c069892bfaef6ed4f001351f92}{call\+Death}} ()
+\begin{DoxyCompactList}\small\item\em Death method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_damagable_ac2c6f050c5bd1f11e94359084c74d23a}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Getting components. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_entity_damagable_a30a13eb132f7d9cd5165e8c733008713}{IPlay\+Damage\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Plaiying damage animation. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_entity_damagable_a29e39d7b4af32daee9f88293bc294467}{IPlay\+Death\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Animation corroutine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_entity_damagable_a3ca38300b7a17ce805412459f16147cd}{health}} = 5
+\item 
+Game\+Object \mbox{\hyperlink{class_entity_damagable_af30a8202a222023dfeb3b3e0417db3c9}{model}}
+\item 
+Quaternion \mbox{\hyperlink{class_entity_damagable_a5a188ab77b0e0c5c270c0735428a0b5f}{start\+Rotation}}
+\item 
+Vector3 \mbox{\hyperlink{class_entity_damagable_a25a6f52117a01b02ac08d07102d6f9f7}{start\+Pos}}
+\item 
+Animator \mbox{\hyperlink{class_entity_damagable_af8d8f21b7af3c3dc69dd43689dea5e41}{animator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for working with states of Entities that can be damaged. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_entity_damagable_ac2c6f050c5bd1f11e94359084c74d23a}\label{class_entity_damagable_ac2c6f050c5bd1f11e94359084c74d23a} 
+\index{EntityDamagable@{EntityDamagable}!Awake@{Awake}}
+\index{Awake@{Awake}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Entity\+Damagable.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Getting components. 
+
+\Hypertarget{class_entity_damagable_a2dd091c069892bfaef6ed4f001351f92}\label{class_entity_damagable_a2dd091c069892bfaef6ed4f001351f92} 
+\index{EntityDamagable@{EntityDamagable}!callDeath@{callDeath}}
+\index{callDeath@{callDeath}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{callDeath()}{callDeath()}}
+{\footnotesize\ttfamily void Entity\+Damagable.\+call\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Death method. 
+
+\Hypertarget{class_entity_damagable_a30a13eb132f7d9cd5165e8c733008713}\label{class_entity_damagable_a30a13eb132f7d9cd5165e8c733008713} 
+\index{EntityDamagable@{EntityDamagable}!IPlayDamageAnimation@{IPlayDamageAnimation}}
+\index{IPlayDamageAnimation@{IPlayDamageAnimation}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{IPlayDamageAnimation()}{IPlayDamageAnimation()}}
+{\footnotesize\ttfamily IEnumerator Entity\+Damagable.\+IPlay\+Damage\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Plaiying damage animation. 
+
+\Hypertarget{class_entity_damagable_a29e39d7b4af32daee9f88293bc294467}\label{class_entity_damagable_a29e39d7b4af32daee9f88293bc294467} 
+\index{EntityDamagable@{EntityDamagable}!IPlayDeathAnimation@{IPlayDeathAnimation}}
+\index{IPlayDeathAnimation@{IPlayDeathAnimation}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{IPlayDeathAnimation()}{IPlayDeathAnimation()}}
+{\footnotesize\ttfamily IEnumerator Entity\+Damagable.\+IPlay\+Death\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation corroutine. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+After three seconds of animation being played, removing the object of dead entity\Hypertarget{class_entity_damagable_a57062539c4ec4f58c5021727f2371c6f}\label{class_entity_damagable_a57062539c4ec4f58c5021727f2371c6f} 
+\index{EntityDamagable@{EntityDamagable}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Entity\+Damagable.\+take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Taking damaged is called by the thing that attack Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+If no hp is left, execute death
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_entity_damagable_af8d8f21b7af3c3dc69dd43689dea5e41}\label{class_entity_damagable_af8d8f21b7af3c3dc69dd43689dea5e41} 
+\index{EntityDamagable@{EntityDamagable}!animator@{animator}}
+\index{animator@{animator}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Entity\+Damagable.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_damagable_a3ca38300b7a17ce805412459f16147cd}\label{class_entity_damagable_a3ca38300b7a17ce805412459f16147cd} 
+\index{EntityDamagable@{EntityDamagable}!health@{health}}
+\index{health@{health}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Entity\+Damagable.\+health = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_damagable_af30a8202a222023dfeb3b3e0417db3c9}\label{class_entity_damagable_af30a8202a222023dfeb3b3e0417db3c9} 
+\index{EntityDamagable@{EntityDamagable}!model@{model}}
+\index{model@{model}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Game\+Object Entity\+Damagable.\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_damagable_a25a6f52117a01b02ac08d07102d6f9f7}\label{class_entity_damagable_a25a6f52117a01b02ac08d07102d6f9f7} 
+\index{EntityDamagable@{EntityDamagable}!startPos@{startPos}}
+\index{startPos@{startPos}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{startPos}{startPos}}
+{\footnotesize\ttfamily Vector3 Entity\+Damagable.\+start\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_damagable_a5a188ab77b0e0c5c270c0735428a0b5f}\label{class_entity_damagable_a5a188ab77b0e0c5c270c0735428a0b5f} 
+\index{EntityDamagable@{EntityDamagable}!startRotation@{startRotation}}
+\index{startRotation@{startRotation}!EntityDamagable@{EntityDamagable}}
+\doxysubsubsection{\texorpdfstring{startRotation}{startRotation}}
+{\footnotesize\ttfamily Quaternion Entity\+Damagable.\+start\+Rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Entity/\mbox{\hyperlink{_entity_damagable_8cs}{Entity\+Damagable.\+cs}}\end{DoxyCompactItemize}

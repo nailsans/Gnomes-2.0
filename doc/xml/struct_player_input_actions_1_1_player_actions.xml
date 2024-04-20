@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="struct_player_input_actions_1_1_player_actions" kind="struct" language="C#" prot="public">
+    <compoundname>PlayerInputActions::PlayerActions</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_player_input_actions_1_1_player_actions_1a1537cbd40dc76fec4b9c8a8e7d0df758" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_input_actions" kindref="compound">PlayerInputActions</ref></type>
+        <definition>PlayerInputActions PlayerInputActions.PlayerActions.m_Wrapper</definition>
+        <argsstring></argsstring>
+        <name>m_Wrapper</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.m_Wrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="234" column="36" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="234" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="struct_player_input_actions_1_1_player_actions_1af44cb7d94cdbd3bf311af91d2f931067" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputAction</type>
+        <definition>InputAction PlayerInputActions.PlayerActions.Move</definition>
+        <argsstring></argsstring>
+        <name>Move</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Move</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="236" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_player_input_actions_1_1_player_actions_1a1db30041a79f90c775da0518a1412466" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputAction</type>
+        <definition>InputAction PlayerInputActions.PlayerActions.Jump</definition>
+        <argsstring></argsstring>
+        <name>Jump</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Jump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="237" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_player_input_actions_1_1_player_actions_1aa65221b9c69b545279f7ef1d7d7dec79" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputAction</type>
+        <definition>InputAction PlayerInputActions.PlayerActions.Attack</definition>
+        <argsstring></argsstring>
+        <name>Attack</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Attack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="238" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_player_input_actions_1_1_player_actions_1aaae70c46bbd0980eebb48b4fcd354b5d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>InputAction</type>
+        <definition>InputAction PlayerInputActions.PlayerActions.Run</definition>
+        <argsstring></argsstring>
+        <name>Run</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="239" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_player_input_actions_1_1_player_actions_1a118c4ef3a420a02d4d96787a9b4c8713" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool PlayerInputActions.PlayerActions.enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="243" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1af5f947a629b9f7974b1483fd51e8a38e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PlayerInputActions.PlayerActions.PlayerActions</definition>
+        <argsstring>(@PlayerInputActions wrapper)</argsstring>
+        <name>PlayerActions</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.PlayerActions</qualifiedname>
+        <param>
+          <type>@<ref refid="class_player_input_actions" kindref="compound">PlayerInputActions</ref></type>
+          <declname>wrapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="235" column="16" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1af968103a65f858565a7a19b3a4936e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputActionMap</type>
+        <definition>InputActionMap PlayerInputActions.PlayerActions.Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="240" column="31" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="240" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1ae2b3777e7e1569cdf739c6d77200b581" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="241" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1a0279831da95fe70f80107c962fab7a6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.Disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="242" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1ad413b9a41a0c8d932d7d3dd32af76b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.AddCallbacks</definition>
+        <argsstring>(IPlayerActions instance)</argsstring>
+        <name>AddCallbacks</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.AddCallbacks</qualifiedname>
+        <param>
+          <type><ref refid="interface_player_input_actions_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="245" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="245" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1aa33a873cde724b1bff91edd0bd3b1ec7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.RemoveCallbacks</definition>
+        <argsstring>(IPlayerActions instance)</argsstring>
+        <name>RemoveCallbacks</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.RemoveCallbacks</qualifiedname>
+        <param>
+          <type><ref refid="interface_player_input_actions_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="279" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="279" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1a41787e2711b176846b1252aa6daa1b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.SetCallbacks</definition>
+        <argsstring>(IPlayerActions instance)</argsstring>
+        <name>SetCallbacks</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.SetCallbacks</qualifiedname>
+        <param>
+          <type><ref refid="interface_player_input_actions_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="285" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="285" bodyend="291"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1a9c717a4698bf38d5c5dc59991f571f87" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit PlayerInputActions.PlayerActions.operator InputActionMap</definition>
+        <argsstring>(PlayerActions set)</argsstring>
+        <name>operator InputActionMap</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.operator InputActionMap</qualifiedname>
+        <param>
+          <type><ref refid="struct_player_input_actions_1_1_player_actions" kindref="compound">PlayerActions</ref></type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="244" column="32" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="244" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="struct_player_input_actions_1_1_player_actions_1a3098d31a5c7e330cea8d96387e8c3c95" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.PlayerActions.UnregisterCallbacks</definition>
+        <argsstring>(IPlayerActions instance)</argsstring>
+        <name>UnregisterCallbacks</name>
+        <qualifiedname>PlayerInputActions.PlayerActions.UnregisterCallbacks</qualifiedname>
+        <param>
+          <type><ref refid="interface_player_input_actions_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="263" column="22" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="263" bodyend="277"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>IDisposable</label>
+      </node>
+      <node id="3">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="2">
+        <label>PlayerInputActions</label>
+        <link refid="class_player_input_actions"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerInputActions.PlayerActions</label>
+        <link refid="struct_player_input_actions_1_1_player_actions"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_Wrapper</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="232" column="11" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="233" bodyend="292"/>
+    <listofallmembers>
+      <member refid="struct_player_input_actions_1_1_player_actions_1ad413b9a41a0c8d932d7d3dd32af76b08" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>AddCallbacks</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1aa65221b9c69b545279f7ef1d7d7dec79" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Attack</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a0279831da95fe70f80107c962fab7a6e" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Disable</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1ae2b3777e7e1569cdf739c6d77200b581" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Enable</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a118c4ef3a420a02d4d96787a9b4c8713" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>enabled</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1af968103a65f858565a7a19b3a4936e90" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Get</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a1db30041a79f90c775da0518a1412466" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Jump</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a1537cbd40dc76fec4b9c8a8e7d0df758" prot="private" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>m_Wrapper</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1af44cb7d94cdbd3bf311af91d2f931067" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Move</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a9c717a4698bf38d5c5dc59991f571f87" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>operator InputActionMap</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1af5f947a629b9f7974b1483fd51e8a38e" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>PlayerActions</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1aa33a873cde724b1bff91edd0bd3b1ec7" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>RemoveCallbacks</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1aaae70c46bbd0980eebb48b4fcd354b5d" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>Run</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a41787e2711b176846b1252aa6daa1b30" prot="public" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>SetCallbacks</name></member>
+      <member refid="struct_player_input_actions_1_1_player_actions_1a3098d31a5c7e330cea8d96387e8c3c95" prot="private" virt="non-virtual"><scope>PlayerInputActions::PlayerActions</scope><name>UnregisterCallbacks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

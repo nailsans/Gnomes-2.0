@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_character_manager" kind="class" language="C#" prot="public">
+    <compoundname>CharacterManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_player_manager" prot="public" virt="non-virtual">PlayerManager</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_character_manager_1a369d57740960c4262e388a62f38dd924" prot="public" static="no" mutable="no">
+        <type>CharacterController</type>
+        <definition>CharacterController CharacterManager.characterController</definition>
+        <argsstring></argsstring>
+        <name>characterController</name>
+        <qualifiedname>CharacterManager.characterController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="9" column="32" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_manager_1a851cdec558805e01e05a2f05930f90f0" prot="public" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator CharacterManager.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <qualifiedname>CharacterManager.animator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="10" column="21" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_manager_1a1b7fa4c87f178836c80716a489d9bf49" prot="public" static="no" mutable="no">
+        <type><ref refid="class_character_network_manager" kindref="compound">CharacterNetworkManager</ref></type>
+        <definition>CharacterNetworkManager CharacterManager.characterNetworkManager</definition>
+        <argsstring></argsstring>
+        <name>characterNetworkManager</name>
+        <qualifiedname>CharacterManager.characterNetworkManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="12" column="36" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_manager_1a86388067eb3b46cb3d20ec5e16978cbb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CharacterManager.isPerfomingAction</definition>
+        <argsstring></argsstring>
+        <name>isPerfomingAction</name>
+        <qualifiedname>CharacterManager.isPerfomingAction</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Is character perfoming action like attacking etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="18" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_character_manager_1a208e8dbd2f1b655e59b65d702c8f27d6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>CharacterManager.Awake</qualifiedname>
+        <reimplementedby refid="class_player_manager_1a5a9c8aed6dfa78573d7ddfd6fbb0fb95">Awake</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="19" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_character_manager_1ad51074eb7b78a4b6bf9bc99ede818591" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>CharacterManager.Update</qualifiedname>
+        <reimplementedby refid="class_player_manager_1abdc877f3adcc7d05a000bc5fa3894ec0">Update</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>If we own the character, then put some values into network variables</para>
+<para>If we dont own the character, then take variables from network</para>
+<para>Position</para>
+<para>Rotation</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="28" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="28" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_character_manager_1a6dd0705e76289c109e5ba8a51f149d05" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterManager.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <qualifiedname>CharacterManager.LateUpdate</qualifiedname>
+        <reimplementedby refid="class_player_manager_1aea06b06bdcf06ac4b342ac673272bdf8">LateUpdate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="55" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="3">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" line="7" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterManager.cs" bodystart="8" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_character_manager_1a851cdec558805e01e05a2f05930f90f0" prot="public" virt="non-virtual"><scope>CharacterManager</scope><name>animator</name></member>
+      <member refid="class_character_manager_1a208e8dbd2f1b655e59b65d702c8f27d6" prot="protected" virt="virtual"><scope>CharacterManager</scope><name>Awake</name></member>
+      <member refid="class_character_manager_1a369d57740960c4262e388a62f38dd924" prot="public" virt="non-virtual"><scope>CharacterManager</scope><name>characterController</name></member>
+      <member refid="class_character_manager_1a1b7fa4c87f178836c80716a489d9bf49" prot="public" virt="non-virtual"><scope>CharacterManager</scope><name>characterNetworkManager</name></member>
+      <member refid="class_character_manager_1a86388067eb3b46cb3d20ec5e16978cbb" prot="public" virt="non-virtual"><scope>CharacterManager</scope><name>isPerfomingAction</name></member>
+      <member refid="class_character_manager_1a6dd0705e76289c109e5ba8a51f149d05" prot="protected" virt="virtual"><scope>CharacterManager</scope><name>LateUpdate</name></member>
+      <member refid="class_character_manager_1ad51074eb7b78a4b6bf9bc99ede818591" prot="protected" virt="virtual"><scope>CharacterManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_attack" kind="class" language="C#" prot="public">
+    <compoundname>PlayerAttack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_attack_1a4c3b5c907848cd4d8a0c55d09d383a1e" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject PlayerAttack.attackArea</definition>
+        <argsstring></argsstring>
+        <name>attackArea</name>
+        <qualifiedname>PlayerAttack.attackArea</qualifiedname>
+        <initializer>= default(GameObject)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="7" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_attack_1aaee590364160623b374be01711cbea60" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerAttack.isAttacking</definition>
+        <argsstring></argsstring>
+        <name>isAttacking</name>
+        <qualifiedname>PlayerAttack.isAttacking</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="8" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_attack_1a98731b41a2446ec1d0d321fde5ee9120" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerAttack.timeToAttack</definition>
+        <argsstring></argsstring>
+        <name>timeToAttack</name>
+        <qualifiedname>PlayerAttack.timeToAttack</qualifiedname>
+        <initializer>= 0.25f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="9" column="19" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_attack_1a6f870997319046f036f4422eba03c1ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerAttack.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerAttack.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="11" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_attack_1a8f963e9ea9003db9d8ffe655efba19ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator PlayerAttack.IAttack</definition>
+        <argsstring>()</argsstring>
+        <name>IAttack</name>
+        <qualifiedname>PlayerAttack.IAttack</qualifiedname>
+        <briefdescription>
+<para>Couroutine with cooldown for attack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="31" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="31" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_attack_1a9716e591b4c74a1149becb7e7ca55aad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerAttack.Attack</definition>
+        <argsstring>()</argsstring>
+        <name>Attack</name>
+        <qualifiedname>PlayerAttack.Attack</qualifiedname>
+        <briefdescription>
+<para>Executing attack on the object in field of attack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="19" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerAttack</label>
+        <link refid="class_player_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerAttack</label>
+        <link refid="class_player_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/PlayerAttack.cs" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_player_attack_1a9716e591b4c74a1149becb7e7ca55aad" prot="public" virt="non-virtual"><scope>PlayerAttack</scope><name>Attack</name></member>
+      <member refid="class_player_attack_1a4c3b5c907848cd4d8a0c55d09d383a1e" prot="private" virt="non-virtual"><scope>PlayerAttack</scope><name>attackArea</name></member>
+      <member refid="class_player_attack_1a8f963e9ea9003db9d8ffe655efba19ce" prot="private" virt="non-virtual"><scope>PlayerAttack</scope><name>IAttack</name></member>
+      <member refid="class_player_attack_1aaee590364160623b374be01711cbea60" prot="private" virt="non-virtual"><scope>PlayerAttack</scope><name>isAttacking</name></member>
+      <member refid="class_player_attack_1a6f870997319046f036f4422eba03c1ab" prot="private" virt="non-virtual"><scope>PlayerAttack</scope><name>Start</name></member>
+      <member refid="class_player_attack_1a98731b41a2446ec1d0d321fde5ee9120" prot="private" virt="non-virtual"><scope>PlayerAttack</scope><name>timeToAttack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

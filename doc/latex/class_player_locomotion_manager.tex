@@ -1,0 +1,186 @@
+\doxysection{Player\+Locomotion\+Manager Class Reference}
+\hypertarget{class_player_locomotion_manager}{}\label{class_player_locomotion_manager}\index{PlayerLocomotionManager@{PlayerLocomotionManager}}
+Inheritance diagram for Player\+Locomotion\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player_locomotion_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_locomotion_manager_aac1d278d11e437b6164a90170ca960d3}{Handle\+All\+Movement}} ()
+\item 
+void \mbox{\hyperlink{class_player_locomotion_manager_a4e031481b66251f8d453d70dc0e7da3c}{Handle\+Running}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_player_locomotion_manager_ac2579d400221ab902213c6a16b229f5c}{vertical\+Movement}}
+\item 
+float \mbox{\hyperlink{class_player_locomotion_manager_ae9a206bd86b19fedecc07fbbffba0bda}{horizontal\+Movement}}
+\item 
+bool \mbox{\hyperlink{class_player_locomotion_manager_a23126c84e34955061efd1279c9a6d527}{is\+Shift\+Pressed}}
+\item 
+bool \mbox{\hyperlink{class_player_locomotion_manager_a0af903fa3683f3a911ea7666b6568f42}{is\+Walking}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_player_locomotion_manager_aac6ccc5933d016cc63513f40db9b9fa3}{Awake}} ()
+\item 
+override void \mbox{\hyperlink{class_player_locomotion_manager_add3e9fa7f2bf9c69801ec39b93bf4805}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_locomotion_manager_a9aa72e4ee9bd3429638b252a303a9697}{Get\+Motion\+Inputs}} ()
+\item 
+void \mbox{\hyperlink{class_player_locomotion_manager_a517000a783a2f54e2b6eacfc86a8f43f}{Handle\+Movement}} ()
+\item 
+Vector3 \mbox{\hyperlink{class_player_locomotion_manager_ae751f63cba609050ed94954a470529ea}{get\+Mouse\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_player_locomotion_manager_ac3059e359d3bcad2b74e42227fd7bc88}{Handle\+Rotation}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_manager}{Player\+Manager}} \mbox{\hyperlink{class_player_locomotion_manager_a5ca0d5f0154b04fde94ee289ff2fe1e5}{player}}
+\item 
+Vector3 \mbox{\hyperlink{class_player_locomotion_manager_a1ebe61ef6af4bb8a53b0c365da93d0e1}{move\+Direction}}
+\item 
+Vector3 \mbox{\hyperlink{class_player_locomotion_manager_a51d65f52440155686050ef3a2959efa4}{target\+Rotation\+Direction}}
+\item 
+float \mbox{\hyperlink{class_player_locomotion_manager_a222c35656425ae2246f617e59b602eff}{walking\+Speed}} = 2
+\item 
+float \mbox{\hyperlink{class_player_locomotion_manager_a546db0f4e57fd23a7fecc60f8b4c738c}{running\+Speed}} = 5
+\item 
+float \mbox{\hyperlink{class_player_locomotion_manager_ad17c860fb63f5ee7db7256f51ebdc37a}{rotation\+Speed}} = 15
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_locomotion_manager_aac6ccc5933d016cc63513f40db9b9fa3}\label{class_player_locomotion_manager_aac6ccc5933d016cc63513f40db9b9fa3} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Player\+Locomotion\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_character_locomotion_manager_ab2408d5d88ca4ebc77b3de5ab22fa808}{Character\+Locomotion\+Manager}}.
+
+\Hypertarget{class_player_locomotion_manager_a9aa72e4ee9bd3429638b252a303a9697}\label{class_player_locomotion_manager_a9aa72e4ee9bd3429638b252a303a9697} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!GetMotionInputs@{GetMotionInputs}}
+\index{GetMotionInputs@{GetMotionInputs}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{GetMotionInputs()}{GetMotionInputs()}}
+{\footnotesize\ttfamily void Player\+Locomotion\+Manager.\+Get\+Motion\+Inputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_ae751f63cba609050ed94954a470529ea}\label{class_player_locomotion_manager_ae751f63cba609050ed94954a470529ea} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!getMousePos@{getMousePos}}
+\index{getMousePos@{getMousePos}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{getMousePos()}{getMousePos()}}
+{\footnotesize\ttfamily Vector3 Player\+Locomotion\+Manager.\+get\+Mouse\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_aac1d278d11e437b6164a90170ca960d3}\label{class_player_locomotion_manager_aac1d278d11e437b6164a90170ca960d3} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!HandleAllMovement@{HandleAllMovement}}
+\index{HandleAllMovement@{HandleAllMovement}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{HandleAllMovement()}{HandleAllMovement()}}
+{\footnotesize\ttfamily void Player\+Locomotion\+Manager.\+Handle\+All\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_locomotion_manager_a517000a783a2f54e2b6eacfc86a8f43f}\label{class_player_locomotion_manager_a517000a783a2f54e2b6eacfc86a8f43f} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!HandleMovement@{HandleMovement}}
+\index{HandleMovement@{HandleMovement}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{HandleMovement()}{HandleMovement()}}
+{\footnotesize\ttfamily void Player\+Locomotion\+Manager.\+Handle\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_ac3059e359d3bcad2b74e42227fd7bc88}\label{class_player_locomotion_manager_ac3059e359d3bcad2b74e42227fd7bc88} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!HandleRotation@{HandleRotation}}
+\index{HandleRotation@{HandleRotation}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{HandleRotation()}{HandleRotation()}}
+{\footnotesize\ttfamily void Player\+Locomotion\+Manager.\+Handle\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_a4e031481b66251f8d453d70dc0e7da3c}\label{class_player_locomotion_manager_a4e031481b66251f8d453d70dc0e7da3c} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!HandleRunning@{HandleRunning}}
+\index{HandleRunning@{HandleRunning}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{HandleRunning()}{HandleRunning()}}
+{\footnotesize\ttfamily void Player\+Locomotion\+Manager.\+Handle\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_locomotion_manager_add3e9fa7f2bf9c69801ec39b93bf4805}\label{class_player_locomotion_manager_add3e9fa7f2bf9c69801ec39b93bf4805} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!Update@{Update}}
+\index{Update@{Update}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Player\+Locomotion\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_character_locomotion_manager_a41cc58b441495c3e63d2d5bb157ab817}{Character\+Locomotion\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_locomotion_manager_ae9a206bd86b19fedecc07fbbffba0bda}\label{class_player_locomotion_manager_ae9a206bd86b19fedecc07fbbffba0bda} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!horizontalMovement@{horizontalMovement}}
+\index{horizontalMovement@{horizontalMovement}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{horizontalMovement}{horizontalMovement}}
+{\footnotesize\ttfamily float Player\+Locomotion\+Manager.\+horizontal\+Movement}
+
+\Hypertarget{class_player_locomotion_manager_a23126c84e34955061efd1279c9a6d527}\label{class_player_locomotion_manager_a23126c84e34955061efd1279c9a6d527} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!isShiftPressed@{isShiftPressed}}
+\index{isShiftPressed@{isShiftPressed}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{isShiftPressed}{isShiftPressed}}
+{\footnotesize\ttfamily bool Player\+Locomotion\+Manager.\+is\+Shift\+Pressed}
+
+\Hypertarget{class_player_locomotion_manager_a0af903fa3683f3a911ea7666b6568f42}\label{class_player_locomotion_manager_a0af903fa3683f3a911ea7666b6568f42} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!isWalking@{isWalking}}
+\index{isWalking@{isWalking}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{isWalking}{isWalking}}
+{\footnotesize\ttfamily bool Player\+Locomotion\+Manager.\+is\+Walking}
+
+\Hypertarget{class_player_locomotion_manager_a1ebe61ef6af4bb8a53b0c365da93d0e1}\label{class_player_locomotion_manager_a1ebe61ef6af4bb8a53b0c365da93d0e1} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!moveDirection@{moveDirection}}
+\index{moveDirection@{moveDirection}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{moveDirection}{moveDirection}}
+{\footnotesize\ttfamily Vector3 Player\+Locomotion\+Manager.\+move\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_a5ca0d5f0154b04fde94ee289ff2fe1e5}\label{class_player_locomotion_manager_a5ca0d5f0154b04fde94ee289ff2fe1e5} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!player@{player}}
+\index{player@{player}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_manager}{Player\+Manager}} Player\+Locomotion\+Manager.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_ad17c860fb63f5ee7db7256f51ebdc37a}\label{class_player_locomotion_manager_ad17c860fb63f5ee7db7256f51ebdc37a} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!rotationSpeed@{rotationSpeed}}
+\index{rotationSpeed@{rotationSpeed}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{rotationSpeed}{rotationSpeed}}
+{\footnotesize\ttfamily float Player\+Locomotion\+Manager.\+rotation\+Speed = 15\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_a546db0f4e57fd23a7fecc60f8b4c738c}\label{class_player_locomotion_manager_a546db0f4e57fd23a7fecc60f8b4c738c} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!runningSpeed@{runningSpeed}}
+\index{runningSpeed@{runningSpeed}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{runningSpeed}{runningSpeed}}
+{\footnotesize\ttfamily float Player\+Locomotion\+Manager.\+running\+Speed = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_a51d65f52440155686050ef3a2959efa4}\label{class_player_locomotion_manager_a51d65f52440155686050ef3a2959efa4} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!targetRotationDirection@{targetRotationDirection}}
+\index{targetRotationDirection@{targetRotationDirection}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{targetRotationDirection}{targetRotationDirection}}
+{\footnotesize\ttfamily Vector3 Player\+Locomotion\+Manager.\+target\+Rotation\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_locomotion_manager_ac2579d400221ab902213c6a16b229f5c}\label{class_player_locomotion_manager_ac2579d400221ab902213c6a16b229f5c} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!verticalMovement@{verticalMovement}}
+\index{verticalMovement@{verticalMovement}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{verticalMovement}{verticalMovement}}
+{\footnotesize\ttfamily float Player\+Locomotion\+Manager.\+vertical\+Movement}
+
+\Hypertarget{class_player_locomotion_manager_a222c35656425ae2246f617e59b602eff}\label{class_player_locomotion_manager_a222c35656425ae2246f617e59b602eff} 
+\index{PlayerLocomotionManager@{PlayerLocomotionManager}!walkingSpeed@{walkingSpeed}}
+\index{walkingSpeed@{walkingSpeed}!PlayerLocomotionManager@{PlayerLocomotionManager}}
+\doxysubsubsection{\texorpdfstring{walkingSpeed}{walkingSpeed}}
+{\footnotesize\ttfamily float Player\+Locomotion\+Manager.\+walking\+Speed = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Character/\+Player/\mbox{\hyperlink{_player_locomotion_manager_8cs}{Player\+Locomotion\+Manager.\+cs}}\end{DoxyCompactItemize}

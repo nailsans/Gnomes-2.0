@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_animator_manager" kind="class" language="C#" prot="public">
+    <compoundname>PlayerAnimatorManager</compoundname>
+    <basecompoundref refid="class_character_animator_manager" prot="public" virt="non-virtual">CharacterAnimatorManager</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerAnimatorManager.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerAnimatorManager.cs" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_character_animator_manager_1aed3334e87bc9e673a97f3664b4c8c64f" prot="protected" virt="virtual"><scope>PlayerAnimatorManager</scope><name>Awake</name></member>
+      <member refid="class_character_animator_manager_1a19bd680781bdeb33f48b56026b13aa8f" prot="private" virt="non-virtual"><scope>PlayerAnimatorManager</scope><name>character</name></member>
+      <member refid="class_character_animator_manager_1a3bd84d4d9a102c36038eefecfc66260e" prot="public" virt="non-virtual"><scope>PlayerAnimatorManager</scope><name>UpdateAnimatorParameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

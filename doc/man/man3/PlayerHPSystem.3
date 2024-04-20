@@ -1,0 +1,73 @@
+.TH "PlayerHPSystem" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerHPSystem
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtakeDamage\fP (int damage)"
+.br
+.RI "Taking damage\&. "
+.ti -1c
+.RI "void \fBDeath\fP ()"
+.br
+.RI "Executing death\&. "
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBmaxHp\fP = 10"
+.br
+.ti -1c
+.RI "int \fBhp\fP"
+.br
+.ti -1c
+.RI "int \fBresistance\fP = 0"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void PlayerHPSystem\&.Death ()"
+
+.PP
+Executing death\&. 
+.SS "void PlayerHPSystem\&.Start ()\fR [private]\fP"
+процент нивелируемого урона 
+.SS "void PlayerHPSystem\&.takeDamage (int damage)"
+
+.PP
+Taking damage\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdamage\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int PlayerHPSystem\&.hp\fR [private]\fP"
+
+.SS "int PlayerHPSystem\&.maxHp = 10\fR [private]\fP"
+
+.SS "int PlayerHPSystem\&.resistance = 0\fR [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

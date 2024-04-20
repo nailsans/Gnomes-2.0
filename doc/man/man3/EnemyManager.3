@@ -1,0 +1,121 @@
+.TH "EnemyManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EnemyManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.ti -1c
+.RI "void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBchangeActivityType\fP (\fBEnemyActivityType\fP activity)"
+.br
+.ti -1c
+.RI "void \fBSummonRandomEnemyOnRandomSpawner\fP ()"
+.br
+.ti -1c
+.RI "void \fBSummonRandomEnemy\fP (Vector3 SpawnCoords)"
+.br
+.ti -1c
+.RI "void \fBStartWave\fP (int waveNumber)"
+.br
+.ti -1c
+.RI "IEnumerator \fBISpawnRandomEnemies\fP (int enemiesAmount)"
+.br
+.ti -1c
+.RI "void \fBStartRest\fP ()"
+.br
+.ti -1c
+.RI "IEnumerator \fBIStartRest\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "GameObject[] \fBplayers\fP"
+.br
+.ti -1c
+.RI "int \fBspawnCoefficient\fP"
+.br
+.ti -1c
+.RI "float \fBrestSeconds\fP"
+.br
+.ti -1c
+.RI "float \fBtimeBetweenSpawn\fP"
+.br
+.ti -1c
+.RI "List< GameObject > \fBenemyPrefabs\fP"
+.br
+.ti -1c
+.RI "List< GameObject > \fBspawnedEnemies\fP"
+.br
+.ti -1c
+.RI "GameObject[] \fBspawns\fP"
+.br
+.ti -1c
+.RI "\fBEnemyActivityType\fP \fBactivityType\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentWaveNumber\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void EnemyManager\&.Awake ()\fR [private]\fP"
+
+.SS "void EnemyManager\&.changeActivityType (\fBEnemyActivityType\fP activity)\fR [private]\fP"
+
+.SS "IEnumerator EnemyManager\&.ISpawnRandomEnemies (int enemiesAmount)\fR [private]\fP"
+
+.SS "IEnumerator EnemyManager\&.IStartRest ()\fR [private]\fP"
+
+.SS "void EnemyManager\&.Start ()\fR [private]\fP"
+
+.SS "void EnemyManager\&.StartRest ()\fR [private]\fP"
+
+.SS "void EnemyManager\&.StartWave (int waveNumber)\fR [private]\fP"
+
+.SS "void EnemyManager\&.SummonRandomEnemy (Vector3 SpawnCoords)\fR [private]\fP"
+
+.SS "void EnemyManager\&.SummonRandomEnemyOnRandomSpawner ()\fR [private]\fP"
+
+.SS "void EnemyManager\&.Update ()\fR [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBEnemyActivityType\fP EnemyManager\&.activityType\fR [private]\fP"
+
+.SS "int EnemyManager\&.currentWaveNumber\fR [private]\fP"
+
+.SS "List<GameObject> EnemyManager\&.enemyPrefabs\fR [private]\fP"
+time between enemies spawn during wave 
+.SS "GameObject [] EnemyManager\&.players\fR [private]\fP"
+
+.SS "float EnemyManager\&.restSeconds\fR [private]\fP"
+estimated amount of enemies spawned per wave 
+.SS "int EnemyManager\&.spawnCoefficient\fR [private]\fP"
+
+.SS "List<GameObject> EnemyManager\&.spawnedEnemies\fR [private]\fP"
+
+.SS "GameObject [] EnemyManager\&.spawns\fR [private]\fP"
+
+.SS "float EnemyManager\&.timeBetweenSpawn\fR [private]\fP"
+time of rest state after enemies are killed 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_manager" kind="class" language="C#" prot="public">
+    <compoundname>PlayerManager</compoundname>
+    <basecompoundref refid="class_character_manager" prot="public" virt="non-virtual">CharacterManager</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_manager_1ab2d5cec99aa4d9679c7d2bcd425b39b8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_locomotion_manager" kindref="compound">PlayerLocomotionManager</ref></type>
+        <definition>PlayerLocomotionManager PlayerManager.PlayerLocomotionManager</definition>
+        <argsstring></argsstring>
+        <name>PlayerLocomotionManager</name>
+        <qualifiedname>PlayerManager.PlayerLocomotionManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="8" column="36" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_manager_1aea7b7bc64c4c468a045fe9154e54b67b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_animator_manager" kindref="compound">PlayerAnimatorManager</ref></type>
+        <definition>PlayerAnimatorManager PlayerManager.PlayerAnimatorManager</definition>
+        <argsstring></argsstring>
+        <name>PlayerAnimatorManager</name>
+        <qualifiedname>PlayerManager.PlayerAnimatorManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="9" column="34" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_manager_1aad3512f1d13c14831ad50194f24a68a5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_network_manager" kindref="compound">PlayerNetworkManager</ref></type>
+        <definition>PlayerNetworkManager PlayerManager.PlayerNetworkManager</definition>
+        <argsstring></argsstring>
+        <name>PlayerNetworkManager</name>
+        <qualifiedname>PlayerManager.PlayerNetworkManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="10" column="33" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_manager_1a8ef05b9bf5d421799d441dcc542df0c7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_attack" kindref="compound">PlayerAttack</ref></type>
+        <definition>PlayerAttack PlayerManager.PlayerAttack</definition>
+        <argsstring></argsstring>
+        <name>PlayerAttack</name>
+        <qualifiedname>PlayerManager.PlayerAttack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="11" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_player_manager_1a5a9c8aed6dfa78573d7ddfd6fbb0fb95" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>PlayerManager.Awake</qualifiedname>
+        <reimplements refid="class_character_manager_1a208e8dbd2f1b655e59b65d702c8f27d6">Awake</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="12" column="29" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="12" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_manager_1abdc877f3adcc7d05a000bc5fa3894ec0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>PlayerManager.Update</qualifiedname>
+        <reimplements refid="class_character_manager_1ad51074eb7b78a4b6bf9bc99ede818591">Update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="22" column="29" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="22" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_manager_1aea06b06bdcf06ac4b342ac673272bdf8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerManager.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <qualifiedname>PlayerManager.LateUpdate</qualifiedname>
+        <reimplements refid="class_character_manager_1a6dd0705e76289c109e5ba8a51f149d05">LateUpdate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="35" column="29" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="35" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_manager_1a47d993ab2a8e05aaade4c71bc3c22702" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void PlayerManager.OnNetworkSpawn</definition>
+        <argsstring>()</argsstring>
+        <name>OnNetworkSpawn</name>
+        <qualifiedname>PlayerManager.OnNetworkSpawn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="45" column="26" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="45" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CharacterLocomotionManager</label>
+        <link refid="class_character_locomotion_manager"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="8">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>PlayerAttack</label>
+        <link refid="class_player_attack"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PlayerLocomotionManager</label>
+        <link refid="class_player_locomotion_manager"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PlayerLocomotionManager</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>PlayerAnimatorManager</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>PlayerNetworkManager</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>PlayerAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PlayerNetworkManager</label>
+        <link refid="class_player_network_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/PlayerManager.cs" bodystart="6" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_character_manager_1a851cdec558805e01e05a2f05930f90f0" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>animator</name></member>
+      <member refid="class_player_manager_1a5a9c8aed6dfa78573d7ddfd6fbb0fb95" prot="protected" virt="virtual"><scope>PlayerManager</scope><name>Awake</name></member>
+      <member refid="class_character_manager_1a369d57740960c4262e388a62f38dd924" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>characterController</name></member>
+      <member refid="class_character_manager_1a1b7fa4c87f178836c80716a489d9bf49" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>characterNetworkManager</name></member>
+      <member refid="class_character_manager_1a86388067eb3b46cb3d20ec5e16978cbb" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>isPerfomingAction</name></member>
+      <member refid="class_player_manager_1aea06b06bdcf06ac4b342ac673272bdf8" prot="protected" virt="virtual"><scope>PlayerManager</scope><name>LateUpdate</name></member>
+      <member refid="class_player_manager_1a47d993ab2a8e05aaade4c71bc3c22702" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>OnNetworkSpawn</name></member>
+      <member refid="class_player_manager_1aea7b7bc64c4c468a045fe9154e54b67b" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>PlayerAnimatorManager</name></member>
+      <member refid="class_player_manager_1a8ef05b9bf5d421799d441dcc542df0c7" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>PlayerAttack</name></member>
+      <member refid="class_player_manager_1ab2d5cec99aa4d9679c7d2bcd425b39b8" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>PlayerLocomotionManager</name></member>
+      <member refid="class_player_manager_1aad3512f1d13c14831ad50194f24a68a5" prot="public" virt="non-virtual"><scope>PlayerManager</scope><name>PlayerNetworkManager</name></member>
+      <member refid="class_player_manager_1abdc877f3adcc7d05a000bc5fa3894ec0" prot="protected" virt="virtual"><scope>PlayerManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

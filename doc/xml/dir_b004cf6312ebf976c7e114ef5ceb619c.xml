@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b004cf6312ebf976c7e114ef5ceb619c" kind="dir">
+    <compoundname>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene</compoundname>
+    <innerfile refid="_title_screen_manager_8cs">TitleScreenManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/"/>
+  </compounddef>
+</doxygen>

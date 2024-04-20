@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="interface_player_input_actions_1_1_i_player_actions" kind="interface" language="C#" prot="public">
+    <compoundname>PlayerInputActions::IPlayerActions</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_player_input_actions_1_1_i_player_actions_1a91232e4a05dc1f6b04f7adaf162a4db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.IPlayerActions.OnMove</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnMove</name>
+        <qualifiedname>PlayerInputActions.IPlayerActions.OnMove</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="296" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_player_input_actions_1_1_i_player_actions_1a8dfc3bcc351552645838e2e369d4c2aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.IPlayerActions.OnJump</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnJump</name>
+        <qualifiedname>PlayerInputActions.IPlayerActions.OnJump</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="297" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_player_input_actions_1_1_i_player_actions_1aec23f51c4a9af66bf0635605d04edc03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.IPlayerActions.OnAttack</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnAttack</name>
+        <qualifiedname>PlayerInputActions.IPlayerActions.OnAttack</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="298" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_player_input_actions_1_1_i_player_actions_1a5a767707bb0637a282c281bf54e4e518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputActions.IPlayerActions.OnRun</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnRun</name>
+        <qualifiedname>PlayerInputActions.IPlayerActions.OnRun</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="299" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" line="294" column="22" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputActions.cs" bodystart="295" bodyend="300"/>
+    <listofallmembers>
+      <member refid="interface_player_input_actions_1_1_i_player_actions_1aec23f51c4a9af66bf0635605d04edc03" prot="public" virt="non-virtual"><scope>PlayerInputActions::IPlayerActions</scope><name>OnAttack</name></member>
+      <member refid="interface_player_input_actions_1_1_i_player_actions_1a8dfc3bcc351552645838e2e369d4c2aa" prot="public" virt="non-virtual"><scope>PlayerInputActions::IPlayerActions</scope><name>OnJump</name></member>
+      <member refid="interface_player_input_actions_1_1_i_player_actions_1a91232e4a05dc1f6b04f7adaf162a4db8" prot="public" virt="non-virtual"><scope>PlayerInputActions::IPlayerActions</scope><name>OnMove</name></member>
+      <member refid="interface_player_input_actions_1_1_i_player_actions_1a5a767707bb0637a282c281bf54e4e518" prot="public" virt="non-virtual"><scope>PlayerInputActions::IPlayerActions</scope><name>OnRun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

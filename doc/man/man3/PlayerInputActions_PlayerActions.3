@@ -1,0 +1,115 @@
+.TH "PlayerInputActions.PlayerActions" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerInputActions.PlayerActions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayerActions\fP (@\fBPlayerInputActions\fP wrapper)"
+.br
+.ti -1c
+.RI "InputActionMap \fBGet\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnable\fP ()"
+.br
+.ti -1c
+.RI "void \fBDisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddCallbacks\fP (\fBIPlayerActions\fP instance)"
+.br
+.ti -1c
+.RI "void \fBRemoveCallbacks\fP (\fBIPlayerActions\fP instance)"
+.br
+.ti -1c
+.RI "void \fBSetCallbacks\fP (\fBIPlayerActions\fP instance)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static implicit \fBoperator InputActionMap\fP (\fBPlayerActions\fP set)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "InputAction \fBMove\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "InputAction \fBJump\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "InputAction \fBAttack\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "InputAction \fBRun\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBenabled\fP\fR [get]\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUnregisterCallbacks\fP (\fBIPlayerActions\fP instance)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayerInputActions\fP \fBm_Wrapper\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlayerInputActions\&.PlayerActions\&.PlayerActions (@\fBPlayerInputActions\fP wrapper)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void PlayerInputActions\&.PlayerActions\&.AddCallbacks (\fBIPlayerActions\fP instance)"
+
+.SS "void PlayerInputActions\&.PlayerActions\&.Disable ()"
+
+.SS "void PlayerInputActions\&.PlayerActions\&.Enable ()"
+
+.SS "InputActionMap PlayerInputActions\&.PlayerActions\&.Get ()"
+
+.SS "static implicit PlayerInputActions\&.PlayerActions\&.operator InputActionMap (\fBPlayerActions\fP set)\fR [static]\fP"
+
+.SS "void PlayerInputActions\&.PlayerActions\&.RemoveCallbacks (\fBIPlayerActions\fP instance)"
+
+.SS "void PlayerInputActions\&.PlayerActions\&.SetCallbacks (\fBIPlayerActions\fP instance)"
+
+.SS "void PlayerInputActions\&.PlayerActions\&.UnregisterCallbacks (\fBIPlayerActions\fP instance)\fR [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBPlayerInputActions\fP PlayerInputActions\&.PlayerActions\&.m_Wrapper\fR [private]\fP"
+
+.SH "Property Documentation"
+.PP 
+.SS "InputAction PlayerInputActions\&.PlayerActions\&.Attack\fR [get]\fP"
+
+.SS "bool PlayerInputActions\&.PlayerActions\&.enabled\fR [get]\fP"
+
+.SS "InputAction PlayerInputActions\&.PlayerActions\&.Jump\fR [get]\fP"
+
+.SS "InputAction PlayerInputActions\&.PlayerActions\&.Move\fR [get]\fP"
+
+.SS "InputAction PlayerInputActions\&.PlayerActions\&.Run\fR [get]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

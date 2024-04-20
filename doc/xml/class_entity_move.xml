@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_entity_move" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>EntityMove</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_bloha_move" prot="public" virt="non-virtual">BlohaMove</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_move_1a8a931962c69fe388a52ea4a4f06052b7" prot="private" static="no" mutable="no">
+        <type>NavMeshAgent</type>
+        <definition>NavMeshAgent EntityMove.agent</definition>
+        <argsstring></argsstring>
+        <name>agent</name>
+        <qualifiedname>EntityMove.agent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="9" column="26" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1aea8d846612c86b02d55f3eaaa125a888" prot="private" static="no" mutable="no">
+        <type>SphereCollider</type>
+        <definition>SphereCollider EntityMove.attackArea</definition>
+        <argsstring></argsstring>
+        <name>attackArea</name>
+        <qualifiedname>EntityMove.attackArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="10" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1ae3fb21854615a1e8f189f5c481cfa4ce" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform EntityMove.currentTarget</definition>
+        <argsstring></argsstring>
+        <name>currentTarget</name>
+        <qualifiedname>EntityMove.currentTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="11" column="23" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1a899adfefc3490d6467f030979ee2399c" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator EntityMove.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <qualifiedname>EntityMove.animator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="13" column="14" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1acc7f015cfede2df7cceafc57790c3d47" prot="private" static="no" mutable="no">
+        <type><ref refid="class_entity_attack_area" kindref="compound">EntityAttackArea</ref></type>
+        <definition>EntityAttackArea EntityMove.entityAttackArea</definition>
+        <argsstring></argsstring>
+        <name>entityAttackArea</name>
+        <qualifiedname>EntityMove.entityAttackArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="17" column="30" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_entity_move_1a1bfa0779ad54d2ca26a1c64f2816588c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EntityMove.targetIsClose</definition>
+        <argsstring></argsstring>
+        <name>targetIsClose</name>
+        <qualifiedname>EntityMove.targetIsClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="12" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1aa477488cebc77edf578d2c9984f76094" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask EntityMove.whatIsGround</definition>
+        <argsstring></argsstring>
+        <name>whatIsGround</name>
+        <qualifiedname>EntityMove.whatIsGround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="15" column="22" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_move_1a1612399cccfa705e25e512e34ca0c0ff" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask EntityMove.whatIsPlayer</definition>
+        <argsstring></argsstring>
+        <name>whatIsPlayer</name>
+        <qualifiedname>EntityMove.whatIsPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="15" column="35" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_entity_move_1a8be8a207d3b383dc2e3a638584ba2e9d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityMove.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>EntityMove.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="19" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="19" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_move_1ac7434682cd9d82265b3dcf21e815ac45" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityMove.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>EntityMove.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="35" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="35" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_entity_move_1aad7d3ab2aae14f8b6360d362b30ffce9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Transform</type>
+        <definition>Transform EntityMove.findTarget</definition>
+        <argsstring>()</argsstring>
+        <name>findTarget</name>
+        <qualifiedname>EntityMove.findTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="45" column="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_move_1a3e458c6f3b9dab7bde0f766b28f22aa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityMove.moveTowards</definition>
+        <argsstring>(Transform target)</argsstring>
+        <name>moveTowards</name>
+        <qualifiedname>EntityMove.moveTowards</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Setting destination for movement AI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="51" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="51" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BlohaMove</label>
+        <link refid="class_bloha_move"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EntityMove</label>
+        <link refid="class_entity_move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>EntityAttack</label>
+        <link refid="class_entity_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EntityAttackArea</label>
+        <link refid="class_entity_attack_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_entityAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EntityMove</label>
+        <link refid="class_entity_move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>entityAttackArea</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" line="6" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityMove.cs" bodystart="7" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_entity_move_1a8a931962c69fe388a52ea4a4f06052b7" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>agent</name></member>
+      <member refid="class_entity_move_1a899adfefc3490d6467f030979ee2399c" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>animator</name></member>
+      <member refid="class_entity_move_1aea8d846612c86b02d55f3eaaa125a888" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>attackArea</name></member>
+      <member refid="class_entity_move_1ac7434682cd9d82265b3dcf21e815ac45" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>Awake</name></member>
+      <member refid="class_entity_move_1ae3fb21854615a1e8f189f5c481cfa4ce" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>currentTarget</name></member>
+      <member refid="class_entity_move_1acc7f015cfede2df7cceafc57790c3d47" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>entityAttackArea</name></member>
+      <member refid="class_entity_move_1aad7d3ab2aae14f8b6360d362b30ffce9" prot="protected" virt="non-virtual"><scope>EntityMove</scope><name>findTarget</name></member>
+      <member refid="class_entity_move_1a3e458c6f3b9dab7bde0f766b28f22aa8" prot="public" virt="non-virtual"><scope>EntityMove</scope><name>moveTowards</name></member>
+      <member refid="class_entity_move_1a1bfa0779ad54d2ca26a1c64f2816588c" prot="public" virt="non-virtual"><scope>EntityMove</scope><name>targetIsClose</name></member>
+      <member refid="class_entity_move_1a8be8a207d3b383dc2e3a638584ba2e9d" prot="private" virt="non-virtual"><scope>EntityMove</scope><name>Update</name></member>
+      <member refid="class_entity_move_1aa477488cebc77edf578d2c9984f76094" prot="public" virt="non-virtual"><scope>EntityMove</scope><name>whatIsGround</name></member>
+      <member refid="class_entity_move_1a1612399cccfa705e25e512e34ca0c0ff" prot="public" virt="non-virtual"><scope>EntityMove</scope><name>whatIsPlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

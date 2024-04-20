@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_entity_attack_area" kind="class" language="C#" prot="public">
+    <compoundname>EntityAttackArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_attack_area_1a43700065441e0389cb7c501169bee5c5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_entity_move" kindref="compound">EntityMove</ref></type>
+        <definition>EntityMove EntityAttackArea._entityMove</definition>
+        <argsstring></argsstring>
+        <name>_entityMove</name>
+        <qualifiedname>EntityAttackArea._entityMove</qualifiedname>
+        <briefdescription>
+<para>A script for collider object of entity that has <ref refid="class_entity_attack" kindref="compound">EntityAttack</ref> script, checks contacts with objects that can be attacked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="10" column="24" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_attack_area_1adf84ddaef60fe8aa4ca9fe9b02aaa34e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_entity_attack" kindref="compound">EntityAttack</ref></type>
+        <definition>EntityAttack EntityAttackArea._entityAttack</definition>
+        <argsstring></argsstring>
+        <name>_entityAttack</name>
+        <qualifiedname>EntityAttackArea._entityAttack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="11" column="26" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_entity_attack_area_1ae1d522990deb70c5d4b0a90f6a06be08" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityAttackArea.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>EntityAttackArea.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Getting main components</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="13" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_attack_area_1aa8c38ac59f376eb58627e210c4b9aba8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityAttackArea.OnTriggerEnter</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerEnter</name>
+        <qualifiedname>EntityAttackArea.OnTriggerEnter</qualifiedname>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>When target is in attacking area, call the script for attacking</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="20" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_attack_area_1abde6697e82d9dd749e75feafe2bcef31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityAttackArea.OnTriggerExit</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerExit</name>
+        <qualifiedname>EntityAttackArea.OnTriggerExit</qualifiedname>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>When target is out of area, stop attacking</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="26" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="26" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EntityAttackArea</label>
+        <link refid="class_entity_attack_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>EntityAttack</label>
+        <link refid="class_entity_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EntityAttackArea</label>
+        <link refid="class_entity_attack_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_entityAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EntityMove</label>
+        <link refid="class_entity_move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>entityAttackArea</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/EntityAttackArea.cs" bodystart="6" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_entity_attack_area_1adf84ddaef60fe8aa4ca9fe9b02aaa34e" prot="private" virt="non-virtual"><scope>EntityAttackArea</scope><name>_entityAttack</name></member>
+      <member refid="class_entity_attack_area_1a43700065441e0389cb7c501169bee5c5" prot="private" virt="non-virtual"><scope>EntityAttackArea</scope><name>_entityMove</name></member>
+      <member refid="class_entity_attack_area_1ae1d522990deb70c5d4b0a90f6a06be08" prot="private" virt="non-virtual"><scope>EntityAttackArea</scope><name>Awake</name></member>
+      <member refid="class_entity_attack_area_1aa8c38ac59f376eb58627e210c4b9aba8" prot="private" virt="non-virtual"><scope>EntityAttackArea</scope><name>OnTriggerEnter</name></member>
+      <member refid="class_entity_attack_area_1abde6697e82d9dd749e75feafe2bcef31" prot="private" virt="non-virtual"><scope>EntityAttackArea</scope><name>OnTriggerExit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

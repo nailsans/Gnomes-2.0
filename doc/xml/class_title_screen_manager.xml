@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_title_screen_manager" kind="class" language="C#" prot="public">
+    <compoundname>TitleScreenManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_title_screen_manager_1a90324475b81e1f65b61b09508779f9f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager.StartNetworkAsHost</definition>
+        <argsstring>()</argsstring>
+        <name>StartNetworkAsHost</name>
+        <qualifiedname>TitleScreenManager.StartNetworkAsHost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" line="8" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_manager_1ae6f20d62f9a9ef2144f2db08b7603dbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager.StartNewGame</definition>
+        <argsstring>()</argsstring>
+        <name>StartNewGame</name>
+        <qualifiedname>TitleScreenManager.StartNewGame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" line="14" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" bodystart="14" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TitleScreenManager</label>
+        <link refid="class_title_screen_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TitleScreenManager</label>
+        <link refid="class_title_screen_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" line="6" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene/TitleScreenManager.cs" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_title_screen_manager_1a90324475b81e1f65b61b09508779f9f5" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>StartNetworkAsHost</name></member>
+      <member refid="class_title_screen_manager_1ae6f20d62f9a9ef2144f2db08b7603dbf" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>StartNewGame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

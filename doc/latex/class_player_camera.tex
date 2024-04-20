@@ -1,0 +1,106 @@
+\doxysection{Player\+Camera Class Reference}
+\hypertarget{class_player_camera}{}\label{class_player_camera}\index{PlayerCamera@{PlayerCamera}}
+Inheritance diagram for Player\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_camera}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_camera_a56a59d93133d673ac93b296497533878}{Handle\+All\+Camera\+Actions}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_manager}{Player\+Manager}} \mbox{\hyperlink{class_player_camera_a435b7302a8d585d182d8a81d676aff94}{player}}
+\item 
+Camera \mbox{\hyperlink{class_player_camera_a0af0df9bedb923cd0291a4f45b952e45}{camera\+Object}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_player_camera}{Player\+Camera}} \mbox{\hyperlink{class_player_camera_a4dd46e41ba7bc595c71573863f579581}{instance}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_camera_a6f129f9d66892cf076dd48dafad67cd0}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_player_camera_a31bf97e8c2d69434a4c6d45c883aa441}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_player_camera_a326040fe8b08ec784a6eb6a59efb68dd}{Follow\+Target}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_player_camera_a35ddfc9a4b61cdb033dbe888a8f6e2c4}{camera\+Velocity}}
+\item 
+float \mbox{\hyperlink{class_player_camera_a085fbb37029f18e909c039cf2b9f09c4}{camera\+Smooth\+Speed}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_camera_a6f129f9d66892cf076dd48dafad67cd0}\label{class_player_camera_a6f129f9d66892cf076dd48dafad67cd0} 
+\index{PlayerCamera@{PlayerCamera}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Camera.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_camera_a326040fe8b08ec784a6eb6a59efb68dd}\label{class_player_camera_a326040fe8b08ec784a6eb6a59efb68dd} 
+\index{PlayerCamera@{PlayerCamera}!FollowTarget@{FollowTarget}}
+\index{FollowTarget@{FollowTarget}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{FollowTarget()}{FollowTarget()}}
+{\footnotesize\ttfamily void Player\+Camera.\+Follow\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_camera_a56a59d93133d673ac93b296497533878}\label{class_player_camera_a56a59d93133d673ac93b296497533878} 
+\index{PlayerCamera@{PlayerCamera}!HandleAllCameraActions@{HandleAllCameraActions}}
+\index{HandleAllCameraActions@{HandleAllCameraActions}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{HandleAllCameraActions()}{HandleAllCameraActions()}}
+{\footnotesize\ttfamily void Player\+Camera.\+Handle\+All\+Camera\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_player_camera_a31bf97e8c2d69434a4c6d45c883aa441}\label{class_player_camera_a31bf97e8c2d69434a4c6d45c883aa441} 
+\index{PlayerCamera@{PlayerCamera}!Start@{Start}}
+\index{Start@{Start}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Player\+Camera.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_camera_a0af0df9bedb923cd0291a4f45b952e45}\label{class_player_camera_a0af0df9bedb923cd0291a4f45b952e45} 
+\index{PlayerCamera@{PlayerCamera}!cameraObject@{cameraObject}}
+\index{cameraObject@{cameraObject}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{cameraObject}{cameraObject}}
+{\footnotesize\ttfamily Camera Player\+Camera.\+camera\+Object}
+
+\Hypertarget{class_player_camera_a085fbb37029f18e909c039cf2b9f09c4}\label{class_player_camera_a085fbb37029f18e909c039cf2b9f09c4} 
+\index{PlayerCamera@{PlayerCamera}!cameraSmoothSpeed@{cameraSmoothSpeed}}
+\index{cameraSmoothSpeed@{cameraSmoothSpeed}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{cameraSmoothSpeed}{cameraSmoothSpeed}}
+{\footnotesize\ttfamily float Player\+Camera.\+camera\+Smooth\+Speed = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_camera_a35ddfc9a4b61cdb033dbe888a8f6e2c4}\label{class_player_camera_a35ddfc9a4b61cdb033dbe888a8f6e2c4} 
+\index{PlayerCamera@{PlayerCamera}!cameraVelocity@{cameraVelocity}}
+\index{cameraVelocity@{cameraVelocity}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{cameraVelocity}{cameraVelocity}}
+{\footnotesize\ttfamily Vector3 Player\+Camera.\+camera\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_camera_a4dd46e41ba7bc595c71573863f579581}\label{class_player_camera_a4dd46e41ba7bc595c71573863f579581} 
+\index{PlayerCamera@{PlayerCamera}!instance@{instance}}
+\index{instance@{instance}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_camera}{Player\+Camera}} Player\+Camera.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_player_camera_a435b7302a8d585d182d8a81d676aff94}\label{class_player_camera_a435b7302a8d585d182d8a81d676aff94} 
+\index{PlayerCamera@{PlayerCamera}!player@{player}}
+\index{player@{player}!PlayerCamera@{PlayerCamera}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_manager}{Player\+Manager}} Player\+Camera.\+player}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Character/\+Player/\mbox{\hyperlink{_player_camera_8cs}{Player\+Camera.\+cs}}\end{DoxyCompactItemize}

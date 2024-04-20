@@ -1,0 +1,41 @@
+.TH "PlayerNetworkManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerNetworkManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCharacterNetworkManager\fP\&.
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBCharacterNetworkManager\fP
+.in +1c
+.ti -1c
+.RI "NetworkVariable< Vector3 > \fBnetworkPosition\fP = new NetworkVariable<Vector3>(Vector3\&.zero, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "NetworkVariable< Quaternion > \fBnetworkRotation\fP = new NetworkVariable<Quaternion>(Quaternion\&.identity, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "Vector3 \fBnetworkPositionVelocity\fP"
+.br
+.ti -1c
+.RI "float \fBnetworkPositionSmoothTime\fP = 0\&.1f"
+.br
+.ti -1c
+.RI "float \fBnetworkRotationSmoothTime\fP = 0\&.1f"
+.br
+.ti -1c
+.RI "NetworkVariable< bool > \fBisRunning\fP = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "NetworkVariable< bool > \fBisWalking\fP = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

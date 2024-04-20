@@ -1,0 +1,87 @@
+.TH "BlohaMove" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BlohaMove \- Hunts for the nearest player\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEntityMove\fP\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override Transform \fBfindTarget\fP ()"
+.br
+.RI "Finding nearest players\&. "
+.in -1c
+
+Protected Member Functions inherited from \fBEntityMove\fP
+.in +1c
+.ti -1c
+.RI "Transform \fBfindTarget\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "GameObject[] \fBplayers\fP"
+.br
+.RI "Making array of all players as we will hunt for them\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Member Functions inherited from \fBEntityMove\fP
+.in +1c
+.ti -1c
+.RI "void \fBmoveTowards\fP (Transform target)"
+.br
+.RI "Setting destination for movement AI\&. "
+.in -1c
+
+Public Attributes inherited from \fBEntityMove\fP
+.in +1c
+.ti -1c
+.RI "bool \fBtargetIsClose\fP"
+.br
+.ti -1c
+.RI "LayerMask \fBwhatIsGround\fP"
+.br
+.ti -1c
+.RI "LayerMask \fBwhatIsPlayer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Hunts for the nearest player\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "override Transform BlohaMove\&.findTarget ()\fR [protected]\fP"
+
+.PP
+Finding nearest players\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+Finding available players to hunt for
+.PP
+Calculating which player is closest to our position
+.PP
+If player is found succeccsfully, move to it
+.SH "Member Data Documentation"
+.PP 
+.SS "GameObject [] BlohaMove\&.players\fR [private]\fP"
+
+.PP
+Making array of all players as we will hunt for them\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_character_locomotion_manager" kind="class" language="C#" prot="public">
+    <compoundname>CharacterLocomotionManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_player_locomotion_manager" prot="public" virt="non-virtual">PlayerLocomotionManager</derivedcompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_character_locomotion_manager_1ab2408d5d88ca4ebc77b3de5ab22fa808" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterLocomotionManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>CharacterLocomotionManager.Awake</qualifiedname>
+        <reimplementedby refid="class_player_locomotion_manager_1aac6ccc5933d016cc63513f40db9b9fa3">Awake</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" line="8" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_character_locomotion_manager_1a41cc58b441495c3e63d2d5bb157ab817" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterLocomotionManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>CharacterLocomotionManager.Update</qualifiedname>
+        <reimplementedby refid="class_player_locomotion_manager_1add3e9fa7f2bf9c69801ec39b93bf4805">Update</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" line="13" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CharacterLocomotionManager</label>
+        <link refid="class_character_locomotion_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>PlayerLocomotionManager</label>
+        <link refid="class_player_locomotion_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CharacterLocomotionManager</label>
+        <link refid="class_character_locomotion_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" line="6" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/CharacterLocomotionManager.cs" bodystart="7" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_character_locomotion_manager_1ab2408d5d88ca4ebc77b3de5ab22fa808" prot="protected" virt="virtual"><scope>CharacterLocomotionManager</scope><name>Awake</name></member>
+      <member refid="class_character_locomotion_manager_1a41cc58b441495c3e63d2d5bb157ab817" prot="protected" virt="virtual"><scope>CharacterLocomotionManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

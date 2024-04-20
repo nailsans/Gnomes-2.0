@@ -1,0 +1,113 @@
+.TH "EntityDamagable" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EntityDamagable \- Class for working with states of Entities that can be damaged\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtakeDamage\fP (int damage)"
+.br
+.RI "Taking damaged is called by the thing that attack Entity\&. "
+.ti -1c
+.RI "void \fBcallDeath\fP ()"
+.br
+.RI "Death method\&. "
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAwake\fP ()"
+.br
+.RI "Getting components\&. "
+.ti -1c
+.RI "IEnumerator \fBIPlayDamageAnimation\fP ()"
+.br
+.RI "Plaiying damage animation\&. "
+.ti -1c
+.RI "IEnumerator \fBIPlayDeathAnimation\fP ()"
+.br
+.RI "Animation corroutine\&. "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBhealth\fP = 5"
+.br
+.ti -1c
+.RI "GameObject \fBmodel\fP"
+.br
+.ti -1c
+.RI "Quaternion \fBstartRotation\fP"
+.br
+.ti -1c
+.RI "Vector3 \fBstartPos\fP"
+.br
+.ti -1c
+.RI "Animator \fBanimator\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for working with states of Entities that can be damaged\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void EntityDamagable\&.Awake ()\fR [private]\fP"
+
+.PP
+Getting components\&. 
+.SS "void EntityDamagable\&.callDeath ()"
+
+.PP
+Death method\&. 
+.SS "IEnumerator EntityDamagable\&.IPlayDamageAnimation ()\fR [private]\fP"
+
+.PP
+Plaiying damage animation\&. 
+.SS "IEnumerator EntityDamagable\&.IPlayDeathAnimation ()\fR [private]\fP"
+
+.PP
+Animation corroutine\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+After three seconds of animation being played, removing the object of dead entity
+.SS "void EntityDamagable\&.takeDamage (int damage)"
+
+.PP
+Taking damaged is called by the thing that attack Entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdamage\fP 
+.RE
+.PP
+If no hp is left, execute death
+.SH "Member Data Documentation"
+.PP 
+.SS "Animator EntityDamagable\&.animator\fR [private]\fP"
+
+.SS "int EntityDamagable\&.health = 5\fR [private]\fP"
+
+.SS "GameObject EntityDamagable\&.model\fR [private]\fP"
+
+.SS "Vector3 EntityDamagable\&.startPos\fR [private]\fP"
+
+.SS "Quaternion EntityDamagable\&.startRotation\fR [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

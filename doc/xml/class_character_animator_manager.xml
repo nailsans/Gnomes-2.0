@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_character_animator_manager" kind="class" language="C#" prot="public">
+    <compoundname>CharacterAnimatorManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_player_animator_manager" prot="public" virt="non-virtual">PlayerAnimatorManager</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_character_animator_manager_1a19bd680781bdeb33f48b56026b13aa8f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_character_manager" kindref="compound">CharacterManager</ref></type>
+        <definition>CharacterManager CharacterAnimatorManager.character</definition>
+        <argsstring></argsstring>
+        <name>character</name>
+        <qualifiedname>CharacterAnimatorManager.character</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" line="7" column="22" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_character_animator_manager_1aed3334e87bc9e673a97f3664b4c8c64f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CharacterAnimatorManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>CharacterAnimatorManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" line="9" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_character_animator_manager_1a3bd84d4d9a102c36038eefecfc66260e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CharacterAnimatorManager.UpdateAnimatorParameter</definition>
+        <argsstring>(string parameterName, bool value)</argsstring>
+        <name>UpdateAnimatorParameter</name>
+        <qualifiedname>CharacterAnimatorManager.UpdateAnimatorParameter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>parameterName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" line="13" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" bodystart="13" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="4">
+        <label>NetworkBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterAnimatorManager.cs" bodystart="6" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_character_animator_manager_1aed3334e87bc9e673a97f3664b4c8c64f" prot="protected" virt="virtual"><scope>CharacterAnimatorManager</scope><name>Awake</name></member>
+      <member refid="class_character_animator_manager_1a19bd680781bdeb33f48b56026b13aa8f" prot="private" virt="non-virtual"><scope>CharacterAnimatorManager</scope><name>character</name></member>
+      <member refid="class_character_animator_manager_1a3bd84d4d9a102c36038eefecfc66260e" prot="public" virt="non-virtual"><scope>CharacterAnimatorManager</scope><name>UpdateAnimatorParameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

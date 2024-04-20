@@ -1,0 +1,163 @@
+\doxysection{Entity\+Attack Class Reference}
+\hypertarget{class_entity_attack}{}\label{class_entity_attack}\index{EntityAttack@{EntityAttack}}
+Inheritance diagram for Entity\+Attack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity_attack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_attack_ac132e233dca12d2202918b200c631e33}{start\+Attacking}} (Collider other)
+\begin{DoxyCompactList}\small\item\em Called when something is in sight of our attack field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_attack_aa4d19209fa0538685b8669c2c74a5678}{Stop\+Attacking}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_attack_a1283d929e81be256abc4cc376370eb41}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Getting components. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_entity_attack_a2501e71b4f550ad51b55ceff3523e311}{IAttack\+Cycle}} (Collider other)
+\begin{DoxyCompactList}\small\item\em Attacking target every time as cooldowm passes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_entity_attack_a186018fc48324e68d4a94b0f54b111e1}{attacks\+Players}} = true
+\begin{DoxyCompactList}\small\item\em A script applied on entity that allows to implement attack for it. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_attack_a4619f6b92b00108e0c387a511c66c8f0}{attacks\+Peneks}} = false
+\item 
+int \mbox{\hyperlink{class_entity_attack_a038d118041d8a3b428bef017461159d1}{damage}} = 3
+\item 
+Game\+Object \mbox{\hyperlink{class_entity_attack_a62bfa40288e81fac651dab805b06d66f}{model}}
+\item 
+Animator \mbox{\hyperlink{class_entity_attack_a73a04c82288f7af9e9cc4f9a66cb8874}{animator}}
+\item 
+\mbox{\hyperlink{class_entity_move}{Entity\+Move}} \mbox{\hyperlink{class_entity_attack_ace61721c5dde7265c73ca417c7dd0b3a}{\+\_\+entity\+Move}}
+\item 
+Game\+Object \mbox{\hyperlink{class_entity_attack_a1ed682e6fcb799522450a821c239ffa9}{attack\+Area}} = default(Game\+Object)
+\item 
+bool \mbox{\hyperlink{class_entity_attack_a204743fbf0d5e82ac89906c4f6c6e4b2}{is\+Attacking}} = false
+\item 
+float \mbox{\hyperlink{class_entity_attack_af97f49047f52d7a307c4e0862aeed18e}{time\+To\+Attack}} = 0.\+65f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_entity_attack_a1283d929e81be256abc4cc376370eb41}\label{class_entity_attack_a1283d929e81be256abc4cc376370eb41} 
+\index{EntityAttack@{EntityAttack}!Awake@{Awake}}
+\index{Awake@{Awake}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Entity\+Attack.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Getting components. 
+
+\Hypertarget{class_entity_attack_a2501e71b4f550ad51b55ceff3523e311}\label{class_entity_attack_a2501e71b4f550ad51b55ceff3523e311} 
+\index{EntityAttack@{EntityAttack}!IAttackCycle@{IAttackCycle}}
+\index{IAttackCycle@{IAttackCycle}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{IAttackCycle()}{IAttackCycle()}}
+{\footnotesize\ttfamily IEnumerator Entity\+Attack.\+IAttack\+Cycle (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Attacking target every time as cooldowm passes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_entity_attack_ac132e233dca12d2202918b200c631e33}\label{class_entity_attack_ac132e233dca12d2202918b200c631e33} 
+\index{EntityAttack@{EntityAttack}!startAttacking@{startAttacking}}
+\index{startAttacking@{startAttacking}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{startAttacking()}{startAttacking()}}
+{\footnotesize\ttfamily void Entity\+Attack.\+start\+Attacking (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})}
+
+
+
+Called when something is in sight of our attack field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+If our entity is not attacking nothing, cancel attacking script
+
+Making Entity\+Mover stop moving as now we are going to attack\Hypertarget{class_entity_attack_aa4d19209fa0538685b8669c2c74a5678}\label{class_entity_attack_aa4d19209fa0538685b8669c2c74a5678} 
+\index{EntityAttack@{EntityAttack}!StopAttacking@{StopAttacking}}
+\index{StopAttacking@{StopAttacking}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{StopAttacking()}{StopAttacking()}}
+{\footnotesize\ttfamily void Entity\+Attack.\+Stop\+Attacking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_entity_attack_ace61721c5dde7265c73ca417c7dd0b3a}\label{class_entity_attack_ace61721c5dde7265c73ca417c7dd0b3a} 
+\index{EntityAttack@{EntityAttack}!\_entityMove@{\_entityMove}}
+\index{\_entityMove@{\_entityMove}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{\_entityMove}{\_entityMove}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity_move}{Entity\+Move}} Entity\+Attack.\+\_\+entity\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a73a04c82288f7af9e9cc4f9a66cb8874}\label{class_entity_attack_a73a04c82288f7af9e9cc4f9a66cb8874} 
+\index{EntityAttack@{EntityAttack}!animator@{animator}}
+\index{animator@{animator}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Entity\+Attack.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a1ed682e6fcb799522450a821c239ffa9}\label{class_entity_attack_a1ed682e6fcb799522450a821c239ffa9} 
+\index{EntityAttack@{EntityAttack}!attackArea@{attackArea}}
+\index{attackArea@{attackArea}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{attackArea}{attackArea}}
+{\footnotesize\ttfamily Game\+Object Entity\+Attack.\+attack\+Area = default(Game\+Object)\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a4619f6b92b00108e0c387a511c66c8f0}\label{class_entity_attack_a4619f6b92b00108e0c387a511c66c8f0} 
+\index{EntityAttack@{EntityAttack}!attacksPeneks@{attacksPeneks}}
+\index{attacksPeneks@{attacksPeneks}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{attacksPeneks}{attacksPeneks}}
+{\footnotesize\ttfamily bool Entity\+Attack.\+attacks\+Peneks = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a186018fc48324e68d4a94b0f54b111e1}\label{class_entity_attack_a186018fc48324e68d4a94b0f54b111e1} 
+\index{EntityAttack@{EntityAttack}!attacksPlayers@{attacksPlayers}}
+\index{attacksPlayers@{attacksPlayers}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{attacksPlayers}{attacksPlayers}}
+{\footnotesize\ttfamily bool Entity\+Attack.\+attacks\+Players = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A script applied on entity that allows to implement attack for it. 
+
+\Hypertarget{class_entity_attack_a038d118041d8a3b428bef017461159d1}\label{class_entity_attack_a038d118041d8a3b428bef017461159d1} 
+\index{EntityAttack@{EntityAttack}!damage@{damage}}
+\index{damage@{damage}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Entity\+Attack.\+damage = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a204743fbf0d5e82ac89906c4f6c6e4b2}\label{class_entity_attack_a204743fbf0d5e82ac89906c4f6c6e4b2} 
+\index{EntityAttack@{EntityAttack}!isAttacking@{isAttacking}}
+\index{isAttacking@{isAttacking}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{isAttacking}{isAttacking}}
+{\footnotesize\ttfamily bool Entity\+Attack.\+is\+Attacking = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_a62bfa40288e81fac651dab805b06d66f}\label{class_entity_attack_a62bfa40288e81fac651dab805b06d66f} 
+\index{EntityAttack@{EntityAttack}!model@{model}}
+\index{model@{model}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Game\+Object Entity\+Attack.\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_attack_af97f49047f52d7a307c4e0862aeed18e}\label{class_entity_attack_af97f49047f52d7a307c4e0862aeed18e} 
+\index{EntityAttack@{EntityAttack}!timeToAttack@{timeToAttack}}
+\index{timeToAttack@{timeToAttack}!EntityAttack@{EntityAttack}}
+\doxysubsubsection{\texorpdfstring{timeToAttack}{timeToAttack}}
+{\footnotesize\ttfamily float Entity\+Attack.\+time\+To\+Attack = 0.\+65f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Entity/\mbox{\hyperlink{_entity_attack_8cs}{Entity\+Attack.\+cs}}\end{DoxyCompactItemize}

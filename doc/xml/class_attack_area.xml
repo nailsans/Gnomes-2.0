@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_attack_area" kind="class" language="C#" prot="public">
+    <compoundname>AttackArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attack_area_1af9b9fe2de5d835c36614896014e6069c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AttackArea.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <qualifiedname>AttackArea.damage</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" line="7" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attack_area_1a67992ff5fce4b13ad34af4f4490e19cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AttackArea.OnTriggerEnter</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerEnter</name>
+        <qualifiedname>AttackArea.OnTriggerEnter</qualifiedname>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>WHen something is in field of view, we check if it is enemy and of so we attack it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" line="10" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" bodystart="10" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AttackArea</label>
+        <link refid="class_attack_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AttackArea</label>
+        <link refid="class_attack_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight/AttackArea.cs" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_attack_area_1af9b9fe2de5d835c36614896014e6069c" prot="private" virt="non-virtual"><scope>AttackArea</scope><name>damage</name></member>
+      <member refid="class_attack_area_1a67992ff5fce4b13ad34af4f4490e19cd" prot="private" virt="non-virtual"><scope>AttackArea</scope><name>OnTriggerEnter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

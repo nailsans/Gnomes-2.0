@@ -1,0 +1,132 @@
+.TH "PlayerLocomotionManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerLocomotionManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCharacterLocomotionManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHandleAllMovement\fP ()"
+.br
+.ti -1c
+.RI "void \fBHandleRunning\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBverticalMovement\fP"
+.br
+.ti -1c
+.RI "float \fBhorizontalMovement\fP"
+.br
+.ti -1c
+.RI "bool \fBisShiftPressed\fP"
+.br
+.ti -1c
+.RI "bool \fBisWalking\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "override void \fBUpdate\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGetMotionInputs\fP ()"
+.br
+.ti -1c
+.RI "void \fBHandleMovement\fP ()"
+.br
+.ti -1c
+.RI "Vector3 \fBgetMousePos\fP ()"
+.br
+.ti -1c
+.RI "void \fBHandleRotation\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayerManager\fP \fBplayer\fP"
+.br
+.ti -1c
+.RI "Vector3 \fBmoveDirection\fP"
+.br
+.ti -1c
+.RI "Vector3 \fBtargetRotationDirection\fP"
+.br
+.ti -1c
+.RI "float \fBwalkingSpeed\fP = 2"
+.br
+.ti -1c
+.RI "float \fBrunningSpeed\fP = 5"
+.br
+.ti -1c
+.RI "float \fBrotationSpeed\fP = 15"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void PlayerLocomotionManager\&.Awake ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBCharacterLocomotionManager\fP\&.
+.SS "void PlayerLocomotionManager\&.GetMotionInputs ()\fR [private]\fP"
+
+.SS "Vector3 PlayerLocomotionManager\&.getMousePos ()\fR [private]\fP"
+
+.SS "void PlayerLocomotionManager\&.HandleAllMovement ()"
+
+.SS "void PlayerLocomotionManager\&.HandleMovement ()\fR [private]\fP"
+
+.SS "void PlayerLocomotionManager\&.HandleRotation ()\fR [private]\fP"
+
+.SS "void PlayerLocomotionManager\&.HandleRunning ()"
+
+.SS "override void PlayerLocomotionManager\&.Update ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBCharacterLocomotionManager\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float PlayerLocomotionManager\&.horizontalMovement"
+
+.SS "bool PlayerLocomotionManager\&.isShiftPressed"
+
+.SS "bool PlayerLocomotionManager\&.isWalking"
+
+.SS "Vector3 PlayerLocomotionManager\&.moveDirection\fR [private]\fP"
+
+.SS "\fBPlayerManager\fP PlayerLocomotionManager\&.player\fR [private]\fP"
+
+.SS "float PlayerLocomotionManager\&.rotationSpeed = 15\fR [private]\fP"
+
+.SS "float PlayerLocomotionManager\&.runningSpeed = 5\fR [private]\fP"
+
+.SS "Vector3 PlayerLocomotionManager\&.targetRotationDirection\fR [private]\fP"
+
+.SS "float PlayerLocomotionManager\&.verticalMovement"
+
+.SS "float PlayerLocomotionManager\&.walkingSpeed = 2\fR [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

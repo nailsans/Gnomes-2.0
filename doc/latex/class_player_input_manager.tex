@@ -1,0 +1,198 @@
+\doxysection{Player\+Input\+Manager Class Reference}
+\hypertarget{class_player_input_manager}{}\label{class_player_input_manager}\index{PlayerInputManager@{PlayerInputManager}}
+Inheritance diagram for Player\+Input\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_input_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_manager}{Player\+Manager}} \mbox{\hyperlink{class_player_input_manager_aa4457d20dca8cd011bf22dc82f479462}{player}}
+\item 
+float \mbox{\hyperlink{class_player_input_manager_afabcc6d82a7b089a17e6503843a19024}{horizontal\+Input}}
+\item 
+float \mbox{\hyperlink{class_player_input_manager_a9c7c0f38743cb6ef3544505e67e01705}{vertical\+Input}}
+\item 
+bool \mbox{\hyperlink{class_player_input_manager_afd756473bdb5b16644e2657485d49816}{is\+Walking}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_player_input_manager}{Player\+Input\+Manager}} \mbox{\hyperlink{class_player_input_manager_a06d664e6c5d52b12f13b6a9f9acac103}{instance}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a2a106caaed659f3b291e5344ecddb45a}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_aee88ffcc0eacc5ae55e44fa9bc52916b}{On\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a73ab69a615c299ac412b24f13faa53da}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_ac2aa81a3d75a63c7a61b12b9d0a258ff}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a503d2a89cf9e4df92ed6f31cf49b92da}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a497e4435f2fb9891ef794453586c25ce}{On\+Scene\+Change}} (Scene old\+Scene, Scene new\+Scene)
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a8ab941c5215e354c80ca4d34b3ff2a74}{Handle\+Movement\+Input}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_accf233975c3dca2b2e03a4e6f83a5af6}{Handle\+Running}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_a5f3bec45f43bb1071887c29c3e5b2c29}{Handle\+Attack}} ()
+\item 
+void \mbox{\hyperlink{class_player_input_manager_abf51462c1ff0599629f4609884daa2c8}{On\+Application\+Focus}} (bool focus)
+\begin{DoxyCompactList}\small\item\em If we minimize or lower the window, stop adjusting inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_input_actions}{Player\+Input\+Actions}} \mbox{\hyperlink{class_player_input_manager_a10811b8142efe2b21deba30c75692abf}{player\+Input\+Actions}}
+\item 
+Vector2 \mbox{\hyperlink{class_player_input_manager_a952eb80261c666553438889dddfaa1bd}{movement\+Input}}
+\item 
+bool \mbox{\hyperlink{class_player_input_manager_a84b0f8e87be1add90cc831b952bf2d7f}{sprint\+Input}} = false
+\item 
+bool \mbox{\hyperlink{class_player_input_manager_a6125fb711b5de4bbdefe785321678bf3}{attack\+Input}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_input_manager_a73ab69a615c299ac412b24f13faa53da}\label{class_player_input_manager_a73ab69a615c299ac412b24f13faa53da} 
+\index{PlayerInputManager@{PlayerInputManager}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_a5f3bec45f43bb1071887c29c3e5b2c29}\label{class_player_input_manager_a5f3bec45f43bb1071887c29c3e5b2c29} 
+\index{PlayerInputManager@{PlayerInputManager}!HandleAttack@{HandleAttack}}
+\index{HandleAttack@{HandleAttack}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{HandleAttack()}{HandleAttack()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Handle\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_a8ab941c5215e354c80ca4d34b3ff2a74}\label{class_player_input_manager_a8ab941c5215e354c80ca4d34b3ff2a74} 
+\index{PlayerInputManager@{PlayerInputManager}!HandleMovementInput@{HandleMovementInput}}
+\index{HandleMovementInput@{HandleMovementInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{HandleMovementInput()}{HandleMovementInput()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Handle\+Movement\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_accf233975c3dca2b2e03a4e6f83a5af6}\label{class_player_input_manager_accf233975c3dca2b2e03a4e6f83a5af6} 
+\index{PlayerInputManager@{PlayerInputManager}!HandleRunning@{HandleRunning}}
+\index{HandleRunning@{HandleRunning}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{HandleRunning()}{HandleRunning()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Handle\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_abf51462c1ff0599629f4609884daa2c8}\label{class_player_input_manager_abf51462c1ff0599629f4609884daa2c8} 
+\index{PlayerInputManager@{PlayerInputManager}!OnApplicationFocus@{OnApplicationFocus}}
+\index{OnApplicationFocus@{OnApplicationFocus}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{OnApplicationFocus()}{OnApplicationFocus()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+On\+Application\+Focus (\begin{DoxyParamCaption}\item[{bool}]{focus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If we minimize or lower the window, stop adjusting inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em focus} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_input_manager_aee88ffcc0eacc5ae55e44fa9bc52916b}\label{class_player_input_manager_aee88ffcc0eacc5ae55e44fa9bc52916b} 
+\index{PlayerInputManager@{PlayerInputManager}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Unsubscribe from the event\Hypertarget{class_player_input_manager_a2a106caaed659f3b291e5344ecddb45a}\label{class_player_input_manager_a2a106caaed659f3b291e5344ecddb45a} 
+\index{PlayerInputManager@{PlayerInputManager}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Holding the run button, sets bool to true
+
+Realising the run button, sets bool to false
+
+attack button\Hypertarget{class_player_input_manager_a497e4435f2fb9891ef794453586c25ce}\label{class_player_input_manager_a497e4435f2fb9891ef794453586c25ce} 
+\index{PlayerInputManager@{PlayerInputManager}!OnSceneChange@{OnSceneChange}}
+\index{OnSceneChange@{OnSceneChange}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{OnSceneChange()}{OnSceneChange()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+On\+Scene\+Change (\begin{DoxyParamCaption}\item[{Scene}]{old\+Scene,  }\item[{Scene}]{new\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+If we are loading into world scene, enable player controls
+
+Otherwise we must be at the main menu, disable player conrols\Hypertarget{class_player_input_manager_ac2aa81a3d75a63c7a61b12b9d0a258ff}\label{class_player_input_manager_ac2aa81a3d75a63c7a61b12b9d0a258ff} 
+\index{PlayerInputManager@{PlayerInputManager}!Start@{Start}}
+\index{Start@{Start}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+When the scene changes, this logic running\Hypertarget{class_player_input_manager_a503d2a89cf9e4df92ed6f31cf49b92da}\label{class_player_input_manager_a503d2a89cf9e4df92ed6f31cf49b92da} 
+\index{PlayerInputManager@{PlayerInputManager}!Update@{Update}}
+\index{Update@{Update}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Input\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_input_manager_a6125fb711b5de4bbdefe785321678bf3}\label{class_player_input_manager_a6125fb711b5de4bbdefe785321678bf3} 
+\index{PlayerInputManager@{PlayerInputManager}!attackInput@{attackInput}}
+\index{attackInput@{attackInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{attackInput}{attackInput}}
+{\footnotesize\ttfamily bool Player\+Input\+Manager.\+attack\+Input = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_afabcc6d82a7b089a17e6503843a19024}\label{class_player_input_manager_afabcc6d82a7b089a17e6503843a19024} 
+\index{PlayerInputManager@{PlayerInputManager}!horizontalInput@{horizontalInput}}
+\index{horizontalInput@{horizontalInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{horizontalInput}{horizontalInput}}
+{\footnotesize\ttfamily float Player\+Input\+Manager.\+horizontal\+Input}
+
+\Hypertarget{class_player_input_manager_a06d664e6c5d52b12f13b6a9f9acac103}\label{class_player_input_manager_a06d664e6c5d52b12f13b6a9f9acac103} 
+\index{PlayerInputManager@{PlayerInputManager}!instance@{instance}}
+\index{instance@{instance}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_input_manager}{Player\+Input\+Manager}} Player\+Input\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_player_input_manager_afd756473bdb5b16644e2657485d49816}\label{class_player_input_manager_afd756473bdb5b16644e2657485d49816} 
+\index{PlayerInputManager@{PlayerInputManager}!isWalking@{isWalking}}
+\index{isWalking@{isWalking}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{isWalking}{isWalking}}
+{\footnotesize\ttfamily bool Player\+Input\+Manager.\+is\+Walking}
+
+\Hypertarget{class_player_input_manager_a952eb80261c666553438889dddfaa1bd}\label{class_player_input_manager_a952eb80261c666553438889dddfaa1bd} 
+\index{PlayerInputManager@{PlayerInputManager}!movementInput@{movementInput}}
+\index{movementInput@{movementInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{movementInput}{movementInput}}
+{\footnotesize\ttfamily Vector2 Player\+Input\+Manager.\+movement\+Input\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_aa4457d20dca8cd011bf22dc82f479462}\label{class_player_input_manager_aa4457d20dca8cd011bf22dc82f479462} 
+\index{PlayerInputManager@{PlayerInputManager}!player@{player}}
+\index{player@{player}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_manager}{Player\+Manager}} Player\+Input\+Manager.\+player}
+
+\Hypertarget{class_player_input_manager_a10811b8142efe2b21deba30c75692abf}\label{class_player_input_manager_a10811b8142efe2b21deba30c75692abf} 
+\index{PlayerInputManager@{PlayerInputManager}!playerInputActions@{playerInputActions}}
+\index{playerInputActions@{playerInputActions}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{playerInputActions}{playerInputActions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_input_actions}{Player\+Input\+Actions}} Player\+Input\+Manager.\+player\+Input\+Actions\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_a84b0f8e87be1add90cc831b952bf2d7f}\label{class_player_input_manager_a84b0f8e87be1add90cc831b952bf2d7f} 
+\index{PlayerInputManager@{PlayerInputManager}!sprintInput@{sprintInput}}
+\index{sprintInput@{sprintInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{sprintInput}{sprintInput}}
+{\footnotesize\ttfamily bool Player\+Input\+Manager.\+sprint\+Input = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_player_input_manager_a9c7c0f38743cb6ef3544505e67e01705}\label{class_player_input_manager_a9c7c0f38743cb6ef3544505e67e01705} 
+\index{PlayerInputManager@{PlayerInputManager}!verticalInput@{verticalInput}}
+\index{verticalInput@{verticalInput}!PlayerInputManager@{PlayerInputManager}}
+\doxysubsubsection{\texorpdfstring{verticalInput}{verticalInput}}
+{\footnotesize\ttfamily float Player\+Input\+Manager.\+vertical\+Input}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\mbox{\hyperlink{_player_input_manager_8cs}{Player\+Input\+Manager.\+cs}}\end{DoxyCompactItemize}

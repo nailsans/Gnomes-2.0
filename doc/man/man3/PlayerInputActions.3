@@ -1,0 +1,153 @@
+.TH "PlayerInputActions" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerInputActions
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits IInputActionCollection2, and IDisposable\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "interface \fBIPlayerActions\fP"
+.br
+.ti -1c
+.RI "struct \fBPlayerActions\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayerInputActions\fP ()"
+.br
+.ti -1c
+.RI "void \fBDispose\fP ()"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (InputAction action)"
+.br
+.ti -1c
+.RI "IEnumerator< InputAction > \fBGetEnumerator\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnable\fP ()"
+.br
+.ti -1c
+.RI "void \fBDisable\fP ()"
+.br
+.ti -1c
+.RI "InputAction \fBFindAction\fP (string actionNameOrId, bool throwIfNotFound=false)"
+.br
+.ti -1c
+.RI "int \fBFindBinding\fP (InputBinding \fBbindingMask\fP, out InputAction action)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "InputActionAsset \fBasset\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "InputBinding? \fBbindingMask\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyArray< InputDevice >? \fBdevices\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "ReadOnlyArray< InputControlScheme > \fBcontrolSchemes\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "IEnumerable< InputBinding > \fBbindings\fP\fR [get]\fP"
+.br
+.ti -1c
+.RI "\fBPlayerActions\fP \fBPlayer\fP\fR [get]\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "IEnumerator IEnumerable\&. \fBGetEnumerator\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "readonly InputActionMap \fBm_Player\fP"
+.br
+.ti -1c
+.RI "List< \fBIPlayerActions\fP > \fBm_PlayerActionsCallbackInterfaces\fP = new List<\fBIPlayerActions\fP>()"
+.br
+.ti -1c
+.RI "readonly InputAction \fBm_Player_Move\fP"
+.br
+.ti -1c
+.RI "readonly InputAction \fBm_Player_Jump\fP"
+.br
+.ti -1c
+.RI "readonly InputAction \fBm_Player_Attack\fP"
+.br
+.ti -1c
+.RI "readonly InputAction \fBm_Player_Run\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlayerInputActions\&.PlayerInputActions ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool PlayerInputActions\&.Contains (InputAction action)"
+
+.SS "void PlayerInputActions\&.Disable ()"
+
+.SS "void PlayerInputActions\&.Dispose ()"
+
+.SS "void PlayerInputActions\&.Enable ()"
+
+.SS "InputAction PlayerInputActions\&.FindAction (string actionNameOrId, bool throwIfNotFound = \fRfalse\fP)"
+
+.SS "int PlayerInputActions\&.FindBinding (InputBinding bindingMask, out InputAction action)"
+
+.SS "IEnumerator< InputAction > PlayerInputActions\&.GetEnumerator ()"
+
+.SS "IEnumerator IEnumerable\&. PlayerInputActions\&.GetEnumerator ()\fR [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "readonly InputActionMap PlayerInputActions\&.m_Player\fR [private]\fP"
+
+.SS "readonly InputAction PlayerInputActions\&.m_Player_Attack\fR [private]\fP"
+
+.SS "readonly InputAction PlayerInputActions\&.m_Player_Jump\fR [private]\fP"
+
+.SS "readonly InputAction PlayerInputActions\&.m_Player_Move\fR [private]\fP"
+
+.SS "readonly InputAction PlayerInputActions\&.m_Player_Run\fR [private]\fP"
+
+.SS "List<\fBIPlayerActions\fP> PlayerInputActions\&.m_PlayerActionsCallbackInterfaces = new List<\fBIPlayerActions\fP>()\fR [private]\fP"
+
+.SH "Property Documentation"
+.PP 
+.SS "InputActionAsset PlayerInputActions\&.asset\fR [get]\fP"
+
+.SS "InputBinding? PlayerInputActions\&.bindingMask\fR [get]\fP, \fR [set]\fP"
+
+.SS "IEnumerable<InputBinding> PlayerInputActions\&.bindings\fR [get]\fP"
+
+.SS "ReadOnlyArray<InputControlScheme> PlayerInputActions\&.controlSchemes\fR [get]\fP"
+
+.SS "ReadOnlyArray<InputDevice>? PlayerInputActions\&.devices\fR [get]\fP, \fR [set]\fP"
+
+.SS "\fBPlayerActions\fP PlayerInputActions\&.Player\fR [get]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

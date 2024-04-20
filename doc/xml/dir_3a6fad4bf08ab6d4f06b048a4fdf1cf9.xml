@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_3a6fad4bf08ab6d4f06b048a4fdf1cf9" kind="dir">
+    <compoundname>D:/D/gnom/Gnomes-2.0</compoundname>
+    <innerdir refid="dir_2b1d421b41b36488fc151a8b16038486">D:/D/gnom/Gnomes-2.0/Assets</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/D/gnom/Gnomes-2.0/"/>
+  </compounddef>
+</doxygen>

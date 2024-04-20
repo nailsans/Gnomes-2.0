@@ -1,0 +1,75 @@
+\doxysection{Character\+Network\+Manager Class Reference}
+\hypertarget{class_character_network_manager}{}\label{class_character_network_manager}\index{CharacterNetworkManager@{CharacterNetworkManager}}
+Inheritance diagram for Character\+Network\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_character_network_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Network\+Variable$<$ Vector3 $>$ \mbox{\hyperlink{class_character_network_manager_a538e90113d444a76b4feefdec2fccb2a}{network\+Position}} = new Network\+Variable$<$Vector3$>$(Vector3.\+zero, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)
+\item 
+Network\+Variable$<$ Quaternion $>$ \mbox{\hyperlink{class_character_network_manager_a006ba5f7c470820afb51199bb939e28d}{network\+Rotation}} = new Network\+Variable$<$Quaternion$>$(Quaternion.\+identity, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)
+\item 
+Vector3 \mbox{\hyperlink{class_character_network_manager_a8a330de889f59392daabaaca2ddae1c8}{network\+Position\+Velocity}}
+\item 
+float \mbox{\hyperlink{class_character_network_manager_a063ce91553a3b25846d006aa96e6eda0}{network\+Position\+Smooth\+Time}} = 0.\+1f
+\item 
+float \mbox{\hyperlink{class_character_network_manager_ae63539a31c2d69fc677ceed29ffaa8b1}{network\+Rotation\+Smooth\+Time}} = 0.\+1f
+\item 
+Network\+Variable$<$ bool $>$ \mbox{\hyperlink{class_character_network_manager_aa10cc0e6cc2f23511148bc0c4e6657ca}{is\+Running}} = new Network\+Variable$<$bool$>$(false, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)
+\item 
+Network\+Variable$<$ bool $>$ \mbox{\hyperlink{class_character_network_manager_ac8bfc304080af082ad3a0f3211729bda}{is\+Walking}} = new Network\+Variable$<$bool$>$(false, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_character_network_manager_aa10cc0e6cc2f23511148bc0c4e6657ca}\label{class_character_network_manager_aa10cc0e6cc2f23511148bc0c4e6657ca} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily Network\+Variable$<$bool$>$ Character\+Network\+Manager.\+is\+Running = new Network\+Variable$<$bool$>$(false, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)}
+
+\Hypertarget{class_character_network_manager_ac8bfc304080af082ad3a0f3211729bda}\label{class_character_network_manager_ac8bfc304080af082ad3a0f3211729bda} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!isWalking@{isWalking}}
+\index{isWalking@{isWalking}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{isWalking}{isWalking}}
+{\footnotesize\ttfamily Network\+Variable$<$bool$>$ Character\+Network\+Manager.\+is\+Walking = new Network\+Variable$<$bool$>$(false, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)}
+
+\Hypertarget{class_character_network_manager_a538e90113d444a76b4feefdec2fccb2a}\label{class_character_network_manager_a538e90113d444a76b4feefdec2fccb2a} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!networkPosition@{networkPosition}}
+\index{networkPosition@{networkPosition}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{networkPosition}{networkPosition}}
+{\footnotesize\ttfamily Network\+Variable$<$Vector3$>$ Character\+Network\+Manager.\+network\+Position = new Network\+Variable$<$Vector3$>$(Vector3.\+zero, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)}
+
+\Hypertarget{class_character_network_manager_a063ce91553a3b25846d006aa96e6eda0}\label{class_character_network_manager_a063ce91553a3b25846d006aa96e6eda0} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!networkPositionSmoothTime@{networkPositionSmoothTime}}
+\index{networkPositionSmoothTime@{networkPositionSmoothTime}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{networkPositionSmoothTime}{networkPositionSmoothTime}}
+{\footnotesize\ttfamily float Character\+Network\+Manager.\+network\+Position\+Smooth\+Time = 0.\+1f}
+
+\Hypertarget{class_character_network_manager_a8a330de889f59392daabaaca2ddae1c8}\label{class_character_network_manager_a8a330de889f59392daabaaca2ddae1c8} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!networkPositionVelocity@{networkPositionVelocity}}
+\index{networkPositionVelocity@{networkPositionVelocity}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{networkPositionVelocity}{networkPositionVelocity}}
+{\footnotesize\ttfamily Vector3 Character\+Network\+Manager.\+network\+Position\+Velocity}
+
+\Hypertarget{class_character_network_manager_a006ba5f7c470820afb51199bb939e28d}\label{class_character_network_manager_a006ba5f7c470820afb51199bb939e28d} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!networkRotation@{networkRotation}}
+\index{networkRotation@{networkRotation}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{networkRotation}{networkRotation}}
+{\footnotesize\ttfamily Network\+Variable$<$Quaternion$>$ Character\+Network\+Manager.\+network\+Rotation = new Network\+Variable$<$Quaternion$>$(Quaternion.\+identity, Network\+Variable\+Read\+Permission.\+Everyone, Network\+Variable\+Write\+Permission.\+Owner)}
+
+\Hypertarget{class_character_network_manager_ae63539a31c2d69fc677ceed29ffaa8b1}\label{class_character_network_manager_ae63539a31c2d69fc677ceed29ffaa8b1} 
+\index{CharacterNetworkManager@{CharacterNetworkManager}!networkRotationSmoothTime@{networkRotationSmoothTime}}
+\index{networkRotationSmoothTime@{networkRotationSmoothTime}!CharacterNetworkManager@{CharacterNetworkManager}}
+\doxysubsubsection{\texorpdfstring{networkRotationSmoothTime}{networkRotationSmoothTime}}
+{\footnotesize\ttfamily float Character\+Network\+Manager.\+network\+Rotation\+Smooth\+Time = 0.\+1f}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Character/\mbox{\hyperlink{_character_network_manager_8cs}{Character\+Network\+Manager.\+cs}}\end{DoxyCompactItemize}

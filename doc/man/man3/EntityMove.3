@@ -1,0 +1,110 @@
+.TH "EntityMove" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EntityMove
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.PP
+Inherited by \fBBlohaMove\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmoveTowards\fP (Transform target)"
+.br
+.RI "Setting destination for movement AI\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBtargetIsClose\fP"
+.br
+.ti -1c
+.RI "LayerMask \fBwhatIsGround\fP"
+.br
+.ti -1c
+.RI "LayerMask \fBwhatIsPlayer\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Transform \fBfindTarget\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBAwake\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "NavMeshAgent \fBagent\fP"
+.br
+.ti -1c
+.RI "SphereCollider \fBattackArea\fP"
+.br
+.ti -1c
+.RI "Transform \fBcurrentTarget\fP"
+.br
+.ti -1c
+.RI "Animator \fBanimator\fP"
+.br
+.ti -1c
+.RI "\fBEntityAttackArea\fP \fBentityAttackArea\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void EntityMove\&.Awake ()\fR [private]\fP"
+
+.SS "Transform EntityMove\&.findTarget ()\fR [abstract]\fP, \fR [protected]\fP"
+
+.SS "void EntityMove\&.moveTowards (Transform target)"
+
+.PP
+Setting destination for movement AI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItarget\fP 
+.RE
+.PP
+
+.SS "void EntityMove\&.Update ()\fR [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "NavMeshAgent EntityMove\&.agent\fR [private]\fP"
+
+.SS "Animator EntityMove\&.animator\fR [private]\fP"
+
+.SS "SphereCollider EntityMove\&.attackArea\fR [private]\fP"
+
+.SS "Transform EntityMove\&.currentTarget\fR [private]\fP"
+
+.SS "\fBEntityAttackArea\fP EntityMove\&.entityAttackArea\fR [private]\fP"
+
+.SS "bool EntityMove\&.targetIsClose"
+
+.SS "LayerMask EntityMove\&.whatIsGround"
+
+.SS "LayerMask EntityMove\&.whatIsPlayer"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

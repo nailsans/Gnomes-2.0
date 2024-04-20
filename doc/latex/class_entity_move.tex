@@ -1,0 +1,139 @@
+\doxysection{Entity\+Move Class Reference}
+\hypertarget{class_entity_move}{}\label{class_entity_move}\index{EntityMove@{EntityMove}}
+Inheritance diagram for Entity\+Move\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_entity_move}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_move_a3e458c6f3b9dab7bde0f766b28f22aa8}{move\+Towards}} (Transform target)
+\begin{DoxyCompactList}\small\item\em Setting destination for movement AI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_entity_move_a1bfa0779ad54d2ca26a1c64f2816588c}{target\+Is\+Close}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_entity_move_aa477488cebc77edf578d2c9984f76094}{what\+Is\+Ground}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_entity_move_a1612399cccfa705e25e512e34ca0c0ff}{what\+Is\+Player}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_entity_move_aad7d3ab2aae14f8b6360d362b30ffce9}{find\+Target}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_move_a8be8a207d3b383dc2e3a638584ba2e9d}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_entity_move_ac7434682cd9d82265b3dcf21e815ac45}{Awake}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Nav\+Mesh\+Agent \mbox{\hyperlink{class_entity_move_a8a931962c69fe388a52ea4a4f06052b7}{agent}}
+\item 
+Sphere\+Collider \mbox{\hyperlink{class_entity_move_aea8d846612c86b02d55f3eaaa125a888}{attack\+Area}}
+\item 
+Transform \mbox{\hyperlink{class_entity_move_ae3fb21854615a1e8f189f5c481cfa4ce}{current\+Target}}
+\item 
+Animator \mbox{\hyperlink{class_entity_move_a899adfefc3490d6467f030979ee2399c}{animator}}
+\item 
+\mbox{\hyperlink{class_entity_attack_area}{Entity\+Attack\+Area}} \mbox{\hyperlink{class_entity_move_acc7f015cfede2df7cceafc57790c3d47}{entity\+Attack\+Area}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_entity_move_ac7434682cd9d82265b3dcf21e815ac45}\label{class_entity_move_ac7434682cd9d82265b3dcf21e815ac45} 
+\index{EntityMove@{EntityMove}!Awake@{Awake}}
+\index{Awake@{Awake}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Entity\+Move.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_aad7d3ab2aae14f8b6360d362b30ffce9}\label{class_entity_move_aad7d3ab2aae14f8b6360d362b30ffce9} 
+\index{EntityMove@{EntityMove}!findTarget@{findTarget}}
+\index{findTarget@{findTarget}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{findTarget()}{findTarget()}}
+{\footnotesize\ttfamily Transform Entity\+Move.\+find\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_entity_move_a3e458c6f3b9dab7bde0f766b28f22aa8}\label{class_entity_move_a3e458c6f3b9dab7bde0f766b28f22aa8} 
+\index{EntityMove@{EntityMove}!moveTowards@{moveTowards}}
+\index{moveTowards@{moveTowards}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{moveTowards()}{moveTowards()}}
+{\footnotesize\ttfamily void Entity\+Move.\+move\+Towards (\begin{DoxyParamCaption}\item[{Transform}]{target }\end{DoxyParamCaption})}
+
+
+
+Setting destination for movement AI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_move_a8be8a207d3b383dc2e3a638584ba2e9d}\label{class_entity_move_a8be8a207d3b383dc2e3a638584ba2e9d} 
+\index{EntityMove@{EntityMove}!Update@{Update}}
+\index{Update@{Update}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Entity\+Move.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_entity_move_a8a931962c69fe388a52ea4a4f06052b7}\label{class_entity_move_a8a931962c69fe388a52ea4a4f06052b7} 
+\index{EntityMove@{EntityMove}!agent@{agent}}
+\index{agent@{agent}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily Nav\+Mesh\+Agent Entity\+Move.\+agent\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_a899adfefc3490d6467f030979ee2399c}\label{class_entity_move_a899adfefc3490d6467f030979ee2399c} 
+\index{EntityMove@{EntityMove}!animator@{animator}}
+\index{animator@{animator}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Entity\+Move.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_aea8d846612c86b02d55f3eaaa125a888}\label{class_entity_move_aea8d846612c86b02d55f3eaaa125a888} 
+\index{EntityMove@{EntityMove}!attackArea@{attackArea}}
+\index{attackArea@{attackArea}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{attackArea}{attackArea}}
+{\footnotesize\ttfamily Sphere\+Collider Entity\+Move.\+attack\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_ae3fb21854615a1e8f189f5c481cfa4ce}\label{class_entity_move_ae3fb21854615a1e8f189f5c481cfa4ce} 
+\index{EntityMove@{EntityMove}!currentTarget@{currentTarget}}
+\index{currentTarget@{currentTarget}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{currentTarget}{currentTarget}}
+{\footnotesize\ttfamily Transform Entity\+Move.\+current\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_acc7f015cfede2df7cceafc57790c3d47}\label{class_entity_move_acc7f015cfede2df7cceafc57790c3d47} 
+\index{EntityMove@{EntityMove}!entityAttackArea@{entityAttackArea}}
+\index{entityAttackArea@{entityAttackArea}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{entityAttackArea}{entityAttackArea}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity_attack_area}{Entity\+Attack\+Area}} Entity\+Move.\+entity\+Attack\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_entity_move_a1bfa0779ad54d2ca26a1c64f2816588c}\label{class_entity_move_a1bfa0779ad54d2ca26a1c64f2816588c} 
+\index{EntityMove@{EntityMove}!targetIsClose@{targetIsClose}}
+\index{targetIsClose@{targetIsClose}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{targetIsClose}{targetIsClose}}
+{\footnotesize\ttfamily bool Entity\+Move.\+target\+Is\+Close}
+
+\Hypertarget{class_entity_move_aa477488cebc77edf578d2c9984f76094}\label{class_entity_move_aa477488cebc77edf578d2c9984f76094} 
+\index{EntityMove@{EntityMove}!whatIsGround@{whatIsGround}}
+\index{whatIsGround@{whatIsGround}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{whatIsGround}{whatIsGround}}
+{\footnotesize\ttfamily Layer\+Mask Entity\+Move.\+what\+Is\+Ground}
+
+\Hypertarget{class_entity_move_a1612399cccfa705e25e512e34ca0c0ff}\label{class_entity_move_a1612399cccfa705e25e512e34ca0c0ff} 
+\index{EntityMove@{EntityMove}!whatIsPlayer@{whatIsPlayer}}
+\index{whatIsPlayer@{whatIsPlayer}!EntityMove@{EntityMove}}
+\doxysubsubsection{\texorpdfstring{whatIsPlayer}{whatIsPlayer}}
+{\footnotesize\ttfamily Layer\+Mask Entity\+Move.\+what\+Is\+Player}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+D/gnom/\+Gnomes-\/2.\+0/\+Assets/\+Scripts/\+Entity/\mbox{\hyperlink{_entity_move_8cs}{Entity\+Move.\+cs}}\end{DoxyCompactItemize}

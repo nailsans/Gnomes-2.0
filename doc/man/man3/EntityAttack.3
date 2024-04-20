@@ -1,0 +1,127 @@
+.TH "EntityAttack" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EntityAttack
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstartAttacking\fP (Collider other)"
+.br
+.RI "Called when something is in sight of our attack field\&. "
+.ti -1c
+.RI "void \fBStopAttacking\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAwake\fP ()"
+.br
+.RI "Getting components\&. "
+.ti -1c
+.RI "IEnumerator \fBIAttackCycle\fP (Collider other)"
+.br
+.RI "Attacking target every time as cooldowm passes\&. "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBattacksPlayers\fP = true"
+.br
+.RI "A script applied on entity that allows to implement attack for it\&. "
+.ti -1c
+.RI "bool \fBattacksPeneks\fP = false"
+.br
+.ti -1c
+.RI "int \fBdamage\fP = 3"
+.br
+.ti -1c
+.RI "GameObject \fBmodel\fP"
+.br
+.ti -1c
+.RI "Animator \fBanimator\fP"
+.br
+.ti -1c
+.RI "\fBEntityMove\fP \fB_entityMove\fP"
+.br
+.ti -1c
+.RI "GameObject \fBattackArea\fP = default(GameObject)"
+.br
+.ti -1c
+.RI "bool \fBisAttacking\fP = false"
+.br
+.ti -1c
+.RI "float \fBtimeToAttack\fP = 0\&.65f"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void EntityAttack\&.Awake ()\fR [private]\fP"
+
+.PP
+Getting components\&. 
+.SS "IEnumerator EntityAttack\&.IAttackCycle (Collider other)\fR [private]\fP"
+
+.PP
+Attacking target every time as cooldowm passes\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void EntityAttack\&.startAttacking (Collider other)"
+
+.PP
+Called when something is in sight of our attack field\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP 
+.RE
+.PP
+If our entity is not attacking nothing, cancel attacking script
+.PP
+Making EntityMover stop moving as now we are going to attack
+.SS "void EntityAttack\&.StopAttacking ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBEntityMove\fP EntityAttack\&._entityMove\fR [private]\fP"
+
+.SS "Animator EntityAttack\&.animator\fR [private]\fP"
+
+.SS "GameObject EntityAttack\&.attackArea = default(GameObject)\fR [private]\fP"
+
+.SS "bool EntityAttack\&.attacksPeneks = false\fR [private]\fP"
+
+.SS "bool EntityAttack\&.attacksPlayers = true\fR [private]\fP"
+
+.PP
+A script applied on entity that allows to implement attack for it\&. 
+.SS "int EntityAttack\&.damage = 3\fR [private]\fP"
+
+.SS "bool EntityAttack\&.isAttacking = false\fR [private]\fP"
+
+.SS "GameObject EntityAttack\&.model\fR [private]\fP"
+
+.SS "float EntityAttack\&.timeToAttack = 0\&.65f\fR [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

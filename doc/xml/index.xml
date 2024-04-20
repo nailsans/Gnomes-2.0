@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="class_attack_area" kind="class"><name>AttackArea</name>
+    <member refid="class_attack_area_1af9b9fe2de5d835c36614896014e6069c" kind="variable"><name>damage</name></member>
+    <member refid="class_attack_area_1a67992ff5fce4b13ad34af4f4490e19cd" kind="function"><name>OnTriggerEnter</name></member>
+  </compound>
+  <compound refid="class_bloha_move" kind="class"><name>BlohaMove</name>
+    <member refid="class_bloha_move_1a09bfe5591e9654da058602f1a093f162" kind="variable"><name>players</name></member>
+    <member refid="class_bloha_move_1ae3f34ecc94bc7f65facf689e74210439" kind="function"><name>findTarget</name></member>
+  </compound>
+  <compound refid="class_character_animator_manager" kind="class"><name>CharacterAnimatorManager</name>
+    <member refid="class_character_animator_manager_1a19bd680781bdeb33f48b56026b13aa8f" kind="variable"><name>character</name></member>
+    <member refid="class_character_animator_manager_1aed3334e87bc9e673a97f3664b4c8c64f" kind="function"><name>Awake</name></member>
+    <member refid="class_character_animator_manager_1a3bd84d4d9a102c36038eefecfc66260e" kind="function"><name>UpdateAnimatorParameter</name></member>
+  </compound>
+  <compound refid="class_character_locomotion_manager" kind="class"><name>CharacterLocomotionManager</name>
+    <member refid="class_character_locomotion_manager_1ab2408d5d88ca4ebc77b3de5ab22fa808" kind="function"><name>Awake</name></member>
+    <member refid="class_character_locomotion_manager_1a41cc58b441495c3e63d2d5bb157ab817" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_character_manager" kind="class"><name>CharacterManager</name>
+    <member refid="class_character_manager_1a369d57740960c4262e388a62f38dd924" kind="variable"><name>characterController</name></member>
+    <member refid="class_character_manager_1a851cdec558805e01e05a2f05930f90f0" kind="variable"><name>animator</name></member>
+    <member refid="class_character_manager_1a1b7fa4c87f178836c80716a489d9bf49" kind="variable"><name>characterNetworkManager</name></member>
+    <member refid="class_character_manager_1a86388067eb3b46cb3d20ec5e16978cbb" kind="variable"><name>isPerfomingAction</name></member>
+    <member refid="class_character_manager_1a208e8dbd2f1b655e59b65d702c8f27d6" kind="function"><name>Awake</name></member>
+    <member refid="class_character_manager_1ad51074eb7b78a4b6bf9bc99ede818591" kind="function"><name>Update</name></member>
+    <member refid="class_character_manager_1a6dd0705e76289c109e5ba8a51f149d05" kind="function"><name>LateUpdate</name></member>
+  </compound>
+  <compound refid="class_character_network_manager" kind="class"><name>CharacterNetworkManager</name>
+    <member refid="class_character_network_manager_1a538e90113d444a76b4feefdec2fccb2a" kind="variable"><name>networkPosition</name></member>
+    <member refid="class_character_network_manager_1a006ba5f7c470820afb51199bb939e28d" kind="variable"><name>networkRotation</name></member>
+    <member refid="class_character_network_manager_1a8a330de889f59392daabaaca2ddae1c8" kind="variable"><name>networkPositionVelocity</name></member>
+    <member refid="class_character_network_manager_1a063ce91553a3b25846d006aa96e6eda0" kind="variable"><name>networkPositionSmoothTime</name></member>
+    <member refid="class_character_network_manager_1ae63539a31c2d69fc677ceed29ffaa8b1" kind="variable"><name>networkRotationSmoothTime</name></member>
+    <member refid="class_character_network_manager_1aa10cc0e6cc2f23511148bc0c4e6657ca" kind="variable"><name>isRunning</name></member>
+    <member refid="class_character_network_manager_1ac8bfc304080af082ad3a0f3211729bda" kind="variable"><name>isWalking</name></member>
+  </compound>
+  <compound refid="class_enemy_manager" kind="class"><name>EnemyManager</name>
+    <member refid="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" kind="variable"><name>players</name></member>
+    <member refid="class_enemy_manager_1ab3cc4aae81cb7b5749e1f3a0ab038b6e" kind="variable"><name>spawnCoefficient</name></member>
+    <member refid="class_enemy_manager_1a8853257bf28e8940f9283efb1e0d3e9a" kind="variable"><name>restSeconds</name></member>
+    <member refid="class_enemy_manager_1a762da7560fb7522fda41ff543021a02a" kind="variable"><name>timeBetweenSpawn</name></member>
+    <member refid="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" kind="variable"><name>enemyPrefabs</name></member>
+    <member refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" kind="variable"><name>spawnedEnemies</name></member>
+    <member refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" kind="variable"><name>spawns</name></member>
+    <member refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" kind="variable"><name>activityType</name></member>
+    <member refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" kind="variable"><name>currentWaveNumber</name></member>
+    <member refid="class_enemy_manager_1a9a95e72112a8e624588bb8283d66698e" kind="function"><name>Awake</name></member>
+    <member refid="class_enemy_manager_1afcf3de6b6a3f197fe343fc43592b46d5" kind="function"><name>Start</name></member>
+    <member refid="class_enemy_manager_1a26d4ccc47045ea2812977824e022fec8" kind="function"><name>Update</name></member>
+    <member refid="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" kind="function"><name>changeActivityType</name></member>
+    <member refid="class_enemy_manager_1a49b477529ce70a01b28c2f702ff9eb53" kind="function"><name>SummonRandomEnemyOnRandomSpawner</name></member>
+    <member refid="class_enemy_manager_1ab3a41ec558f9498b1129b2c6fd316a52" kind="function"><name>SummonRandomEnemy</name></member>
+    <member refid="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" kind="function"><name>StartWave</name></member>
+    <member refid="class_enemy_manager_1a0641d914820f3aeea06936c538927ed8" kind="function"><name>ISpawnRandomEnemies</name></member>
+    <member refid="class_enemy_manager_1ab3f12acb8d9273091e1f47b8f4ff5ad0" kind="function"><name>StartRest</name></member>
+    <member refid="class_enemy_manager_1a1a406ff8a95e052f2e246c5969b082e5" kind="function"><name>IStartRest</name></member>
+  </compound>
+  <compound refid="class_entity_attack" kind="class"><name>EntityAttack</name>
+    <member refid="class_entity_attack_1a186018fc48324e68d4a94b0f54b111e1" kind="variable"><name>attacksPlayers</name></member>
+    <member refid="class_entity_attack_1a4619f6b92b00108e0c387a511c66c8f0" kind="variable"><name>attacksPeneks</name></member>
+    <member refid="class_entity_attack_1a038d118041d8a3b428bef017461159d1" kind="variable"><name>damage</name></member>
+    <member refid="class_entity_attack_1a62bfa40288e81fac651dab805b06d66f" kind="variable"><name>model</name></member>
+    <member refid="class_entity_attack_1a73a04c82288f7af9e9cc4f9a66cb8874" kind="variable"><name>animator</name></member>
+    <member refid="class_entity_attack_1ace61721c5dde7265c73ca417c7dd0b3a" kind="variable"><name>_entityMove</name></member>
+    <member refid="class_entity_attack_1a1ed682e6fcb799522450a821c239ffa9" kind="variable"><name>attackArea</name></member>
+    <member refid="class_entity_attack_1a204743fbf0d5e82ac89906c4f6c6e4b2" kind="variable"><name>isAttacking</name></member>
+    <member refid="class_entity_attack_1af97f49047f52d7a307c4e0862aeed18e" kind="variable"><name>timeToAttack</name></member>
+    <member refid="class_entity_attack_1a1283d929e81be256abc4cc376370eb41" kind="function"><name>Awake</name></member>
+    <member refid="class_entity_attack_1a2501e71b4f550ad51b55ceff3523e311" kind="function"><name>IAttackCycle</name></member>
+    <member refid="class_entity_attack_1ac132e233dca12d2202918b200c631e33" kind="function"><name>startAttacking</name></member>
+    <member refid="class_entity_attack_1aa4d19209fa0538685b8669c2c74a5678" kind="function"><name>StopAttacking</name></member>
+  </compound>
+  <compound refid="class_entity_attack_area" kind="class"><name>EntityAttackArea</name>
+    <member refid="class_entity_attack_area_1a43700065441e0389cb7c501169bee5c5" kind="variable"><name>_entityMove</name></member>
+    <member refid="class_entity_attack_area_1adf84ddaef60fe8aa4ca9fe9b02aaa34e" kind="variable"><name>_entityAttack</name></member>
+    <member refid="class_entity_attack_area_1ae1d522990deb70c5d4b0a90f6a06be08" kind="function"><name>Awake</name></member>
+    <member refid="class_entity_attack_area_1aa8c38ac59f376eb58627e210c4b9aba8" kind="function"><name>OnTriggerEnter</name></member>
+    <member refid="class_entity_attack_area_1abde6697e82d9dd749e75feafe2bcef31" kind="function"><name>OnTriggerExit</name></member>
+  </compound>
+  <compound refid="class_entity_damagable" kind="class"><name>EntityDamagable</name>
+    <member refid="class_entity_damagable_1a3ca38300b7a17ce805412459f16147cd" kind="variable"><name>health</name></member>
+    <member refid="class_entity_damagable_1af30a8202a222023dfeb3b3e0417db3c9" kind="variable"><name>model</name></member>
+    <member refid="class_entity_damagable_1a5a188ab77b0e0c5c270c0735428a0b5f" kind="variable"><name>startRotation</name></member>
+    <member refid="class_entity_damagable_1a25a6f52117a01b02ac08d07102d6f9f7" kind="variable"><name>startPos</name></member>
+    <member refid="class_entity_damagable_1af8d8f21b7af3c3dc69dd43689dea5e41" kind="variable"><name>animator</name></member>
+    <member refid="class_entity_damagable_1ac2c6f050c5bd1f11e94359084c74d23a" kind="function"><name>Awake</name></member>
+    <member refid="class_entity_damagable_1a30a13eb132f7d9cd5165e8c733008713" kind="function"><name>IPlayDamageAnimation</name></member>
+    <member refid="class_entity_damagable_1a29e39d7b4af32daee9f88293bc294467" kind="function"><name>IPlayDeathAnimation</name></member>
+    <member refid="class_entity_damagable_1a57062539c4ec4f58c5021727f2371c6f" kind="function"><name>takeDamage</name></member>
+    <member refid="class_entity_damagable_1a2dd091c069892bfaef6ed4f001351f92" kind="function"><name>callDeath</name></member>
+  </compound>
+  <compound refid="class_entity_move" kind="class"><name>EntityMove</name>
+    <member refid="class_entity_move_1a8a931962c69fe388a52ea4a4f06052b7" kind="variable"><name>agent</name></member>
+    <member refid="class_entity_move_1aea8d846612c86b02d55f3eaaa125a888" kind="variable"><name>attackArea</name></member>
+    <member refid="class_entity_move_1ae3fb21854615a1e8f189f5c481cfa4ce" kind="variable"><name>currentTarget</name></member>
+    <member refid="class_entity_move_1a899adfefc3490d6467f030979ee2399c" kind="variable"><name>animator</name></member>
+    <member refid="class_entity_move_1acc7f015cfede2df7cceafc57790c3d47" kind="variable"><name>entityAttackArea</name></member>
+    <member refid="class_entity_move_1a1bfa0779ad54d2ca26a1c64f2816588c" kind="variable"><name>targetIsClose</name></member>
+    <member refid="class_entity_move_1aa477488cebc77edf578d2c9984f76094" kind="variable"><name>whatIsGround</name></member>
+    <member refid="class_entity_move_1a1612399cccfa705e25e512e34ca0c0ff" kind="variable"><name>whatIsPlayer</name></member>
+    <member refid="class_entity_move_1a8be8a207d3b383dc2e3a638584ba2e9d" kind="function"><name>Update</name></member>
+    <member refid="class_entity_move_1ac7434682cd9d82265b3dcf21e815ac45" kind="function"><name>Awake</name></member>
+    <member refid="class_entity_move_1aad7d3ab2aae14f8b6360d362b30ffce9" kind="function"><name>findTarget</name></member>
+    <member refid="class_entity_move_1a3e458c6f3b9dab7bde0f766b28f22aa8" kind="function"><name>moveTowards</name></member>
+  </compound>
+  <compound refid="interface_i_damagable" kind="interface"><name>IDamagable</name>
+    <member refid="interface_i_damagable_1a1a7286cd9364e8aa3eebf24c28093dc0" kind="function"><name>takeDamage</name></member>
+  </compound>
+  <compound refid="interface_player_input_actions_1_1_i_player_actions" kind="interface"><name>PlayerInputActions::IPlayerActions</name>
+    <member refid="interface_player_input_actions_1_1_i_player_actions_1a91232e4a05dc1f6b04f7adaf162a4db8" kind="function"><name>OnMove</name></member>
+    <member refid="interface_player_input_actions_1_1_i_player_actions_1a8dfc3bcc351552645838e2e369d4c2aa" kind="function"><name>OnJump</name></member>
+    <member refid="interface_player_input_actions_1_1_i_player_actions_1aec23f51c4a9af66bf0635605d04edc03" kind="function"><name>OnAttack</name></member>
+    <member refid="interface_player_input_actions_1_1_i_player_actions_1a5a767707bb0637a282c281bf54e4e518" kind="function"><name>OnRun</name></member>
+  </compound>
+  <compound refid="struct_player_input_actions_1_1_player_actions" kind="struct"><name>PlayerInputActions::PlayerActions</name>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a1537cbd40dc76fec4b9c8a8e7d0df758" kind="variable"><name>m_Wrapper</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1af44cb7d94cdbd3bf311af91d2f931067" kind="property"><name>Move</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a1db30041a79f90c775da0518a1412466" kind="property"><name>Jump</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1aa65221b9c69b545279f7ef1d7d7dec79" kind="property"><name>Attack</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1aaae70c46bbd0980eebb48b4fcd354b5d" kind="property"><name>Run</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a118c4ef3a420a02d4d96787a9b4c8713" kind="property"><name>enabled</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1af5f947a629b9f7974b1483fd51e8a38e" kind="function"><name>PlayerActions</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1af968103a65f858565a7a19b3a4936e90" kind="function"><name>Get</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1ae2b3777e7e1569cdf739c6d77200b581" kind="function"><name>Enable</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a0279831da95fe70f80107c962fab7a6e" kind="function"><name>Disable</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1ad413b9a41a0c8d932d7d3dd32af76b08" kind="function"><name>AddCallbacks</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1aa33a873cde724b1bff91edd0bd3b1ec7" kind="function"><name>RemoveCallbacks</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a41787e2711b176846b1252aa6daa1b30" kind="function"><name>SetCallbacks</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a9c717a4698bf38d5c5dc59991f571f87" kind="function"><name>operator InputActionMap</name></member>
+    <member refid="struct_player_input_actions_1_1_player_actions_1a3098d31a5c7e330cea8d96387e8c3c95" kind="function"><name>UnregisterCallbacks</name></member>
+  </compound>
+  <compound refid="class_player_animator_manager" kind="class"><name>PlayerAnimatorManager</name>
+  </compound>
+  <compound refid="class_player_attack" kind="class"><name>PlayerAttack</name>
+    <member refid="class_player_attack_1a4c3b5c907848cd4d8a0c55d09d383a1e" kind="variable"><name>attackArea</name></member>
+    <member refid="class_player_attack_1aaee590364160623b374be01711cbea60" kind="variable"><name>isAttacking</name></member>
+    <member refid="class_player_attack_1a98731b41a2446ec1d0d321fde5ee9120" kind="variable"><name>timeToAttack</name></member>
+    <member refid="class_player_attack_1a6f870997319046f036f4422eba03c1ab" kind="function"><name>Start</name></member>
+    <member refid="class_player_attack_1a8f963e9ea9003db9d8ffe655efba19ce" kind="function"><name>IAttack</name></member>
+    <member refid="class_player_attack_1a9716e591b4c74a1149becb7e7ca55aad" kind="function"><name>Attack</name></member>
+  </compound>
+  <compound refid="class_player_camera" kind="class"><name>PlayerCamera</name>
+    <member refid="class_player_camera_1a4dd46e41ba7bc595c71573863f579581" kind="variable"><name>instance</name></member>
+    <member refid="class_player_camera_1a435b7302a8d585d182d8a81d676aff94" kind="variable"><name>player</name></member>
+    <member refid="class_player_camera_1a0af0df9bedb923cd0291a4f45b952e45" kind="variable"><name>cameraObject</name></member>
+    <member refid="class_player_camera_1a35ddfc9a4b61cdb033dbe888a8f6e2c4" kind="variable"><name>cameraVelocity</name></member>
+    <member refid="class_player_camera_1a085fbb37029f18e909c039cf2b9f09c4" kind="variable"><name>cameraSmoothSpeed</name></member>
+    <member refid="class_player_camera_1a6f129f9d66892cf076dd48dafad67cd0" kind="function"><name>Awake</name></member>
+    <member refid="class_player_camera_1a31bf97e8c2d69434a4c6d45c883aa441" kind="function"><name>Start</name></member>
+    <member refid="class_player_camera_1a326040fe8b08ec784a6eb6a59efb68dd" kind="function"><name>FollowTarget</name></member>
+    <member refid="class_player_camera_1a56a59d93133d673ac93b296497533878" kind="function"><name>HandleAllCameraActions</name></member>
+  </compound>
+  <compound refid="class_player_h_p_system" kind="class"><name>PlayerHPSystem</name>
+    <member refid="class_player_h_p_system_1a0336e6583ca1283802451eafc25be884" kind="variable"><name>maxHp</name></member>
+    <member refid="class_player_h_p_system_1a3aa48c8974e921d5f8b7279a0d8129ae" kind="variable"><name>hp</name></member>
+    <member refid="class_player_h_p_system_1a2ce5ab458a193d92bd90fc12f61be78a" kind="variable"><name>resistance</name></member>
+    <member refid="class_player_h_p_system_1a0ef23cbc9943861dac8e7a44e060a3ac" kind="function"><name>Start</name></member>
+    <member refid="class_player_h_p_system_1a7c22da0410e557c052db4900e4c0784b" kind="function"><name>takeDamage</name></member>
+    <member refid="class_player_h_p_system_1a364f52f8d8b715d8924ac629af4b78dd" kind="function"><name>Death</name></member>
+  </compound>
+  <compound refid="class_player_input_actions" kind="class"><name>PlayerInputActions</name>
+    <member refid="class_player_input_actions_1a9cca9924290e1a02d3dc5cc249c1dfcc" kind="property"><name>asset</name></member>
+    <member refid="class_player_input_actions_1a5705f0242e753440e4aadfa54159d6fc" kind="property"><name>bindingMask</name></member>
+    <member refid="class_player_input_actions_1a7a53781ab7e52a8d74b3b8f5da3e9927" kind="property"><name>devices</name></member>
+    <member refid="class_player_input_actions_1ab5c35025028364f9034efccd6dfb0b59" kind="property"><name>controlSchemes</name></member>
+    <member refid="class_player_input_actions_1a2866b3830bb914bc6d94ce40334f7cab" kind="property"><name>bindings</name></member>
+    <member refid="class_player_input_actions_1a0e3e03820a2adc5478047234188eaa42" kind="property"><name>Player</name></member>
+    <member refid="class_player_input_actions_1a80381aba8eb6191c31ef4f4bdd492226" kind="variable"><name>m_Player</name></member>
+    <member refid="class_player_input_actions_1a7ce673703c72dd897cd05f193c879440" kind="variable"><name>m_PlayerActionsCallbackInterfaces</name></member>
+    <member refid="class_player_input_actions_1a447b65bf524cfb0748174d4c0c26ba73" kind="variable"><name>m_Player_Move</name></member>
+    <member refid="class_player_input_actions_1abfa5d7a2fd48a60920fa1f5e4d830d51" kind="variable"><name>m_Player_Jump</name></member>
+    <member refid="class_player_input_actions_1ae8a860d4f70c48dfc6482bce25928789" kind="variable"><name>m_Player_Attack</name></member>
+    <member refid="class_player_input_actions_1a03e379203a412421acefb18e95e601e2" kind="variable"><name>m_Player_Run</name></member>
+    <member refid="class_player_input_actions_1aede10627bc76e7b6950cc8c009baf85a" kind="function"><name>PlayerInputActions</name></member>
+    <member refid="class_player_input_actions_1a62ef2b36c7ccf5e8ee419363f565219c" kind="function"><name>Dispose</name></member>
+    <member refid="class_player_input_actions_1a9279ba7160150bf0d5f7210121a38c58" kind="function"><name>Contains</name></member>
+    <member refid="class_player_input_actions_1ac44179911dc0f41381456145ea490e8a" kind="function"><name>GetEnumerator</name></member>
+    <member refid="class_player_input_actions_1afe575d8f0596c019d9317d681f232464" kind="function"><name>Enable</name></member>
+    <member refid="class_player_input_actions_1a9c51e57bb93bbd441105909c1bd6a472" kind="function"><name>Disable</name></member>
+    <member refid="class_player_input_actions_1a634b048f0a81cbb9f56b2ca0edf092b9" kind="function"><name>FindAction</name></member>
+    <member refid="class_player_input_actions_1a8b4ce9ea96e3614a5d2aa9f5b9f2c473" kind="function"><name>FindBinding</name></member>
+    <member refid="class_player_input_actions_1a0c077d2a7c093dbf017ce1060f486943" kind="function"><name>GetEnumerator</name></member>
+  </compound>
+  <compound refid="class_player_input_manager" kind="class"><name>PlayerInputManager</name>
+    <member refid="class_player_input_manager_1a06d664e6c5d52b12f13b6a9f9acac103" kind="variable"><name>instance</name></member>
+    <member refid="class_player_input_manager_1a10811b8142efe2b21deba30c75692abf" kind="variable"><name>playerInputActions</name></member>
+    <member refid="class_player_input_manager_1a952eb80261c666553438889dddfaa1bd" kind="variable"><name>movementInput</name></member>
+    <member refid="class_player_input_manager_1a84b0f8e87be1add90cc831b952bf2d7f" kind="variable"><name>sprintInput</name></member>
+    <member refid="class_player_input_manager_1a6125fb711b5de4bbdefe785321678bf3" kind="variable"><name>attackInput</name></member>
+    <member refid="class_player_input_manager_1aa4457d20dca8cd011bf22dc82f479462" kind="variable"><name>player</name></member>
+    <member refid="class_player_input_manager_1afabcc6d82a7b089a17e6503843a19024" kind="variable"><name>horizontalInput</name></member>
+    <member refid="class_player_input_manager_1a9c7c0f38743cb6ef3544505e67e01705" kind="variable"><name>verticalInput</name></member>
+    <member refid="class_player_input_manager_1afd756473bdb5b16644e2657485d49816" kind="variable"><name>isWalking</name></member>
+    <member refid="class_player_input_manager_1a2a106caaed659f3b291e5344ecddb45a" kind="function"><name>OnEnable</name></member>
+    <member refid="class_player_input_manager_1aee88ffcc0eacc5ae55e44fa9bc52916b" kind="function"><name>OnDestroy</name></member>
+    <member refid="class_player_input_manager_1a73ab69a615c299ac412b24f13faa53da" kind="function"><name>Awake</name></member>
+    <member refid="class_player_input_manager_1ac2aa81a3d75a63c7a61b12b9d0a258ff" kind="function"><name>Start</name></member>
+    <member refid="class_player_input_manager_1a503d2a89cf9e4df92ed6f31cf49b92da" kind="function"><name>Update</name></member>
+    <member refid="class_player_input_manager_1a497e4435f2fb9891ef794453586c25ce" kind="function"><name>OnSceneChange</name></member>
+    <member refid="class_player_input_manager_1a8ab941c5215e354c80ca4d34b3ff2a74" kind="function"><name>HandleMovementInput</name></member>
+    <member refid="class_player_input_manager_1accf233975c3dca2b2e03a4e6f83a5af6" kind="function"><name>HandleRunning</name></member>
+    <member refid="class_player_input_manager_1a5f3bec45f43bb1071887c29c3e5b2c29" kind="function"><name>HandleAttack</name></member>
+    <member refid="class_player_input_manager_1abf51462c1ff0599629f4609884daa2c8" kind="function"><name>OnApplicationFocus</name></member>
+  </compound>
+  <compound refid="class_player_locomotion_manager" kind="class"><name>PlayerLocomotionManager</name>
+    <member refid="class_player_locomotion_manager_1a5ca0d5f0154b04fde94ee289ff2fe1e5" kind="variable"><name>player</name></member>
+    <member refid="class_player_locomotion_manager_1a1ebe61ef6af4bb8a53b0c365da93d0e1" kind="variable"><name>moveDirection</name></member>
+    <member refid="class_player_locomotion_manager_1a51d65f52440155686050ef3a2959efa4" kind="variable"><name>targetRotationDirection</name></member>
+    <member refid="class_player_locomotion_manager_1a222c35656425ae2246f617e59b602eff" kind="variable"><name>walkingSpeed</name></member>
+    <member refid="class_player_locomotion_manager_1a546db0f4e57fd23a7fecc60f8b4c738c" kind="variable"><name>runningSpeed</name></member>
+    <member refid="class_player_locomotion_manager_1ad17c860fb63f5ee7db7256f51ebdc37a" kind="variable"><name>rotationSpeed</name></member>
+    <member refid="class_player_locomotion_manager_1ac2579d400221ab902213c6a16b229f5c" kind="variable"><name>verticalMovement</name></member>
+    <member refid="class_player_locomotion_manager_1ae9a206bd86b19fedecc07fbbffba0bda" kind="variable"><name>horizontalMovement</name></member>
+    <member refid="class_player_locomotion_manager_1a23126c84e34955061efd1279c9a6d527" kind="variable"><name>isShiftPressed</name></member>
+    <member refid="class_player_locomotion_manager_1a0af903fa3683f3a911ea7666b6568f42" kind="variable"><name>isWalking</name></member>
+    <member refid="class_player_locomotion_manager_1aac6ccc5933d016cc63513f40db9b9fa3" kind="function"><name>Awake</name></member>
+    <member refid="class_player_locomotion_manager_1add3e9fa7f2bf9c69801ec39b93bf4805" kind="function"><name>Update</name></member>
+    <member refid="class_player_locomotion_manager_1aac1d278d11e437b6164a90170ca960d3" kind="function"><name>HandleAllMovement</name></member>
+    <member refid="class_player_locomotion_manager_1a4e031481b66251f8d453d70dc0e7da3c" kind="function"><name>HandleRunning</name></member>
+    <member refid="class_player_locomotion_manager_1a9aa72e4ee9bd3429638b252a303a9697" kind="function"><name>GetMotionInputs</name></member>
+    <member refid="class_player_locomotion_manager_1a517000a783a2f54e2b6eacfc86a8f43f" kind="function"><name>HandleMovement</name></member>
+    <member refid="class_player_locomotion_manager_1ae751f63cba609050ed94954a470529ea" kind="function"><name>getMousePos</name></member>
+    <member refid="class_player_locomotion_manager_1ac3059e359d3bcad2b74e42227fd7bc88" kind="function"><name>HandleRotation</name></member>
+  </compound>
+  <compound refid="class_player_manager" kind="class"><name>PlayerManager</name>
+    <member refid="class_player_manager_1ab2d5cec99aa4d9679c7d2bcd425b39b8" kind="variable"><name>PlayerLocomotionManager</name></member>
+    <member refid="class_player_manager_1aea7b7bc64c4c468a045fe9154e54b67b" kind="variable"><name>PlayerAnimatorManager</name></member>
+    <member refid="class_player_manager_1aad3512f1d13c14831ad50194f24a68a5" kind="variable"><name>PlayerNetworkManager</name></member>
+    <member refid="class_player_manager_1a8ef05b9bf5d421799d441dcc542df0c7" kind="variable"><name>PlayerAttack</name></member>
+    <member refid="class_player_manager_1a5a9c8aed6dfa78573d7ddfd6fbb0fb95" kind="function"><name>Awake</name></member>
+    <member refid="class_player_manager_1abdc877f3adcc7d05a000bc5fa3894ec0" kind="function"><name>Update</name></member>
+    <member refid="class_player_manager_1aea06b06bdcf06ac4b342ac673272bdf8" kind="function"><name>LateUpdate</name></member>
+    <member refid="class_player_manager_1a47d993ab2a8e05aaade4c71bc3c22702" kind="function"><name>OnNetworkSpawn</name></member>
+  </compound>
+  <compound refid="class_player_network_manager" kind="class"><name>PlayerNetworkManager</name>
+  </compound>
+  <compound refid="class_player_u_i_manager" kind="class"><name>PlayerUIManager</name>
+    <member refid="class_player_u_i_manager_1a4984c5756279f47ebe33d8366c1685ba" kind="variable"><name>instance</name></member>
+    <member refid="class_player_u_i_manager_1a18234363749a7dfd6906120d490bd5d4" kind="variable"><name>startGameAsClient</name></member>
+    <member refid="class_player_u_i_manager_1ade182e4f8f1f6c103d058f09888818cf" kind="function"><name>Awake</name></member>
+    <member refid="class_player_u_i_manager_1a5086fc385cf393c27f9e1cfabe160d93" kind="function"><name>Start</name></member>
+    <member refid="class_player_u_i_manager_1a1f7d83348191dcc2d227b1bc2fc7c4c0" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_title_screen_manager" kind="class"><name>TitleScreenManager</name>
+    <member refid="class_title_screen_manager_1a90324475b81e1f65b61b09508779f9f5" kind="function"><name>StartNetworkAsHost</name></member>
+    <member refid="class_title_screen_manager_1ae6f20d62f9a9ef2144f2db08b7603dbf" kind="function"><name>StartNewGame</name></member>
+  </compound>
+  <compound refid="class_world_save_game_manager" kind="class"><name>WorldSaveGameManager</name>
+    <member refid="class_world_save_game_manager_1a900e67b7c30a309b29e8c359e360b8bf" kind="variable"><name>instance</name></member>
+    <member refid="class_world_save_game_manager_1aeba0b4dde37b9914949cb47535dca985" kind="variable"><name>worldSceneIndex</name></member>
+    <member refid="class_world_save_game_manager_1ad60d367e13f8c888941083d1b269d175" kind="function"><name>Awake</name></member>
+    <member refid="class_world_save_game_manager_1a0a2825d54696016a99b867d506e71ee7" kind="function"><name>Start</name></member>
+    <member refid="class_world_save_game_manager_1a2fb411f32b9028fcb76dcf56b05c6167" kind="function"><name>LoadNewGame</name></member>
+    <member refid="class_world_save_game_manager_1a3fd548e889f743405104e6eb80054877" kind="function"><name>GetWorldSceneIndex</name></member>
+  </compound>
+  <compound refid="namespace_mono_1_1_cecil_1_1_cil" kind="namespace"><name>Mono::Cecil::Cil</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_netcode" kind="namespace"><name>Unity::Netcode</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_a_i" kind="namespace"><name>UnityEngine::AI</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system" kind="namespace"><name>UnityEngine::InputSystem</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system_1_1_utilities" kind="namespace"><name>UnityEngine::InputSystem::Utilities</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
+  <compound refid="_character_animator_manager_8cs" kind="file"><name>CharacterAnimatorManager.cs</name>
+  </compound>
+  <compound refid="_character_manager_8cs" kind="file"><name>CharacterManager.cs</name>
+  </compound>
+  <compound refid="_character_network_manager_8cs" kind="file"><name>CharacterNetworkManager.cs</name>
+  </compound>
+  <compound refid="_character_locomotion_manager_8cs" kind="file"><name>CharacterLocomotionManager.cs</name>
+  </compound>
+  <compound refid="_player_u_i_manager_8cs" kind="file"><name>PlayerUIManager.cs</name>
+  </compound>
+  <compound refid="_player_animator_manager_8cs" kind="file"><name>PlayerAnimatorManager.cs</name>
+  </compound>
+  <compound refid="_player_camera_8cs" kind="file"><name>PlayerCamera.cs</name>
+  </compound>
+  <compound refid="_player_locomotion_manager_8cs" kind="file"><name>PlayerLocomotionManager.cs</name>
+  </compound>
+  <compound refid="_player_manager_8cs" kind="file"><name>PlayerManager.cs</name>
+  </compound>
+  <compound refid="_player_network_manager_8cs" kind="file"><name>PlayerNetworkManager.cs</name>
+  </compound>
+  <compound refid="_bloha_move_8cs" kind="file"><name>BlohaMove.cs</name>
+  </compound>
+  <compound refid="_entity_attack_8cs" kind="file"><name>EntityAttack.cs</name>
+  </compound>
+  <compound refid="_entity_attack_area_8cs" kind="file"><name>EntityAttackArea.cs</name>
+  </compound>
+  <compound refid="_entity_damagable_8cs" kind="file"><name>EntityDamagable.cs</name>
+  </compound>
+  <compound refid="_entity_move_8cs" kind="file"><name>EntityMove.cs</name>
+  </compound>
+  <compound refid="_enemy_manager_8cs" kind="file"><name>EnemyManager.cs</name>
+    <member refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kind="enum"><name>EnemyActivityType</name></member>
+    <member refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3ad911b34823c7674c292556dc56148c27" kind="enumvalue"><name>Wave</name></member>
+    <member refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a0647f0776aed243f58bfec4dd81de863" kind="enumvalue"><name>Cleaning</name></member>
+    <member refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a55276c10d84e1df7713b441e76e141f9" kind="enumvalue"><name>Rest</name></member>
+  </compound>
+  <compound refid="_title_screen_manager_8cs" kind="file"><name>TitleScreenManager.cs</name>
+  </compound>
+  <compound refid="_attack_area_8cs" kind="file"><name>AttackArea.cs</name>
+  </compound>
+  <compound refid="_player_attack_8cs" kind="file"><name>PlayerAttack.cs</name>
+  </compound>
+  <compound refid="_player_h_p_system_8cs" kind="file"><name>PlayerHPSystem.cs</name>
+  </compound>
+  <compound refid="_player_input_actions_8cs" kind="file"><name>PlayerInputActions.cs</name>
+  </compound>
+  <compound refid="_player_input_manager_8cs" kind="file"><name>PlayerInputManager.cs</name>
+  </compound>
+  <compound refid="_world_save_game_manager_8cs" kind="file"><name>WorldSaveGameManager.cs</name>
+  </compound>
+  <compound refid="dir_2b1d421b41b36488fc151a8b16038486" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets</name>
+  </compound>
+  <compound refid="dir_4f87aaff01163ea54db64ef88bff782b" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character</name>
+  </compound>
+  <compound refid="dir_96c96cb48f048047c93c54c662e9d53e" kind="dir"><name>D:/D</name>
+  </compound>
+  <compound refid="dir_81e03e8d7bee58cf2cb0c6abfd2951d8" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity</name>
+  </compound>
+  <compound refid="dir_935dafaa444ef95aa3f75a015fb7f747" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers</name>
+  </compound>
+  <compound refid="dir_1315e9af8c021ebfdb74327342b41d23" kind="dir"><name>D:/D/gnom</name>
+  </compound>
+  <compound refid="dir_3a6fad4bf08ab6d4f06b048a4fdf1cf9" kind="dir"><name>D:/D/gnom/Gnomes-2.0</name>
+  </compound>
+  <compound refid="dir_b004cf6312ebf976c7e114ef5ceb619c" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Menu Scene</name>
+  </compound>
+  <compound refid="dir_e403c52bf260fc82ac6663ee12305c1f" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player</name>
+  </compound>
+  <compound refid="dir_45c5f39d5c0da33c3993f9806877a595" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/Player/Player UI</name>
+  </compound>
+  <compound refid="dir_0c9f531e053037cacdbdb194678a815b" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerFight</name>
+  </compound>
+  <compound refid="dir_62f2d574a749ad935a34619f6be3edd0" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts</name>
+  </compound>
+  <compound refid="dir_7da7274bf4a54365b76253e0f7a2534d" kind="dir"><name>D:/D/gnom/Gnomes-2.0/Assets/Scripts/World Managers</name>
+  </compound>
+</doxygenindex>

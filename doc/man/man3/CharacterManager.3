@@ -1,0 +1,78 @@
+.TH "CharacterManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CharacterManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits NetworkBehaviour\&.
+.PP
+Inherited by \fBPlayerManager\fP\&.
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "CharacterController \fBcharacterController\fP"
+.br
+.ti -1c
+.RI "Animator \fBanimator\fP"
+.br
+.ti -1c
+.RI "\fBCharacterNetworkManager\fP \fBcharacterNetworkManager\fP"
+.br
+.ti -1c
+.RI "bool \fBisPerfomingAction\fP = false"
+.br
+.RI "Is character perfoming action like attacking etc\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBLateUpdate\fP ()"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CharacterManager\&.Awake ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBPlayerManager\fP\&.
+.SS "virtual void CharacterManager\&.LateUpdate ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented in \fBPlayerManager\fP\&.
+.SS "virtual void CharacterManager\&.Update ()\fR [protected]\fP, \fR [virtual]\fP"
+If we own the character, then put some values into network variables
+.PP
+If we dont own the character, then take variables from network
+.PP
+Position
+.PP
+Rotation
+.PP
+Reimplemented in \fBPlayerManager\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Animator CharacterManager\&.animator"
+
+.SS "CharacterController CharacterManager\&.characterController"
+
+.SS "\fBCharacterNetworkManager\fP CharacterManager\&.characterNetworkManager"
+
+.SS "bool CharacterManager\&.isPerfomingAction = false"
+
+.PP
+Is character perfoming action like attacking etc\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

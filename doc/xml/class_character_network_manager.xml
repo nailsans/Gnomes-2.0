@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_character_network_manager" kind="class" language="C#" prot="public">
+    <compoundname>CharacterNetworkManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NetworkBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_player_network_manager" prot="public" virt="non-virtual">PlayerNetworkManager</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_character_network_manager_1a538e90113d444a76b4feefdec2fccb2a" prot="public" static="no" mutable="no">
+        <type>NetworkVariable&lt; Vector3 &gt;</type>
+        <definition>NetworkVariable&lt;Vector3&gt; CharacterNetworkManager.networkPosition</definition>
+        <argsstring></argsstring>
+        <name>networkPosition</name>
+        <qualifiedname>CharacterNetworkManager.networkPosition</qualifiedname>
+        <initializer>= new NetworkVariable&lt;Vector3&gt;(Vector3.zero, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="9" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1a006ba5f7c470820afb51199bb939e28d" prot="public" static="no" mutable="no">
+        <type>NetworkVariable&lt; Quaternion &gt;</type>
+        <definition>NetworkVariable&lt;Quaternion&gt; CharacterNetworkManager.networkRotation</definition>
+        <argsstring></argsstring>
+        <name>networkRotation</name>
+        <qualifiedname>CharacterNetworkManager.networkRotation</qualifiedname>
+        <initializer>= new NetworkVariable&lt;Quaternion&gt;(Quaternion.identity, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="10" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1a8a330de889f59392daabaaca2ddae1c8" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 CharacterNetworkManager.networkPositionVelocity</definition>
+        <argsstring></argsstring>
+        <name>networkPositionVelocity</name>
+        <qualifiedname>CharacterNetworkManager.networkPositionVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="11" column="20" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1a063ce91553a3b25846d006aa96e6eda0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CharacterNetworkManager.networkPositionSmoothTime</definition>
+        <argsstring></argsstring>
+        <name>networkPositionSmoothTime</name>
+        <qualifiedname>CharacterNetworkManager.networkPositionSmoothTime</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="12" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1ae63539a31c2d69fc677ceed29ffaa8b1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CharacterNetworkManager.networkRotationSmoothTime</definition>
+        <argsstring></argsstring>
+        <name>networkRotationSmoothTime</name>
+        <qualifiedname>CharacterNetworkManager.networkRotationSmoothTime</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="13" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1aa10cc0e6cc2f23511148bc0c4e6657ca" prot="public" static="no" mutable="no">
+        <type>NetworkVariable&lt; bool &gt;</type>
+        <definition>NetworkVariable&lt;bool&gt; CharacterNetworkManager.isRunning</definition>
+        <argsstring></argsstring>
+        <name>isRunning</name>
+        <qualifiedname>CharacterNetworkManager.isRunning</qualifiedname>
+        <initializer>= new NetworkVariable&lt;bool&gt;(false, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="16" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_network_manager_1ac8bfc304080af082ad3a0f3211729bda" prot="public" static="no" mutable="no">
+        <type>NetworkVariable&lt; bool &gt;</type>
+        <definition>NetworkVariable&lt;bool&gt; CharacterNetworkManager.isWalking</definition>
+        <argsstring></argsstring>
+        <name>isWalking</name>
+        <qualifiedname>CharacterNetworkManager.isWalking</qualifiedname>
+        <initializer>= new NetworkVariable&lt;bool&gt;(false, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="17" column="28" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="3">
+        <label>PlayerNetworkManager</label>
+        <link refid="class_player_network_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" line="6" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Character/CharacterNetworkManager.cs" bodystart="7" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_character_network_manager_1aa10cc0e6cc2f23511148bc0c4e6657ca" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>isRunning</name></member>
+      <member refid="class_character_network_manager_1ac8bfc304080af082ad3a0f3211729bda" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>isWalking</name></member>
+      <member refid="class_character_network_manager_1a538e90113d444a76b4feefdec2fccb2a" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>networkPosition</name></member>
+      <member refid="class_character_network_manager_1a063ce91553a3b25846d006aa96e6eda0" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>networkPositionSmoothTime</name></member>
+      <member refid="class_character_network_manager_1a8a330de889f59392daabaaca2ddae1c8" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>networkPositionVelocity</name></member>
+      <member refid="class_character_network_manager_1a006ba5f7c470820afb51199bb939e28d" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>networkRotation</name></member>
+      <member refid="class_character_network_manager_1ae63539a31c2d69fc677ceed29ffaa8b1" prot="public" virt="non-virtual"><scope>CharacterNetworkManager</scope><name>networkRotationSmoothTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

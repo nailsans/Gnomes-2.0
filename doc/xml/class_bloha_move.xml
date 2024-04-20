@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_bloha_move" kind="class" language="C#" prot="public">
+    <compoundname>BlohaMove</compoundname>
+    <basecompoundref refid="class_entity_move" prot="public" virt="non-virtual">EntityMove</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bloha_move_1a09bfe5591e9654da058602f1a093f162" prot="private" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] BlohaMove.players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <qualifiedname>BlohaMove.players</qualifiedname>
+        <briefdescription>
+<para>Making array of all players as we will hunt for them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" line="13" column="16" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bloha_move_1ae3f34ecc94bc7f65facf689e74210439" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override Transform</type>
+        <definition>override Transform BlohaMove.findTarget</definition>
+        <argsstring>()</argsstring>
+        <name>findTarget</name>
+        <qualifiedname>BlohaMove.findTarget</qualifiedname>
+        <briefdescription>
+<para>Finding nearest players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Finding available players to hunt for</para>
+<para>Calculating which player is closest to our position</para>
+<para>If player is found succeccsfully, move to it</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" line="19" column="34" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" bodystart="19" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hunts for the nearest player. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlohaMove</label>
+        <link refid="class_bloha_move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EntityMove</label>
+        <link refid="class_entity_move"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BlohaMove</label>
+        <link refid="class_bloha_move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EntityAttack</label>
+        <link refid="class_entity_attack"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>EntityAttackArea</label>
+        <link refid="class_entity_attack_area"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_entityMove</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_entityAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EntityMove</label>
+        <link refid="class_entity_move"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>entityAttackArea</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" line="8" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/Entity/BlohaMove.cs" bodystart="9" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_entity_move_1a8a931962c69fe388a52ea4a4f06052b7" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>agent</name></member>
+      <member refid="class_entity_move_1a899adfefc3490d6467f030979ee2399c" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>animator</name></member>
+      <member refid="class_entity_move_1aea8d846612c86b02d55f3eaaa125a888" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>attackArea</name></member>
+      <member refid="class_entity_move_1ac7434682cd9d82265b3dcf21e815ac45" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>Awake</name></member>
+      <member refid="class_entity_move_1ae3fb21854615a1e8f189f5c481cfa4ce" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>currentTarget</name></member>
+      <member refid="class_entity_move_1acc7f015cfede2df7cceafc57790c3d47" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>entityAttackArea</name></member>
+      <member refid="class_bloha_move_1ae3f34ecc94bc7f65facf689e74210439" prot="protected" virt="non-virtual"><scope>BlohaMove</scope><name>findTarget</name></member>
+      <member refid="class_entity_move_1a3e458c6f3b9dab7bde0f766b28f22aa8" prot="public" virt="non-virtual"><scope>BlohaMove</scope><name>moveTowards</name></member>
+      <member refid="class_bloha_move_1a09bfe5591e9654da058602f1a093f162" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>players</name></member>
+      <member refid="class_entity_move_1a1bfa0779ad54d2ca26a1c64f2816588c" prot="public" virt="non-virtual"><scope>BlohaMove</scope><name>targetIsClose</name></member>
+      <member refid="class_entity_move_1a8be8a207d3b383dc2e3a638584ba2e9d" prot="private" virt="non-virtual"><scope>BlohaMove</scope><name>Update</name></member>
+      <member refid="class_entity_move_1aa477488cebc77edf578d2c9984f76094" prot="public" virt="non-virtual"><scope>BlohaMove</scope><name>whatIsGround</name></member>
+      <member refid="class_entity_move_1a1612399cccfa705e25e512e34ca0c0ff" prot="public" virt="non-virtual"><scope>BlohaMove</scope><name>whatIsPlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

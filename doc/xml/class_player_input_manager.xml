@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_player_input_manager" kind="class" language="C#" prot="public">
+    <compoundname>PlayerInputManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_player_input_manager_1a06d664e6c5d52b12f13b6a9f9acac103" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_player_input_manager" kindref="compound">PlayerInputManager</ref></type>
+        <definition>PlayerInputManager PlayerInputManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>PlayerInputManager.instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="8" column="38" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_input_manager_1a10811b8142efe2b21deba30c75692abf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_input_actions" kindref="compound">PlayerInputActions</ref></type>
+        <definition>PlayerInputActions PlayerInputManager.playerInputActions</definition>
+        <argsstring></argsstring>
+        <name>playerInputActions</name>
+        <qualifiedname>PlayerInputManager.playerInputActions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="9" column="24" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1a952eb80261c666553438889dddfaa1bd" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerInputManager.movementInput</definition>
+        <argsstring></argsstring>
+        <name>movementInput</name>
+        <qualifiedname>PlayerInputManager.movementInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="13" column="14" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1a84b0f8e87be1add90cc831b952bf2d7f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerInputManager.sprintInput</definition>
+        <argsstring></argsstring>
+        <name>sprintInput</name>
+        <qualifiedname>PlayerInputManager.sprintInput</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="19" column="11" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1a6125fb711b5de4bbdefe785321678bf3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerInputManager.attackInput</definition>
+        <argsstring></argsstring>
+        <name>attackInput</name>
+        <qualifiedname>PlayerInputManager.attackInput</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="20" column="11" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_input_manager_1aa4457d20dca8cd011bf22dc82f479462" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_manager" kindref="compound">PlayerManager</ref></type>
+        <definition>PlayerManager PlayerInputManager.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>PlayerInputManager.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="10" column="26" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1afabcc6d82a7b089a17e6503843a19024" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerInputManager.horizontalInput</definition>
+        <argsstring></argsstring>
+        <name>horizontalInput</name>
+        <qualifiedname>PlayerInputManager.horizontalInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="14" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1a9c7c0f38743cb6ef3544505e67e01705" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerInputManager.verticalInput</definition>
+        <argsstring></argsstring>
+        <name>verticalInput</name>
+        <qualifiedname>PlayerInputManager.verticalInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="15" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_manager_1afd756473bdb5b16644e2657485d49816" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerInputManager.isWalking</definition>
+        <argsstring></argsstring>
+        <name>isWalking</name>
+        <qualifiedname>PlayerInputManager.isWalking</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="16" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_input_manager_1a2a106caaed659f3b291e5344ecddb45a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>PlayerInputManager.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Holding the run button, sets bool to true</para>
+<para>Realising the run button, sets bool to false</para>
+<para>attack button</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="22" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="22" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1aee88ffcc0eacc5ae55e44fa9bc52916b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <qualifiedname>PlayerInputManager.OnDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Unsubscribe from the event</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="44" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1a73ab69a615c299ac412b24f13faa53da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>PlayerInputManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="49" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="49" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1ac2aa81a3d75a63c7a61b12b9d0a258ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerInputManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>When the scene changes, this logic running</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="64" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1a503d2a89cf9e4df92ed6f31cf49b92da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>PlayerInputManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="75" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1a497e4435f2fb9891ef794453586c25ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.OnSceneChange</definition>
+        <argsstring>(Scene oldScene, Scene newScene)</argsstring>
+        <name>OnSceneChange</name>
+        <qualifiedname>PlayerInputManager.OnSceneChange</qualifiedname>
+        <param>
+          <type>Scene</type>
+          <declname>oldScene</declname>
+        </param>
+        <param>
+          <type>Scene</type>
+          <declname>newScene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>If we are loading into world scene, enable player controls</para>
+<para>Otherwise we must be at the main menu, disable player conrols</para>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="82" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="82" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1a8ab941c5215e354c80ca4d34b3ff2a74" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.HandleMovementInput</definition>
+        <argsstring>()</argsstring>
+        <name>HandleMovementInput</name>
+        <qualifiedname>PlayerInputManager.HandleMovementInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="96" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="96" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1accf233975c3dca2b2e03a4e6f83a5af6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.HandleRunning</definition>
+        <argsstring>()</argsstring>
+        <name>HandleRunning</name>
+        <qualifiedname>PlayerInputManager.HandleRunning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="127" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="127" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1a5f3bec45f43bb1071887c29c3e5b2c29" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.HandleAttack</definition>
+        <argsstring>()</argsstring>
+        <name>HandleAttack</name>
+        <qualifiedname>PlayerInputManager.HandleAttack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="140" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_input_manager_1abf51462c1ff0599629f4609884daa2c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInputManager.OnApplicationFocus</definition>
+        <argsstring>(bool focus)</argsstring>
+        <name>OnApplicationFocus</name>
+        <qualifiedname>PlayerInputManager.OnApplicationFocus</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>focus</declname>
+        </param>
+        <briefdescription>
+<para>If we minimize or lower the window, stop adjusting inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focus</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="152" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="152" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerInputManager</label>
+        <link refid="class_player_input_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>CharacterAnimatorManager</label>
+        <link refid="class_character_animator_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CharacterLocomotionManager</label>
+        <link refid="class_character_locomotion_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CharacterManager</label>
+        <link refid="class_character_manager"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>characterNetworkManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CharacterNetworkManager</label>
+        <link refid="class_character_network_manager"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IDisposable</label>
+      </node>
+      <node id="4">
+        <label>IInputActionCollection2</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="8">
+        <label>NetworkBehaviour</label>
+      </node>
+      <node id="12">
+        <label>PlayerAnimatorManager</label>
+        <link refid="class_player_animator_manager"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>PlayerAttack</label>
+        <link refid="class_player_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PlayerInputActions</label>
+        <link refid="class_player_input_actions"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerInputManager</label>
+        <link refid="class_player_input_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>playerInputActions</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PlayerLocomotionManager</label>
+        <link refid="class_player_locomotion_manager"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>PlayerLocomotionManager</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>PlayerAnimatorManager</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>PlayerNetworkManager</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>PlayerAttack</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>PlayerNetworkManager</label>
+        <link refid="class_player_network_manager"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" line="6" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/PlayerInputManager.cs" bodystart="7" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_player_input_manager_1a6125fb711b5de4bbdefe785321678bf3" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>attackInput</name></member>
+      <member refid="class_player_input_manager_1a73ab69a615c299ac412b24f13faa53da" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>Awake</name></member>
+      <member refid="class_player_input_manager_1a5f3bec45f43bb1071887c29c3e5b2c29" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>HandleAttack</name></member>
+      <member refid="class_player_input_manager_1a8ab941c5215e354c80ca4d34b3ff2a74" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>HandleMovementInput</name></member>
+      <member refid="class_player_input_manager_1accf233975c3dca2b2e03a4e6f83a5af6" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>HandleRunning</name></member>
+      <member refid="class_player_input_manager_1afabcc6d82a7b089a17e6503843a19024" prot="public" virt="non-virtual"><scope>PlayerInputManager</scope><name>horizontalInput</name></member>
+      <member refid="class_player_input_manager_1a06d664e6c5d52b12f13b6a9f9acac103" prot="public" virt="non-virtual"><scope>PlayerInputManager</scope><name>instance</name></member>
+      <member refid="class_player_input_manager_1afd756473bdb5b16644e2657485d49816" prot="public" virt="non-virtual"><scope>PlayerInputManager</scope><name>isWalking</name></member>
+      <member refid="class_player_input_manager_1a952eb80261c666553438889dddfaa1bd" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>movementInput</name></member>
+      <member refid="class_player_input_manager_1abf51462c1ff0599629f4609884daa2c8" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>OnApplicationFocus</name></member>
+      <member refid="class_player_input_manager_1aee88ffcc0eacc5ae55e44fa9bc52916b" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>OnDestroy</name></member>
+      <member refid="class_player_input_manager_1a2a106caaed659f3b291e5344ecddb45a" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>OnEnable</name></member>
+      <member refid="class_player_input_manager_1a497e4435f2fb9891ef794453586c25ce" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>OnSceneChange</name></member>
+      <member refid="class_player_input_manager_1aa4457d20dca8cd011bf22dc82f479462" prot="public" virt="non-virtual"><scope>PlayerInputManager</scope><name>player</name></member>
+      <member refid="class_player_input_manager_1a10811b8142efe2b21deba30c75692abf" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>playerInputActions</name></member>
+      <member refid="class_player_input_manager_1a84b0f8e87be1add90cc831b952bf2d7f" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>sprintInput</name></member>
+      <member refid="class_player_input_manager_1ac2aa81a3d75a63c7a61b12b9d0a258ff" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>Start</name></member>
+      <member refid="class_player_input_manager_1a503d2a89cf9e4df92ed6f31cf49b92da" prot="private" virt="non-virtual"><scope>PlayerInputManager</scope><name>Update</name></member>
+      <member refid="class_player_input_manager_1a9c7c0f38743cb6ef3544505e67e01705" prot="public" virt="non-virtual"><scope>PlayerInputManager</scope><name>verticalInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+.TH "CharacterNetworkManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CharacterNetworkManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits NetworkBehaviour\&.
+.PP
+Inherited by \fBPlayerNetworkManager\fP\&.
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "NetworkVariable< Vector3 > \fBnetworkPosition\fP = new NetworkVariable<Vector3>(Vector3\&.zero, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "NetworkVariable< Quaternion > \fBnetworkRotation\fP = new NetworkVariable<Quaternion>(Quaternion\&.identity, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "Vector3 \fBnetworkPositionVelocity\fP"
+.br
+.ti -1c
+.RI "float \fBnetworkPositionSmoothTime\fP = 0\&.1f"
+.br
+.ti -1c
+.RI "float \fBnetworkRotationSmoothTime\fP = 0\&.1f"
+.br
+.ti -1c
+.RI "NetworkVariable< bool > \fBisRunning\fP = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.ti -1c
+.RI "NetworkVariable< bool > \fBisWalking\fP = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+.br
+.in -1c
+.SH "Member Data Documentation"
+.PP 
+.SS "NetworkVariable<bool> CharacterNetworkManager\&.isRunning = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+
+.SS "NetworkVariable<bool> CharacterNetworkManager\&.isWalking = new NetworkVariable<bool>(false, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+
+.SS "NetworkVariable<Vector3> CharacterNetworkManager\&.networkPosition = new NetworkVariable<Vector3>(Vector3\&.zero, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+
+.SS "float CharacterNetworkManager\&.networkPositionSmoothTime = 0\&.1f"
+
+.SS "Vector3 CharacterNetworkManager\&.networkPositionVelocity"
+
+.SS "NetworkVariable<Quaternion> CharacterNetworkManager\&.networkRotation = new NetworkVariable<Quaternion>(Quaternion\&.identity, NetworkVariableReadPermission\&.Everyone, NetworkVariableWritePermission\&.Owner)"
+
+.SS "float CharacterNetworkManager\&.networkRotationSmoothTime = 0\&.1f"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

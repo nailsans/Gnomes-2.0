@@ -1,0 +1,93 @@
+.TH "PlayerManager" 3 "Version 1.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCharacterManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBOnNetworkSpawn\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayerLocomotionManager\fP \fBPlayerLocomotionManager\fP"
+.br
+.ti -1c
+.RI "\fBPlayerAnimatorManager\fP \fBPlayerAnimatorManager\fP"
+.br
+.ti -1c
+.RI "\fBPlayerNetworkManager\fP \fBPlayerNetworkManager\fP"
+.br
+.ti -1c
+.RI "\fBPlayerAttack\fP \fBPlayerAttack\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBCharacterManager\fP
+.in +1c
+.ti -1c
+.RI "CharacterController \fBcharacterController\fP"
+.br
+.ti -1c
+.RI "Animator \fBanimator\fP"
+.br
+.ti -1c
+.RI "\fBCharacterNetworkManager\fP \fBcharacterNetworkManager\fP"
+.br
+.ti -1c
+.RI "bool \fBisPerfomingAction\fP = false"
+.br
+.RI "Is character perfoming action like attacking etc\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBAwake\fP ()"
+.br
+.ti -1c
+.RI "override void \fBUpdate\fP ()"
+.br
+.ti -1c
+.RI "override void \fBLateUpdate\fP ()"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "override void PlayerManager\&.Awake ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBCharacterManager\fP\&.
+.SS "override void PlayerManager\&.LateUpdate ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBCharacterManager\fP\&.
+.SS "override void PlayerManager\&.OnNetworkSpawn ()"
+
+.SS "override void PlayerManager\&.Update ()\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+Reimplemented from \fBCharacterManager\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBPlayerAnimatorManager\fP PlayerManager\&.PlayerAnimatorManager"
+
+.SS "\fBPlayerAttack\fP PlayerManager\&.PlayerAttack"
+
+.SS "\fBPlayerLocomotionManager\fP PlayerManager\&.PlayerLocomotionManager"
+
+.SS "\fBPlayerNetworkManager\fP PlayerManager\&.PlayerNetworkManager"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

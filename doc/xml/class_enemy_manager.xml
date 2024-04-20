@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_enemy_manager" kind="class" language="C#" prot="public">
+    <compoundname>EnemyManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" prot="private" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] EnemyManager.players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <qualifiedname>EnemyManager.players</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="18" column="24" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1ab3cc4aae81cb7b5749e1f3a0ab038b6e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnemyManager.spawnCoefficient</definition>
+        <argsstring></argsstring>
+        <name>spawnCoefficient</name>
+        <qualifiedname>EnemyManager.spawnCoefficient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="20" column="10" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1a8853257bf28e8940f9283efb1e0d3e9a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EnemyManager.restSeconds</definition>
+        <argsstring></argsstring>
+        <name>restSeconds</name>
+        <qualifiedname>EnemyManager.restSeconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>estimated amount of enemies spawned per wave </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="23" column="12" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1a762da7560fb7522fda41ff543021a02a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EnemyManager.timeBetweenSpawn</definition>
+        <argsstring></argsstring>
+        <name>timeBetweenSpawn</name>
+        <qualifiedname>EnemyManager.timeBetweenSpawn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time of rest state after enemies are killed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="26" column="12" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" prot="private" static="no" mutable="no">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; EnemyManager.enemyPrefabs</definition>
+        <argsstring></argsstring>
+        <name>enemyPrefabs</name>
+        <qualifiedname>EnemyManager.enemyPrefabs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time between enemies spawn during wave </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="30" column="11" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" prot="private" static="no" mutable="no">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; EnemyManager.spawnedEnemies</definition>
+        <argsstring></argsstring>
+        <name>spawnedEnemies</name>
+        <qualifiedname>EnemyManager.spawnedEnemies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="31" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" prot="private" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] EnemyManager.spawns</definition>
+        <argsstring></argsstring>
+        <name>spawns</name>
+        <qualifiedname>EnemyManager.spawns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="32" column="24" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" prot="private" static="no" mutable="no">
+        <type><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref></type>
+        <definition>EnemyActivityType EnemyManager.activityType</definition>
+        <argsstring></argsstring>
+        <name>activityType</name>
+        <qualifiedname>EnemyManager.activityType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="34" column="31" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnemyManager.currentWaveNumber</definition>
+        <argsstring></argsstring>
+        <name>currentWaveNumber</name>
+        <qualifiedname>EnemyManager.currentWaveNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="35" column="17" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enemy_manager_1a9a95e72112a8e624588bb8283d66698e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>EnemyManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="37" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1afcf3de6b6a3f197fe343fc43592b46d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>EnemyManager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="45" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1a26d4ccc47045ea2812977824e022fec8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>EnemyManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="51" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.changeActivityType</definition>
+        <argsstring>(EnemyActivityType activity)</argsstring>
+        <name>changeActivityType</name>
+        <qualifiedname>EnemyManager.changeActivityType</qualifiedname>
+        <param>
+          <type><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref></type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="62" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1a49b477529ce70a01b28c2f702ff9eb53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.SummonRandomEnemyOnRandomSpawner</definition>
+        <argsstring>()</argsstring>
+        <name>SummonRandomEnemyOnRandomSpawner</name>
+        <qualifiedname>EnemyManager.SummonRandomEnemyOnRandomSpawner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="70" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1ab3a41ec558f9498b1129b2c6fd316a52" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.SummonRandomEnemy</definition>
+        <argsstring>(Vector3 SpawnCoords)</argsstring>
+        <name>SummonRandomEnemy</name>
+        <qualifiedname>EnemyManager.SummonRandomEnemy</qualifiedname>
+        <param>
+          <type>Vector3</type>
+          <declname>SpawnCoords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="75" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.StartWave</definition>
+        <argsstring>(int waveNumber)</argsstring>
+        <name>StartWave</name>
+        <qualifiedname>EnemyManager.StartWave</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>waveNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="82" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1a0641d914820f3aeea06936c538927ed8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EnemyManager.ISpawnRandomEnemies</definition>
+        <argsstring>(int enemiesAmount)</argsstring>
+        <name>ISpawnRandomEnemies</name>
+        <qualifiedname>EnemyManager.ISpawnRandomEnemies</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>enemiesAmount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="89" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="89" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1ab3f12acb8d9273091e1f47b8f4ff5ad0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnemyManager.StartRest</definition>
+        <argsstring>()</argsstring>
+        <name>StartRest</name>
+        <qualifiedname>EnemyManager.StartRest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="99" column="18" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_manager_1a1a406ff8a95e052f2e246c5969b082e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EnemyManager.IStartRest</definition>
+        <argsstring>()</argsstring>
+        <name>IStartRest</name>
+        <qualifiedname>EnemyManager.IStartRest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="105" column="25" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="105" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EnemyManager</label>
+        <link refid="class_enemy_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EnemyManager</label>
+        <link refid="class_enemy_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="16" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="17" bodyend="110"/>
+    <listofallmembers>
+      <member refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>activityType</name></member>
+      <member refid="class_enemy_manager_1a9a95e72112a8e624588bb8283d66698e" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>Awake</name></member>
+      <member refid="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>changeActivityType</name></member>
+      <member refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>currentWaveNumber</name></member>
+      <member refid="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>enemyPrefabs</name></member>
+      <member refid="class_enemy_manager_1a0641d914820f3aeea06936c538927ed8" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>ISpawnRandomEnemies</name></member>
+      <member refid="class_enemy_manager_1a1a406ff8a95e052f2e246c5969b082e5" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>IStartRest</name></member>
+      <member refid="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>players</name></member>
+      <member refid="class_enemy_manager_1a8853257bf28e8940f9283efb1e0d3e9a" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>restSeconds</name></member>
+      <member refid="class_enemy_manager_1ab3cc4aae81cb7b5749e1f3a0ab038b6e" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>spawnCoefficient</name></member>
+      <member refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>spawnedEnemies</name></member>
+      <member refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>spawns</name></member>
+      <member refid="class_enemy_manager_1afcf3de6b6a3f197fe343fc43592b46d5" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>Start</name></member>
+      <member refid="class_enemy_manager_1ab3f12acb8d9273091e1f47b8f4ff5ad0" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>StartRest</name></member>
+      <member refid="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>StartWave</name></member>
+      <member refid="class_enemy_manager_1ab3a41ec558f9498b1129b2c6fd316a52" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>SummonRandomEnemy</name></member>
+      <member refid="class_enemy_manager_1a49b477529ce70a01b28c2f702ff9eb53" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>SummonRandomEnemyOnRandomSpawner</name></member>
+      <member refid="class_enemy_manager_1a762da7560fb7522fda41ff543021a02a" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>timeBetweenSpawn</name></member>
+      <member refid="class_enemy_manager_1a26d4ccc47045ea2812977824e022fec8" prot="private" virt="non-virtual"><scope>EnemyManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

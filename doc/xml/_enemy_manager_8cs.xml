@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_enemy_manager_8cs" kind="file" language="C#">
+    <compoundname>EnemyManager.cs</compoundname>
+    <innerclass refid="class_enemy_manager" prot="public">EnemyManager</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EnemyActivityType</name>
+        <enumvalue id="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3ad911b34823c7674c292556dc56148c27" prot="public">
+          <name>Wave</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a0647f0776aed243f58bfec4dd81de863" prot="public">
+          <name>Cleaning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>active spawn of many enemies </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a55276c10d84e1df7713b441e76e141f9" prot="public">
+          <name>Rest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no spawn, but not all of enemies spawned on wave are dead no spawn </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" line="5" column="7" bodyfile="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs" bodystart="6" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref><sp/></highlight><highlight class="comment">//<sp/>types<sp/>of<sp/>way<sp/>enemies<sp/>spawn<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3ad911b34823c7674c292556dc56148c27" kindref="member">Wave</ref>,<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a0647f0776aed243f58bfec4dd81de863" kindref="member">Cleaning</ref>,<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3a55276c10d84e1df7713b441e76e141f9" kindref="member">Rest</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_enemy_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_enemy_manager" kindref="compound">EnemyManager</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" kindref="member">players</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1ab3cc4aae81cb7b5749e1f3a0ab038b6e" kindref="member">spawnCoefficient</ref>;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a8853257bf28e8940f9283efb1e0d3e9a" kindref="member">restSeconds</ref>;<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a762da7560fb7522fda41ff543021a02a" kindref="member">timeBetweenSpawn</ref>;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>List&lt;GameObject&gt;<sp/><ref refid="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" kindref="member">enemyPrefabs</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;GameObject&gt;<sp/><ref refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" kindref="member">spawnedEnemies</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" kindref="member">spawns</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref><sp/><ref refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" kindref="member">activityType</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" kindref="member">currentWaveNumber</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a9a95e72112a8e624588bb8283d66698e" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" kindref="member">players</ref><sp/>=<sp/>GameObject.FindGameObjectsWithTag(</highlight><highlight class="stringliteral">&quot;Player&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" kindref="member">spawns</ref><sp/>=<sp/>GameObject.FindGameObjectsWithTag(</highlight><highlight class="stringliteral">&quot;Spawner&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" kindref="member">spawnedEnemies</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;GameObject&gt;();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1afcf3de6b6a3f197fe343fc43592b46d5" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" kindref="member">currentWaveNumber</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" kindref="member">StartWave</ref>(<ref refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" kindref="member">currentWaveNumber</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a26d4ccc47045ea2812977824e022fec8" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" kindref="member">activityType</ref><sp/>==<sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref>.Cleaning)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" kindref="member">spawnedEnemies</ref>.Count<sp/>&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" kindref="member">activityType</ref><sp/>=<sp/><ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref>.Rest;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" kindref="member">changeActivityType</ref>(<ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref><sp/>activity)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a7e900f6001d654893d32e457b9096fd8" kindref="member">activityType</ref><sp/>=<sp/>activity;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(GameObject<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1aa1b16e31b992c1490413cb7eb1114cc0" kindref="member">players</ref>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a49b477529ce70a01b28c2f702ff9eb53" kindref="member">SummonRandomEnemyOnRandomSpawner</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1ab3a41ec558f9498b1129b2c6fd316a52" kindref="member">SummonRandomEnemy</ref>(<ref refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" kindref="member">spawns</ref>[Random.Range(0,<sp/><ref refid="class_enemy_manager_1a9fcab95d1124bed09576a9f9f3629408" kindref="member">spawns</ref>.GetLength(0)<sp/>-<sp/>1)].transform.position);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1ab3a41ec558f9498b1129b2c6fd316a52" kindref="member">SummonRandomEnemy</ref>(Vector3<sp/>SpawnCoords)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameObject<sp/>enemy<sp/>=<sp/><ref refid="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" kindref="member">enemyPrefabs</ref>[Random.Range(0,<sp/><ref refid="class_enemy_manager_1ad1d483493e3984e12787e4c3999ac32d" kindref="member">enemyPrefabs</ref>.Count)];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enemy<sp/>=<sp/>Instantiate(enemy,<sp/>SpawnCoords,<sp/>Quaternion.identity);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a98efaaeb55b3ebc300644f6abe033358" kindref="member">spawnedEnemies</ref>.Add(enemy);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" kindref="member">StartWave</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>waveNumber)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" kindref="member">changeActivityType</ref>(<ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref>.Wave);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enemiesAmount<sp/>=<sp/>(int)(waveNumber<sp/>*<sp/>1.5)<sp/>*<sp/><ref refid="class_enemy_manager_1ab3cc4aae81cb7b5749e1f3a0ab038b6e" kindref="member">spawnCoefficient</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_enemy_manager_1a0641d914820f3aeea06936c538927ed8" kindref="member">ISpawnRandomEnemies</ref>(enemiesAmount));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>IEnumerator<sp/><ref refid="class_enemy_manager_1a0641d914820f3aeea06936c538927ed8" kindref="member">ISpawnRandomEnemies</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enemiesAmount)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>enemiesAmount;<sp/>i++)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a49b477529ce70a01b28c2f702ff9eb53" kindref="member">SummonRandomEnemyOnRandomSpawner</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForSeconds(<ref refid="class_enemy_manager_1a762da7560fb7522fda41ff543021a02a" kindref="member">timeBetweenSpawn</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1ab3f12acb8d9273091e1f47b8f4ff5ad0" kindref="member">StartRest</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_manager_1ab3f12acb8d9273091e1f47b8f4ff5ad0" kindref="member">StartRest</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1af57abe0d8647a967325a10de704579e3" kindref="member">changeActivityType</ref>(<ref refid="_enemy_manager_8cs_1a7de913ef354f617713b8e5019a47c3b3" kindref="member">EnemyActivityType</ref>.Rest);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_enemy_manager_1a1a406ff8a95e052f2e246c5969b082e5" kindref="member">IStartRest</ref>());</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>IEnumerator<sp/><ref refid="class_enemy_manager_1a1a406ff8a95e052f2e246c5969b082e5" kindref="member">IStartRest</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForSeconds(<ref refid="class_enemy_manager_1a8853257bf28e8940f9283efb1e0d3e9a" kindref="member">restSeconds</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_manager_1a44ed3bb0a221934b048d8d3e06e3cd3b" kindref="member">StartWave</ref>(<ref refid="class_enemy_manager_1ad2ee2694f225ebb9a1b5569b4776d492" kindref="member">currentWaveNumber</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/D/gnom/Gnomes-2.0/Assets/Scripts/GameplayManagers/EnemyManager.cs"/>
+  </compounddef>
+</doxygen>
