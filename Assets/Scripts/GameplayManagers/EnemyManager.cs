@@ -4,18 +4,28 @@ using UnityEngine;
 
 public enum EnemyActivityType // types of way enemies spawn 
 {
-    Wave, //active spawn of many enemies
-    Cleaning, //no spawn, but not all of enemies spawned on wave are dead
-    Rest  //no spawn
+    Wave, /// <summary>
+    /// active spawn of many enemies
+    /// </summary>
+    Cleaning, /// <summary>
+    /// no spawn, but not all of enemies spawned on wave are dead
+    /// </summary>
+    Rest  ///no spawn
 }
 
 public class EnemyManager : MonoBehaviour
 {
     private GameObject[] players;
 
-    [SerializeField] int spawnCoefficient; //estimated amount of enemies spawned per wave
-    [SerializeField] float restSeconds; // time of rest state after enemies are killed
-    [SerializeField] float timeBetweenSpawn; // time between enemies spawn during wave
+    [SerializeField] int spawnCoefficient; /// <summary>
+    /// estimated amount of enemies spawned per wave
+    /// </summary>
+    [SerializeField] float restSeconds; /// <summary>
+    /// time of rest state after enemies are killed
+    /// </summary>
+    [SerializeField] float timeBetweenSpawn; /// <summary>
+    /// time between enemies spawn during wave
+    /// </summary>
 
     [SerializeField] List<GameObject> enemyPrefabs;
     private List<GameObject> spawnedEnemies;

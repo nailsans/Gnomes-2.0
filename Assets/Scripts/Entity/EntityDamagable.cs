@@ -8,7 +8,9 @@ public interface IDamagable {
 
 }
 
-// Class for working with states of Entities that can be damaged 
+/// <summary>
+/// Class for working with states of Entities that can be damaged 
+/// </summary>
 public class EntityDamagable : MonoBehaviour
 {
     [SerializeField] private int health = 5;
@@ -18,7 +20,9 @@ public class EntityDamagable : MonoBehaviour
 
     Animator animator;
 
-    // Getting components
+    /// <summary>
+    /// Getting components
+    /// </summary>
     private void Awake()
     {
         startRotation = model.transform.rotation;
@@ -26,23 +30,26 @@ public class EntityDamagable : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
-    // Taking damaged is called by the thing that attack Entity
+    /// <summary>
+    /// Taking damaged is called by the thing that attack Entity
+    /// </summary>
+    /// <param name="damage"></param>
     public void takeDamage(int damage)
     {
         StartCoroutine(IPlayDamageAnimation());
         health -= damage;
         if (health <= 0)
-            // If no hp is left, execute death
+            /// If no hp is left, execute death
             callDeath();
     }
 
-    // Death method
+    /// Death method
     public void callDeath()
     {
         StartCoroutine(IPlayDeathAnimation());
     }
 
-    //Plaiying damage animation
+    ///Plaiying damage animation
     private IEnumerator IPlayDamageAnimation()
     {
         model.transform.Rotate(new Vector3(10, 10, 10));
@@ -50,12 +57,15 @@ public class EntityDamagable : MonoBehaviour
         model.transform.SetLocalPositionAndRotation(startPos, startRotation);
     }
 
-    // Animation corroutine
+    /// <summary>
+    /// Animation corroutine
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator IPlayDeathAnimation()
     {
         animator.SetTrigger("dead");
         
-        //After three seconds of animation being played, removing the object of dead entity
+        ///After three seconds of animation being played, removing the object of dead entity
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }

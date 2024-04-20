@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EntityAttack : MonoBehaviour
 {
-    // A script applied on entity that allows to implement attack for it
+    /// <summary>
+    /// A script applied on entity that allows to implement attack for it
+    /// </summary>
     [SerializeField] bool attacksPlayers = true;
     [SerializeField] bool attacksPeneks = false;
     [SerializeField] private int damage = 3;
@@ -16,7 +18,9 @@ public class EntityAttack : MonoBehaviour
     private bool isAttacking = false;
     private float timeToAttack = 0.65f;
 
-    // Getting components
+    /// <summary>
+    /// Getting components
+    /// </summary>
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
@@ -24,14 +28,17 @@ public class EntityAttack : MonoBehaviour
         model = transform.Find("Model").gameObject;
     }
 
-    // Called when something is in sight of our attack field
+    /// <summary>
+    /// Called when something is in sight of our attack field
+    /// </summary>
+    /// <param name="other"></param>
     public void startAttacking(Collider other)
     {
-        // If our entity is not attacking nothing, cancel attacking script
+        /// If our entity is not attacking nothing, cancel attacking script
         if (!attacksPlayers) return;
         PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();
         if (playerHP == null) return;
-        // Making EntityMover stop moving as now we are going to attack
+        /// Making EntityMover stop moving as now we are going to attack
         _entityMove.targetIsClose = true;
         StartCoroutine(IAttackCycle(other));
     }
@@ -42,7 +49,11 @@ public class EntityAttack : MonoBehaviour
         StopAllCoroutines();
     }
 
-    // Attacking target every time as cooldowm passes
+    /// <summary>
+    /// Attacking target every time as cooldowm passes
+    /// </summary>
+    /// <param name="other"></param>
+    /// <returns></returns>
     private IEnumerator IAttackCycle(Collider other)
     {
         PlayerHPSystem playerHP = other.GetComponent<PlayerHPSystem>();

@@ -13,7 +13,9 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = false;
         attackArea.SetActive(isAttacking);
     }
-
+    /// <summary>
+    /// Executing attack on the object in field of attack
+    /// </summary>
     public void Attack()
     {
         if (!isAttacking)
@@ -22,6 +24,10 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Couroutine with cooldown for attack
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator IAttack()
     {
         Debug.Log("ATTACK!");

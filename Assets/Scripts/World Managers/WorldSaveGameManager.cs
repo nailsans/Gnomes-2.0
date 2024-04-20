@@ -12,7 +12,7 @@ public class WorldSaveGameManager : MonoBehaviour
 
     private void Awake()
     {
-        // There can only be one instance of this script at one time, if another exists, destroy it
+        /// There can only be one instance of this script at one time, if another exists, destroy it
 
         if (instance == null)
         {
