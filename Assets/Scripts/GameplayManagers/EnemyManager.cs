@@ -64,8 +64,6 @@ public class EnemyManager : MonoBehaviour
         activityType = activity;
         foreach (GameObject p in players)
         {
-            //PlayerInterface pi = p.GetComponent<PlayerInterface>();
-            //pi.DisplayWarningOnActivityType(activity);
         }
     }
 

@@ -26,13 +26,13 @@ public class PlayerInputManager : MonoBehaviour
             playerInputActions = new PlayerInputActions();
             playerInputActions.Player.Move.performed += i => movementInput = i.ReadValue<Vector2>();
 
-            //Holding the run button, sets bool to true
+            ///Holding the run button, sets bool to true
             playerInputActions.Player.Run.performed += i => sprintInput = true;
 
-            //Realising the run button, sets bool to false
+            ///Realising the run button, sets bool to false
             playerInputActions.Player.Run.canceled += i => sprintInput = false;
 
-            //attack button
+            ///attack button
             playerInputActions.Player.Attack.performed += i => attackInput = true;
             playerInputActions.Player.Attack.canceled += i => attackInput = false;
         }
@@ -43,7 +43,7 @@ public class PlayerInputManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        //Unsubscribe from the event
+        ///Unsubscribe from the event
         SceneManager.activeSceneChanged -= OnSceneChange;
     }
     private void Awake()
@@ -65,7 +65,7 @@ public class PlayerInputManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
-        //When the scene changes, this logic running
+        ///When the scene changes, this logic running
         SceneManager.activeSceneChanged += OnSceneChange;
 
         instance.enabled = false;
@@ -81,12 +81,12 @@ public class PlayerInputManager : MonoBehaviour
 
     private void OnSceneChange(Scene oldScene, Scene newScene)
     {
-        //If we are loading into world scene, enable player controls
+        ///If we are loading into world scene, enable player controls
         if (newScene.buildIndex == WorldSaveGameManager.instance.GetWorldSceneIndex())
         {
             instance.enabled = true;
         }
-        //Otherwise we must be at the main menu, disable player conrols
+        ///Otherwise we must be at the main menu, disable player conrols
         else
         {
             instance.enabled = false;
@@ -145,7 +145,10 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
-    //If we minimize or lower the window, stop adjusting inputs
+    /// <summary>
+    /// If we minimize or lower the window, stop adjusting inputs
+    /// </summary>
+    /// <param name="focus"></param>
     private void OnApplicationFocus(bool focus)
     {
         if(enabled) {
